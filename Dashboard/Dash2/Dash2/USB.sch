@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:Dash2-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -22,6 +21,7 @@ F 0 "U501" H 5500 5200 50  0000 C CNN
 F 1 "CP2102N-A01-GQFN24" H 5500 5100 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5950 3000 50  0001 L CNN
 F 3 "http://www.silabs.com/support%20documents/technicaldocs/cp2102n-datasheet.pdf" H 5550 2750 50  0001 C CNN
+F 4 "634-CP2102NA01GQFN24 " H 5500 3800 50  0001 C CNN "Mouser Part Number"
 	1    5500 3800
 	1    0    0    -1  
 $EndComp
@@ -34,6 +34,7 @@ F 1 "USB_B_Micro" H 3000 4650 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3150 4250 50  0001 C CNN
 F 3 "~" H 3150 4250 50  0001 C CNN
 F 4 "105017-1001" H 3000 4300 50  0001 C CNN "P/N"
+F 5 " 538-105017-1001 " H 3000 4300 50  0001 C CNN "Mouser Part Number"
 	1    3000 4300
 	1    0    0    -1  
 $EndComp
@@ -93,6 +94,7 @@ F 0 "D501" H 4155 4846 50  0000 L CNN
 F 1 "SP0503BAHT" H 4000 4650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-143" H 4175 4750 50  0001 L CNN
 F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 4075 4925 50  0001 C CNN
+F 4 "576-SP0503BAHTG " H 3950 4800 50  0001 C CNN "Mouser Part Number"
 	1    3950 4800
 	1    0    0    -1  
 $EndComp
@@ -119,6 +121,7 @@ F 0 "R502" H 4770 4546 50  0000 L CNN
 F 1 "47.5k" H 4770 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4630 4500 50  0001 C CNN
 F 3 "~" H 4700 4500 50  0001 C CNN
+F 4 "71-CRCW0805-47.5K-E3" H 4700 4500 50  0001 C CNN "Mouser Part Number"
 	1    4700 4500
 	1    0    0    -1  
 $EndComp
@@ -130,6 +133,7 @@ F 0 "R501" V 4143 4100 50  0000 C CNN
 F 1 "22.1k" V 4234 4100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4280 4100 50  0001 C CNN
 F 3 "~" H 4350 4100 50  0001 C CNN
+F 4 "71-CRCW0805-22.1K-E3" H 4350 4100 50  0001 C CNN "Mouser Part Number"
 	1    4350 4100
 	0    1    1    0   
 $EndComp
@@ -174,6 +178,7 @@ F 0 "R503" H 4870 3046 50  0000 L CNN
 F 1 "1k" H 4870 2955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4730 3000 50  0001 C CNN
 F 3 "~" H 4800 3000 50  0001 C CNN
+F 4 "71-CRCW08051K00FKEAC" H 4800 3000 50  0001 C CNN "Mouser Part Number"
 	1    4800 3000
 	1    0    0    -1  
 $EndComp
@@ -197,6 +202,7 @@ F 0 "C501" H 6015 2846 50  0000 L CNN
 F 1 "4.7uF" H 6015 2755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5938 2650 50  0001 C CNN
 F 3 "~" H 5900 2800 50  0001 C CNN
+F 4 "80-C0805C475K3RAUTO " H 5900 2800 50  0001 C CNN "Mouser Part Number"
 	1    5900 2800
 	1    0    0    -1  
 $EndComp
@@ -245,6 +251,7 @@ F 0 "C502" H 6515 2846 50  0000 L CNN
 F 1 "0.1uF" H 6515 2755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6438 2650 50  0001 C CNN
 F 3 "~" H 6400 2800 50  0001 C CNN
+F 4 "80-C0805C104K3R " H 6400 2800 50  0001 C CNN "Mouser Part Number"
 	1    6400 2800
 	1    0    0    -1  
 $EndComp

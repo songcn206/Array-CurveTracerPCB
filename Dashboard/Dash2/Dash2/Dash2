@@ -1,0 +1,98 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>/home/chase/Documents/SVT/Electronics/Dashboard/Dash2/Dash2/Dash2.sch</h1>
+    <p>Sat 22 Feb 2020 06:29:34 PM CST</p>
+    <p>Eeschema 5.1.5-52549c5~84~ubuntu19.10.1</p>
+    <p><b>Component Count:</b>163</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>C101, C102, C103, C104</td><td>4</td><td>1u</td><td>Device:C_Small</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>C105, C106, C109, C112, C113, C114, C115, C116, C117, C118, C119, C122, C123, C125</td><td>14</td><td>100nF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C107, C108</td><td>2</td><td>4.3pF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C110, C111</td><td>2</td><td>2.2uF</td><td>Device:C_Small</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>C120, C121</td><td>2</td><td>2pF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C124, C301, C501</td><td>3</td><td>4.7uF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C126, C127</td><td>2</td><td>0.1u</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C201, C206</td><td>2</td><td>10uF</td><td>Device:C_Small</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>C202, C203, C207</td><td>3</td><td>0.1uF</td><td>Device:C_Small</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>C204, C208</td><td>2</td><td>0.01uF</td><td>Device:C_Small</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>C205</td><td>1</td><td>0.22uF</td><td>Device:C_Small</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>C302, C304</td><td>2</td><td>10uF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C303</td><td>1</td><td>470pF</td><td>Device:C</td><td>Capacitor_SMD:C_2220_5650Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C502</td><td>1</td><td>0.1uF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>D101</td><td>1</td><td>BPS_LED</td><td>Device:LED</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>D102</td><td>1</td><td>LeftSignal</td><td>Device:LED</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>D103</td><td>1</td><td>RightSignal</td><td>Device:LED</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>D104</td><td>1</td><td>KILL_SW_LED</td><td>Device:LED</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>D105</td><td>1</td><td>MOTOR-CONTACTOR</td><td>Device:LED</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>D106</td><td>1</td><td>MOTOR-PRECHARGE</td><td>Device:LED</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>D107</td><td>1</td><td>ARRAY-CONTACTOR</td><td>Device:LED</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>D108</td><td>1</td><td>ARRAY-PRECHARGE</td><td>Device:LED</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>D109, D110, D111, D112</td><td>4</td><td>D</td><td>Device:D</td><td>Diode_SMD:D_0805_2012Metric</td><td>Diode</td><td></td></tr>
+    <tr><td>D301</td><td>1</td><td>PowerOn</td><td>Device:LED_ALT</td><td>LED_SMD:LED_0805_2012Metric</td><td>Light emitting diode, filled shape</td><td></td></tr>
+    <tr><td>D501</td><td>1</td><td>SP0503BAHT</td><td>Dash2-rescue:SP0503BAHT-Power_Protection</td><td>Package_TO_SOT_SMD:SOT-143</td><td></td><td></td></tr>
+    <tr><td>H101, H102, H103, H104, H105, H106, H107</td><td>7</td><td>MountingHole</td><td>Mechanical:MountingHole</td><td>MountingHole:MountingHole_3mm</td><td>Mounting Hole without connection</td><td></td></tr>
+    <tr><td>J101</td><td>1</td><td>Left_Signal</td><td>Connector_Generic:Conn_01x02</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J102</td><td>1</td><td>Right_Signal</td><td>Connector_Generic:Conn_01x02</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J103</td><td>1</td><td>Brake Light</td><td>Connector_Generic:Conn_01x02</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J104</td><td>1</td><td>Headlight</td><td>Connector_Generic:Conn_01x02</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J105</td><td>1</td><td>Backup</td><td>Connector_Generic:Conn_01x02</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J106</td><td>1</td><td>BPS_PWR</td><td>Connector_Generic:Conn_01x02</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J108</td><td>1</td><td>Motor-C</td><td>Connector_Generic:Conn_01x02</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J109</td><td>1</td><td>Motor-P</td><td>Connector_Generic:Conn_01x02</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J110</td><td>1</td><td>Array-C</td><td>Connector_Generic:Conn_01x02</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J111</td><td>1</td><td>Array-P</td><td>Connector_Generic:Conn_01x02</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J112, J113</td><td>2</td><td>Conn_01x03_Female</td><td>Connector_Generic:Conn_01x03</td><td>utsvt_conn:Molex_MicroFit3.0_1x3xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J114</td><td>1</td><td>JTAG</td><td>Connector_Generic:Conn_01x06</td><td>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical</td><td>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J115</td><td>1</td><td>Gecko_Cable</td><td>Connector_Generic:Conn_02x10_Counter_Clockwise</td><td>utsvt_conn:ribbon_cable_right_2x10</td><td>Generic connector, double row, 02x10, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J201</td><td>1</td><td>CAN_OUT</td><td>Connector_Generic:Conn_01x04</td><td>utsvt_conn:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J202</td><td>1</td><td>CAN_IN</td><td>Connector_Generic:Conn_01x04</td><td>utsvt_conn:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical</td><td>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J301</td><td>1</td><td>CarPowerConnector</td><td>Conn:CarPowerConnector</td><td>utsvt_conn:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical</td><td>Connection to the car's low power bus</td><td></td></tr>
+    <tr><td>J501</td><td>1</td><td>USB_B_Micro</td><td>Connector:USB_B_Micro</td><td>Connector_USB:USB_Micro-B_Molex-105017-0001</td><td>USB Micro Type B connector</td><td></td></tr>
+    <tr><td>JP201</td><td>1</td><td>Termination Resistors</td><td>Device:Jumper_NC_Small</td><td>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</td><td>Jumper, normally closed, small symbol</td><td></td></tr>
+    <tr><td>L101, L102, L103, L104</td><td>4</td><td>22u</td><td>pspice:INDUCTOR</td><td>Diode_SMD:D_0805_2012Metric</td><td>Inductor symbol for simulation only</td><td></td></tr>
+    <tr><td>L201, L202</td><td>2</td><td>2kH</td><td>Device:Ferrite_Bead_Small</td><td>Inductor_SMD:L_0805_2012Metric</td><td>Ferrite bead, small symbol</td><td></td></tr>
+    <tr><td>L301</td><td>1</td><td>SRF0905-100Y</td><td>BPS:SRF0905-100Y</td><td>utsvt_bps:SRF0905A</td><td></td><td></td></tr>
+    <tr><td>PS101, PS102, PS103, PS104</td><td>4</td><td>RCD-24</td><td>Dash:RCD-24</td><td>utsvt_special:RCD-24</td><td></td><td></td></tr>
+    <tr><td>R101, R102, R103, R107, R108, R125, R126, R127, R128</td><td>9</td><td>10k</td><td>Device:R_US</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor, US symbol</td><td></td></tr>
+    <tr><td>R104, R105</td><td>2</td><td>4.9k</td><td>Device:R_US</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor, US symbol</td><td></td></tr>
+    <tr><td>R106, R113</td><td>2</td><td>1.2k</td><td>Device:R_US</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor, US symbol</td><td></td></tr>
+    <tr><td>R109, R110, R111, R112</td><td>4</td><td>105</td><td>Device:R_US</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor, US symbol</td><td></td></tr>
+    <tr><td>R114, R115, R117, R118, R119, R120</td><td>6</td><td>330R</td><td>Device:R_US</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor, US symbol</td><td></td></tr>
+    <tr><td>R116</td><td>1</td><td>10K</td><td>Device:R_US</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor, US symbol</td><td></td></tr>
+    <tr><td>R121, R122, R123, R124</td><td>4</td><td>105R</td><td>Device:R_US</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor, US symbol</td><td></td></tr>
+    <tr><td>R201</td><td>1</td><td>0</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R202, R203</td><td>2</td><td>60</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R301</td><td>1</td><td>1.5k</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R501</td><td>1</td><td>22.1k</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R502</td><td>1</td><td>47.5k</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R503</td><td>1</td><td>1k</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>SW101</td><td>1</td><td>CRUISE_SET</td><td>Switch:SW_SPDT</td><td>utsvt_conn:Molex_MicroFit3.0_1x3xP3.00mm_PolarizingPeg_Vertical</td><td>Switch, single pole double throw</td><td></td></tr>
+    <tr><td>SW102</td><td>1</td><td>CRUISE</td><td>Switch:SW_SPDT</td><td>utsvt_conn:Molex_MicroFit3.0_1x3xP3.00mm_PolarizingPeg_Vertical</td><td>Switch, single pole double throw</td><td></td></tr>
+    <tr><td>SW103</td><td>1</td><td>HAZARD</td><td>Switch:SW_SPDT</td><td>utsvt_conn:Molex_MicroFit3.0_1x3xP3.00mm_PolarizingPeg_Vertical</td><td>Switch, single pole double throw</td><td></td></tr>
+    <tr><td>SW104</td><td>1</td><td>HEADLIGHT_SW</td><td>Switch:SW_SPDT</td><td>utsvt_conn:Molex_MicroFit3.0_1x3xP3.00mm_PolarizingPeg_Vertical</td><td>Switch, single pole double throw</td><td></td></tr>
+    <tr><td>SW105</td><td>1</td><td>F/R_SW</td><td>Switch:SW_SPDT</td><td>utsvt_conn:Molex_MicroFit3.0_1x3xP3.00mm_PolarizingPeg_Vertical</td><td>Switch, single pole double throw</td><td></td></tr>
+    <tr><td>SW106</td><td>1</td><td>BACKUP_SW</td><td>Switch:SW_SPDT</td><td>utsvt_conn:Molex_MicroFit3.0_1x3xP3.00mm_PolarizingPeg_Vertical</td><td>Switch, single pole double throw</td><td></td></tr>
+    <tr><td>SW107</td><td>1</td><td>SW_Rotary2x6</td><td>Switch:SW_Rotary2x6</td><td>utsvt_special:CK1035</td><td>2 rotary switch with 6 positions</td><td></td></tr>
+    <tr><td>SW108</td><td>1</td><td>TURN_SIGNAL_SW</td><td>Switch:SW_SPDT_MSM</td><td>utsvt_conn:Molex_MicroFit3.0_1x3xP3.00mm_PolarizingPeg_Vertical</td><td>Switch, single pole double throw, center OFF position</td><td></td></tr>
+    <tr><td>SW109</td><td>1</td><td>KILL_SW</td><td>Switch:SW_SPDT</td><td>utsvt_conn:Molex_MicroFit3.0_1x3xP3.00mm_PolarizingPeg_Vertical</td><td>Switch, single pole double throw</td><td></td></tr>
+    <tr><td>SW110</td><td>1</td><td>RESET</td><td>Switch:SW_SPST</td><td>Button_Switch_SMD:SW_SPST_B3SL-1002P</td><td>Single Pole Single Throw (SPST) switch</td><td></td></tr>
+    <tr><td>U101, U102, U103, U104, U105, U106, U108, U109, U110, U111</td><td>10</td><td>EL3H7</td><td>Isolator:SFH617A-1</td><td>Package_SO:SOP-4_4.4x2.6mm_P1.27mm</td><td>Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80, -55 to +110 degree Celcius, UL, BSI, FIMKO, cUL, THT PDIP-4</td><td></td></tr>
+    <tr><td>U107</td><td>1</td><td>STM32F413ZHTx</td><td>MCU_ST_STM32F4:STM32F413ZHTx</td><td>Package_QFP:LQFP-144_20x20mm_P0.5mm</td><td>ARM Cortex-M4 MCU, 1536KB flash, 320KB RAM, 100MHz, 1.7-3.6V, 114 GPIO, LQFP-144</td><td></td></tr>
+    <tr><td>U201</td><td>1</td><td>ADM3055E</td><td>Chips:ADM3055E</td><td>utsvt_ics:SOIC-20W_7.5x15.4mm_Pitch1.27mm</td><td>Isolating CAN Transceiver with Integrated Power Regulator</td><td></td></tr>
+    <tr><td>U202</td><td>1</td><td>CDSOT23-T24CAN</td><td>Chips:CDSOT23-T24CAN</td><td>Package_TO_SOT_SMD:SOT-23W</td><td>CAN Bus Protector</td><td></td></tr>
+    <tr><td>U301</td><td>1</td><td>RI3-1205S</td><td>Power:RI3-1205S</td><td>utsvt_ics:RI3_DC_Converter</td><td></td><td></td></tr>
+    <tr><td>U302</td><td>1</td><td>NCP1117-3.3_SOT223</td><td>Regulator_Linear:LD1117S33TR_SOT223</td><td>Package_TO_SOT_SMD:SOT-223-3_TabPin2</td><td>800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223</td><td></td></tr>
+    <tr><td>U501</td><td>1</td><td>CP2102N-A01-GQFN24</td><td>Interface_USB:CP2102N-A01-GQFN24</td><td>Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm</td><td>USB to UART master bridge, QFN-24</td><td></td></tr>
+    <tr><td>Y101, Y102</td><td>2</td><td>Crystal</td><td>Device:Crystal</td><td>Crystal:Crystal_SMD_TXC_7A-2Pin_5x3.2mm</td><td>Two pin crystal</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
