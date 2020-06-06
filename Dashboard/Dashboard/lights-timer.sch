@@ -1,0 +1,203 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Dash2-rescue:NE555-Timer U1
+U 1 1 5EBF0D26
+P 5650 3600
+F 0 "U1" H 5350 4100 50  0000 C CNN
+F 1 "TS555" H 5350 4000 50  0000 C CNN
+F 2 "" H 5650 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 5650 3600 50  0001 C CNN
+	1    5650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0178
+U 1 1 5EBF2615
+P 5650 3200
+F 0 "#PWR0178" H 5650 3050 50  0001 C CNN
+F 1 "+3.3V" H 5665 3373 50  0000 C CNN
+F 2 "" H 5650 3200 50  0001 C CNN
+F 3 "" H 5650 3200 50  0001 C CNN
+	1    5650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0179
+U 1 1 5EBF28CB
+P 5650 4000
+F 0 "#PWR0179" H 5650 3750 50  0001 C CNN
+F 1 "GND" H 5655 3827 50  0000 C CNN
+F 2 "" H 5650 4000 50  0001 C CNN
+F 3 "" H 5650 4000 50  0001 C CNN
+	1    5650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0180
+U 1 1 5EBF2A33
+P 5000 3800
+F 0 "#PWR0180" H 5000 3650 50  0001 C CNN
+F 1 "+3.3V" V 5000 3900 50  0000 L CNN
+F 2 "" H 5000 3800 50  0001 C CNN
+F 3 "" H 5000 3800 50  0001 C CNN
+	1    5000 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 3800 5150 3800
+Wire Wire Line
+	5150 3600 4450 3600
+Wire Wire Line
+	4450 3600 4450 3750
+$Comp
+L Device:C_Small C1
+U 1 1 5EBF316A
+P 4450 3850
+F 0 "C1" H 4200 3900 50  0000 L CNN
+F 1 "10nF" H 4150 3800 50  0000 L CNN
+F 2 "" H 4450 3850 50  0001 C CNN
+F 3 "~" H 4450 3850 50  0001 C CNN
+	1    4450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0181
+U 1 1 5EBF3A8A
+P 4450 4000
+F 0 "#PWR0181" H 4450 3750 50  0001 C CNN
+F 1 "GND" H 4455 3827 50  0000 C CNN
+F 2 "" H 4450 4000 50  0001 C CNN
+F 3 "" H 4450 4000 50  0001 C CNN
+	1    4450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4000 4450 3950
+Wire Wire Line
+	6150 3800 6450 3800
+$Comp
+L power:GND #PWR0182
+U 1 1 5EBF43E5
+P 6450 4000
+F 0 "#PWR0182" H 6450 3750 50  0001 C CNN
+F 1 "GND" H 6455 3827 50  0000 C CNN
+F 2 "" H 6450 4000 50  0001 C CNN
+F 3 "" H 6450 4000 50  0001 C CNN
+	1    6450 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 3800
+Wire Wire Line
+	6450 3600 6150 3600
+$Comp
+L power:+3.3V #PWR0183
+U 1 1 5EBF71CD
+P 6450 3000
+F 0 "#PWR0183" H 6450 2850 50  0001 C CNN
+F 1 "+3.3V" H 6465 3173 50  0000 C CNN
+F 2 "" H 6450 3000 50  0001 C CNN
+F 3 "" H 6450 3000 50  0001 C CNN
+	1    6450 3000
+	1    0    0    -1  
+$EndComp
+Text HLabel 6150 3400 2    50   Input ~ 0
+BLINK
+Connection ~ 6450 3600
+Wire Wire Line
+	5150 3400 5050 3400
+Wire Wire Line
+	5050 3400 5050 2700
+Wire Wire Line
+	5050 2700 6700 2700
+Wire Wire Line
+	6700 2700 6700 3800
+Wire Wire Line
+	6700 3800 6450 3800
+Text Notes 5000 2550 0    50   ~ 0
+So theoretically, this should be\noptimized to blink at 1.584Hz.
+Text HLabel 3700 3050 0    50   Input ~ 0
+3.3V
+Text HLabel 3700 3400 0    50   Input ~ 0
+GND
+$Comp
+L power:+3.3V #PWR0184
+U 1 1 5EBFBD16
+P 3850 2900
+F 0 "#PWR0184" H 3850 2750 50  0001 C CNN
+F 1 "+3.3V" H 3865 3073 50  0000 C CNN
+F 2 "" H 3850 2900 50  0001 C CNN
+F 3 "" H 3850 2900 50  0001 C CNN
+	1    3850 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2900 3850 3050
+Wire Wire Line
+	3850 3050 3700 3050
+$Comp
+L power:GND #PWR0185
+U 1 1 5EBFC31C
+P 3850 3450
+F 0 "#PWR0185" H 3850 3200 50  0001 C CNN
+F 1 "GND" H 3855 3277 50  0000 C CNN
+F 2 "" H 3850 3450 50  0001 C CNN
+F 3 "" H 3850 3450 50  0001 C CNN
+	1    3850 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3450 3850 3400
+Wire Wire Line
+	3850 3400 3700 3400
+$Comp
+L Device:C_Small C2
+U 1 1 5EBF3E10
+P 6450 3900
+F 0 "C2" H 6200 3950 50  0000 L CNN
+F 1 "2.2uF" H 6150 3850 50  0000 L CNN
+F 2 "" H 6450 3900 50  0001 C CNN
+F 3 "~" H 6450 3900 50  0001 C CNN
+	1    6450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R5
+U 1 1 5EBF5CCC
+P 6450 3700
+F 0 "R5" H 6518 3746 50  0000 L CNN
+F 1 "220k" H 6518 3655 50  0000 L CNN
+F 2 "" H 6450 3700 50  0001 C CNN
+F 3 "~" H 6450 3700 50  0001 C CNN
+	1    6450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3300 6450 3600
+Wire Wire Line
+	6450 3100 6450 3000
+$Comp
+L Device:R_Small_US R4
+U 1 1 5EBF6EC8
+P 6450 3200
+F 0 "R4" H 6518 3246 50  0000 L CNN
+F 1 "10k" H 6518 3155 50  0000 L CNN
+F 2 "" H 6450 3200 50  0001 C CNN
+F 3 "~" H 6450 3200 50  0001 C CNN
+	1    6450 3200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

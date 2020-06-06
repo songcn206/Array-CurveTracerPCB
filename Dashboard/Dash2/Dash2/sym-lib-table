@@ -1,8 +1,0 @@
-(sym_lib_table
-  (lib (name Dash)(type Legacy)(uri ${KIPRJMOD}/Driver_LED.lib)(options "")(descr ""))
-  (lib (name Chips)(type Legacy)(uri ${KIPRJMOD}/../../../Common/utsvt-chips.lib)(options "")(descr ""))
-  (lib (name Conn)(type Legacy)(uri ${KIPRJMOD}/../../../Common/utsvt-connectors.lib)(options "")(descr ""))
-  (lib (name Power)(type Legacy)(uri ${KIPRJMOD}/../../../Common/utsvt-power-regulators.lib)(options "")(descr ""))
-  (lib (name BPS)(type Legacy)(uri ${KIPRJMOD}/../../../BPS/Library/utsvt-bps.lib)(options "")(descr ""))
-  (lib (name Dash2-rescue)(type Legacy)(uri ${KIPRJMOD}/Dash2-rescue.lib)(options "")(descr ""))
-)
