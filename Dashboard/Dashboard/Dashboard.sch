@@ -3154,34 +3154,6 @@ Wire Wire Line
 Text Label 10650 7450 0    50   ~ 0
 Brake_Pot
 Wire Wire Line
-	12450 6550 12850 6550
-Text Label 12850 6550 2    50   ~ 0
-FR_SW
-Wire Wire Line
-	12450 6150 12850 6150
-Wire Wire Line
-	12850 6250 12450 6250
-Wire Wire Line
-	12450 6350 12850 6350
-Wire Wire Line
-	12850 6450 12450 6450
-Text Label 12850 6150 2    50   ~ 0
-M_PRCHG
-Text Label 12850 6250 2    50   ~ 0
-M_CNCTR
-Text Label 12850 6350 2    50   ~ 0
-A_PRCHG
-Text Label 12850 6450 2    50   ~ 0
-A_CNCTR
-Wire Wire Line
-	12450 6650 12850 6650
-Wire Wire Line
-	12450 6750 12850 6750
-Text Label 12850 6650 2    50   ~ 0
-IG1
-Text Label 12850 6750 2    50   ~ 0
-IG2
-Wire Wire Line
 	12450 7550 12850 7550
 Text Label 12850 7550 2    50   ~ 0
 RIGHT_SW
@@ -3302,4 +3274,11 @@ F 3 "" H 1750 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2150 4350
+NoConn ~ 12450 6150
+NoConn ~ 12450 6250
+NoConn ~ 12450 6350
+NoConn ~ 12450 6450
+NoConn ~ 12450 6550
+NoConn ~ 12450 6650
+NoConn ~ 12450 6750
 $EndSCHEMATC
