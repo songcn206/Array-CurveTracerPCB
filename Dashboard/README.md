@@ -37,7 +37,6 @@ PA12 | Car CAN TX              |
 PA13 | SWDIO (Programming)     |
 PA14 | SWCLK (Programming)     |
 PA15 | JTDI  (Programming)     |
-     |
 PB0  | Headlights              | Input
 PB1  | Right Turn Switch       | Input
 PB2  | Left Turn Switch        | Input
@@ -54,7 +53,6 @@ PB12 | Motor CAN RX            |
 PB13 | Motor CAN TX            |
 PB14 | Ignition Switch 1       | Input
 PB15 | Ignition Switch 2       | Input
-     |                         |
 PC0  | Accelerator Pot.        | Analog Input
 PC1  | Brake Pot.              | Analog Input
 PC2  |                         | 
@@ -71,5 +69,4 @@ PC12 | Control Fault LED       | Output
 PC13 | Reserved LED            | Output
 PC14 | Cruise Enable           | Input
 PC15 | Cruise Set              | Input
-     |                         |
 PD2  |                         | 
