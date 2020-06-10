@@ -999,15 +999,15 @@ UART_RX
 Text HLabel 2000 6900 0    50   Input ~ 0
 UART_TX
 Wire Wire Line
-	2000 6800 2500 6800
-Wire Wire Line
 	2000 6900 2500 6900
-Wire Bus Line
-	7100 2700 7100 3000
-Wire Bus Line
-	4500 3800 4500 4300
 Text Label 2100 6800 0    50   ~ 0
 USART6_TX
 Text Label 2100 6900 0    50   ~ 0
 USART6_RX
+Wire Wire Line
+	2000 6800 2500 6800
+Wire Bus Line
+	7100 2700 7100 3000
+Wire Bus Line
+	4500 3800 4500 4300
 $EndSCHEMATC
