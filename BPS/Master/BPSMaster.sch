@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -950,8 +950,6 @@ Wire Wire Line
 	8300 5850 7800 5850
 Text Label 7800 5850 0    50   ~ 0
 CAN1_TX
-NoConn ~ 5100 4600
-NoConn ~ 5100 4700
 NoConn ~ 5100 4800
 NoConn ~ 6500 5300
 NoConn ~ 6500 5400
@@ -982,8 +980,34 @@ Text Label 7800 5300 0    50   ~ 0
 SPI1_MISO
 Text Label 7800 5400 0    50   ~ 0
 SPI1_MOSI
+Wire Wire Line
+	5100 4600 4600 4600
+Wire Wire Line
+	5100 4700 4600 4700
+Text Label 4600 4600 0    50   ~ 0
+USART6_TX
+Text Label 4600 4700 0    50   ~ 0
+USART6_RX
+$Sheet
+S 1000 6700 1000 350 
+U 5EE39517
+F0 "Bluetooth Module" 50
+F1 "BlutoothMod.sch" 50
+$EndSheet
+Text HLabel 2000 6800 0    50   Output ~ 0
+UART_RX
+Text HLabel 2000 6900 0    50   Input ~ 0
+UART_TX
+Wire Wire Line
+	2000 6800 2500 6800
+Wire Wire Line
+	2000 6900 2500 6900
 Wire Bus Line
 	7100 2700 7100 3000
 Wire Bus Line
 	4500 3800 4500 4300
+Text Label 2100 6800 0    50   ~ 0
+USART6_TX
+Text Label 2100 6900 0    50   ~ 0
+USART6_RX
 $EndSCHEMATC
