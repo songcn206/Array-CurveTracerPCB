@@ -736,7 +736,6 @@ Wire Wire Line
 	4050 3350 4250 3350
 NoConn ~ 5100 5500
 NoConn ~ 5100 5400
-NoConn ~ 5100 5300
 NoConn ~ 6500 4300
 NoConn ~ 6500 3900
 NoConn ~ 5100 3800
@@ -981,11 +980,7 @@ SPI1_MISO
 Text Label 7800 5400 0    50   ~ 0
 SPI1_MOSI
 Wire Wire Line
-	5100 4600 4600 4600
-Wire Wire Line
 	5100 4700 4600 4700
-Text Label 4600 4600 0    50   ~ 0
-USART6_TX
 Text Label 4600 4700 0    50   ~ 0
 USART6_RX
 $Sheet
@@ -993,21 +988,32 @@ S 1000 6700 1000 350
 U 5EE39517
 F0 "Bluetooth Module" 50
 F1 "BlutoothMod.sch" 50
+F2 "UART_RX" I R 2000 6800 50 
+F3 "UART_TX" O R 2000 6900 50 
+F4 "Mode" I R 2000 7000 50 
 $EndSheet
-Text HLabel 2000 6800 0    50   Output ~ 0
-UART_RX
-Text HLabel 2000 6900 0    50   Input ~ 0
-UART_TX
 Wire Wire Line
 	2000 6900 2500 6900
-Text Label 2100 6800 0    50   ~ 0
-USART6_TX
-Text Label 2100 6900 0    50   ~ 0
-USART6_RX
 Wire Wire Line
 	2000 6800 2500 6800
+Wire Wire Line
+	2000 7000 2500 7000
+Text Label 2500 6900 2    50   ~ 0
+USART6_RX
+Text Label 2500 6800 2    50   ~ 0
+USART6_TX
+Wire Wire Line
+	5100 5300 4600 5300
+Text Label 4600 5300 0    50   ~ 0
+EVENTOUT
+Text Label 2500 7000 2    50   ~ 0
+EVENTOUT
 Wire Bus Line
 	7100 2700 7100 3000
 Wire Bus Line
 	4500 3800 4500 4300
+Wire Wire Line
+	5100 4600 4600 4600
+Text Label 4600 4600 0    50   ~ 0
+USART6_TX
 $EndSCHEMATC
