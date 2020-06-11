@@ -343,8 +343,6 @@ F 3 "" H 4600 4500 50  0001 C CNN
 	1    4600 4500
 	1    0    0    -1  
 $EndComp
-Text HLabel 6750 2900 2    50   Input ~ 0
-Mode
 Text Notes 3500 2850 0    50   ~ 0
 Reverse Voltage Protection Circuit\nGiven in Datasheet
 Text Notes 3450 4500 0    50   ~ 0
@@ -357,8 +355,6 @@ Wire Wire Line
 	6700 3300 6750 3300
 Wire Wire Line
 	6700 3400 6750 3400
-Wire Wire Line
-	6700 2900 6750 2900
 $Comp
 L Power_Supervisor:MCP100-315D U7
 U 1 1 5EE0F520
@@ -433,4 +429,57 @@ Wire Wire Line
 	4650 3900 5000 3900
 Text Notes 3450 3950 0    50   ~ 0
 UART_TX Indicator\nOn: TX begins\nOff: TX over
+$Comp
+L Switch:SW_DIP_x01 SW2
+U 1 1 5EE36BE3
+P 6700 1950
+F 0 "SW2" V 6654 2080 50  0000 L CNN
+F 1 "SW_DIP_x01" V 6745 2080 50  0000 L CNN
+F 2 "" H 6700 1950 50  0001 C CNN
+F 3 "~" H 6700 1950 50  0001 C CNN
+	1    6700 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR035
+U 1 1 5EE37A78
+P 6700 1650
+F 0 "#PWR035" H 6700 1500 50  0001 C CNN
+F 1 "+3.3V" H 6715 1823 50  0000 C CNN
+F 2 "" H 6700 1650 50  0001 C CNN
+F 3 "" H 6700 1650 50  0001 C CNN
+	1    6700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 5EE37E2D
+P 6450 2600
+F 0 "#PWR034" H 6450 2350 50  0001 C CNN
+F 1 "GND" H 6455 2427 50  0000 C CNN
+F 2 "" H 6450 2600 50  0001 C CNN
+F 3 "" H 6450 2600 50  0001 C CNN
+	1    6450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5EE38412
+P 6450 2400
+F 0 "R16" H 6520 2446 50  0000 L CNN
+F 1 "330k" H 6520 2355 50  0000 L CNN
+F 2 "" V 6380 2400 50  0001 C CNN
+F 3 "~" H 6450 2400 50  0001 C CNN
+	1    6450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2550 6450 2600
+Wire Wire Line
+	6450 2250 6700 2250
+Wire Wire Line
+	6700 2250 6700 2900
+Connection ~ 6700 2250
+Text Notes 5750 1850 0    50   ~ 0
+On for Application mode\nOff for Testing mode
 $EndSCHEMATC

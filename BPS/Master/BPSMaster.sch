@@ -984,30 +984,21 @@ Wire Wire Line
 Text Label 4600 4700 0    50   ~ 0
 USART6_RX
 $Sheet
-S 1000 6700 1000 350 
+S 1000 6700 1000 300 
 U 5EE39517
 F0 "Bluetooth Module" 50
 F1 "BlutoothMod.sch" 50
 F2 "UART_RX" I R 2000 6800 50 
 F3 "UART_TX" O R 2000 6900 50 
-F4 "Mode" I R 2000 7000 50 
 $EndSheet
 Wire Wire Line
 	2000 6900 2500 6900
 Wire Wire Line
 	2000 6800 2500 6800
-Wire Wire Line
-	2000 7000 2500 7000
 Text Label 2500 6900 2    50   ~ 0
 USART6_RX
 Text Label 2500 6800 2    50   ~ 0
 USART6_TX
-Wire Wire Line
-	5100 5300 4600 5300
-Text Label 4600 5300 0    50   ~ 0
-EVENTOUT
-Text Label 2500 7000 2    50   ~ 0
-EVENTOUT
 Wire Wire Line
 	5100 4600 4600 4600
 Text Label 4600 4600 0    50   ~ 0
@@ -1020,6 +1011,7 @@ Wire Wire Line
 	2000 6250 2500 6250
 Text Label 2500 6250 2    50   ~ 0
 LPTIM1(PWM)
+NoConn ~ 5100 5300
 Wire Bus Line
 	7100 2700 7100 3000
 Wire Bus Line
