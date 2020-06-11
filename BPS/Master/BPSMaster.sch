@@ -644,13 +644,14 @@ Wire Wire Line
 Wire Wire Line
 	10550 2900 10650 2900
 $Sheet
-S 1000 6100 1000 400 
+S 1000 6100 1000 500 
 U 5C392C6A
 F0 "Misc" 50
 F1 "Misc.sch" 50
 F2 "PC[0..5]" I R 2000 6200 50 
 F3 "PA[5..7]" I R 2000 6300 50 
 F4 "RUN" I R 2000 6400 50 
+F5 "FANPWR" I R 2000 6500 50 
 $EndSheet
 Text Notes 8650 1150 0    100  ~ 20
 Bypass Capacitors
@@ -736,7 +737,6 @@ Wire Wire Line
 	4050 3350 4250 3350
 NoConn ~ 5100 5500
 NoConn ~ 5100 5400
-NoConn ~ 6500 4300
 NoConn ~ 6500 3900
 NoConn ~ 5100 3800
 NoConn ~ 6500 2800
@@ -984,36 +984,44 @@ Wire Wire Line
 Text Label 4600 4700 0    50   ~ 0
 USART6_RX
 $Sheet
-S 1000 6700 1000 350 
+S 1000 6950 1000 350 
 U 5EE39517
 F0 "Bluetooth Module" 50
 F1 "BlutoothMod.sch" 50
-F2 "UART_RX" I R 2000 6800 50 
-F3 "UART_TX" O R 2000 6900 50 
-F4 "Mode" I R 2000 7000 50 
+F2 "UART_RX" I R 2000 7050 50 
+F3 "UART_TX" O R 2000 7150 50 
+F4 "Mode" I R 2000 7250 50 
 $EndSheet
 Wire Wire Line
-	2000 6900 2500 6900
+	2000 7150 2500 7150
 Wire Wire Line
-	2000 6800 2500 6800
+	2000 7050 2500 7050
 Wire Wire Line
-	2000 7000 2500 7000
-Text Label 2500 6900 2    50   ~ 0
+	2000 7250 2500 7250
+Text Label 2500 7150 2    50   ~ 0
 USART6_RX
-Text Label 2500 6800 2    50   ~ 0
+Text Label 2500 7050 2    50   ~ 0
 USART6_TX
 Wire Wire Line
 	5100 5300 4600 5300
 Text Label 4600 5300 0    50   ~ 0
 EVENTOUT
-Text Label 2500 7000 2    50   ~ 0
+Text Label 2500 7250 2    50   ~ 0
 EVENTOUT
-Wire Bus Line
-	7100 2700 7100 3000
-Wire Bus Line
-	4500 3800 4500 4300
 Wire Wire Line
 	5100 4600 4600 4600
 Text Label 4600 4600 0    50   ~ 0
 USART6_TX
+Wire Wire Line
+	6500 4300 7000 4300
+Text Label 7000 4300 2    50   ~ 0
+LPTIM1(PWM)
+Wire Wire Line
+	2000 6500 2500 6500
+Wire Bus Line
+	7100 2700 7100 3000
+Wire Bus Line
+	4500 3800 4500 4300
+Text Label 2500 6500 2    50   ~ 0
+LPTIM1(PWM)
 $EndSCHEMATC

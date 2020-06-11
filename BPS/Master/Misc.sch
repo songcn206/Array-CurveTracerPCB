@@ -24,7 +24,7 @@ F 3 "~" H 8350 2650 50  0001 C CNN
 	1    8350 2650
 	1    0    0    -1  
 $EndComp
-Text Notes 8200 2150 0    100  ~ 20
+Text Notes 8200 1800 0    100  ~ 20
 Fans
 $Comp
 L Connector_Generic:Conn_02x04_Counter_Clockwise J4
@@ -35,17 +35,6 @@ F 1 "BackFans" H 8250 3100 50  0000 L CNN
 F 2 "UTSVT_Connectors:Molex_MicroFit3.0_2x4xP3.00mm_PolarizingPeg_Vertical" H 8350 3400 50  0001 C CNN
 F 3 "~" H 8350 3400 50  0001 C CNN
 	1    8350 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR028
-U 1 1 5C39E1C8
-P 8050 2450
-F 0 "#PWR028" H 8050 2300 50  0001 C CNN
-F 1 "+12V" H 8065 2623 50  0000 C CNN
-F 2 "" H 8050 2450 50  0001 C CNN
-F 3 "" H 8050 2450 50  0001 C CNN
-	1    8050 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -461,8 +450,32 @@ Wire Wire Line
 Text HLabel 2100 2700 0    50   Input ~ 0
 RUN
 Connection ~ 5800 3700
+Text HLabel 7750 2250 0    50   Input ~ 0
+FANPWR
+$Comp
+L power:+12V #PWR0118
+U 1 1 5EE38D3D
+P 8050 2050
+F 0 "#PWR0118" H 8050 1900 50  0001 C CNN
+F 1 "+12V" H 8065 2223 50  0000 C CNN
+F 2 "" H 8050 2050 50  0001 C CNN
+F 3 "" H 8050 2050 50  0001 C CNN
+	1    8050 2050
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	5400 2500 6500 2500
 Wire Bus Line
 	2100 2500 4800 2500
+$Comp
+L Transistor_BJT:BUT11 Q6
+U 1 1 5EE3EB2A
+P 7950 2250
+F 0 "Q6" H 8142 2296 50  0000 L CNN
+F 1 "BUT11" H 8142 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8150 2175 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BU/BUT11.pdf" H 7950 2250 50  0001 L CNN
+	1    7950 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
