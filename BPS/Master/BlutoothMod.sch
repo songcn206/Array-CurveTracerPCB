@@ -298,7 +298,6 @@ NoConn ~ 5000 4500
 NoConn ~ 5000 4300
 NoConn ~ 5000 4200
 NoConn ~ 5000 4100
-NoConn ~ 5000 3900
 NoConn ~ 5000 3800
 NoConn ~ 5000 3700
 NoConn ~ 5000 3600
@@ -310,13 +309,13 @@ UART_TX
 $Comp
 L Device:LED D16
 U 1 1 5EE20E59
-P 4850 4000
-F 0 "D16" H 4843 4217 50  0000 C CNN
-F 1 "LED" H 4843 4126 50  0000 C CNN
-F 2 "" H 4850 4000 50  0001 C CNN
-F 3 "~" H 4850 4000 50  0001 C CNN
-	1    4850 4000
-	1    0    0    -1  
+P 4600 4200
+F 0 "D16" V 4700 4350 50  0000 C CNN
+F 1 "LED" V 4600 4350 50  0000 C CNN
+F 2 "" H 4600 4200 50  0001 C CNN
+F 3 "~" H 4600 4200 50  0001 C CNN
+	1    4600 4200
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D17
@@ -330,14 +329,9 @@ F 3 "~" H 4850 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 4000 4600 4000
-Wire Wire Line
-	4600 4000 4600 4400
-Wire Wire Line
 	4600 4400 4700 4400
 Wire Wire Line
 	4600 4400 4600 4500
-Connection ~ 4600 4400
 $Comp
 L power:GND #PWR0117
 U 1 1 5EE2468E
@@ -406,4 +400,37 @@ Wire Wire Line
 	6700 3500 7100 3500
 Text Notes 7450 3600 0    50   ~ 0
 RSSI Indicator\n(On: Strong)
+Wire Wire Line
+	4600 4400 4600 4350
+Connection ~ 4600 4400
+Wire Wire Line
+	4600 4050 4600 4000
+Wire Wire Line
+	4600 4000 5000 4000
+$Comp
+L Device:LED D19
+U 1 1 5EE52339
+P 4500 3900
+F 0 "D19" H 4550 3700 50  0000 C CNN
+F 1 "LED" H 4550 3800 50  0000 C CNN
+F 2 "" H 4500 3900 50  0001 C CNN
+F 3 "~" H 4500 3900 50  0001 C CNN
+	1    4500 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR028
+U 1 1 5EE5298C
+P 4350 3900
+F 0 "#PWR028" H 4350 3750 50  0001 C CNN
+F 1 "+3.3V" V 4365 4028 50  0000 L CNN
+F 2 "" H 4350 3900 50  0001 C CNN
+F 3 "" H 4350 3900 50  0001 C CNN
+	1    4350 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 3900 5000 3900
+Text Notes 3450 3950 0    50   ~ 0
+UART_TX Indicator\nOn: TX begins\nOff: TX over
 $EndSCHEMATC

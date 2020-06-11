@@ -644,14 +644,14 @@ Wire Wire Line
 Wire Wire Line
 	10550 2900 10650 2900
 $Sheet
-S 1000 6100 1000 500 
+S 1000 5850 1000 500 
 U 5C392C6A
 F0 "Misc" 50
 F1 "Misc.sch" 50
-F2 "PC[0..5]" I R 2000 6200 50 
-F3 "PA[5..7]" I R 2000 6300 50 
-F4 "RUN" I R 2000 6400 50 
-F5 "FANPWR" I R 2000 6500 50 
+F2 "PC[0..5]" I R 2000 5950 50 
+F3 "PA[5..7]" I R 2000 6050 50 
+F4 "RUN" I R 2000 6150 50 
+F5 "FANPWR" I R 2000 6250 50 
 $EndSheet
 Text Notes 8650 1150 0    100  ~ 20
 Bypass Capacitors
@@ -665,7 +665,7 @@ Entry Wire Line
 	4500 3900 4600 4000
 Text Label 4500 3800 0    50   ~ 0
 PC[0..5]
-Text Label 2500 6200 2    50   ~ 0
+Text Label 2500 5950 2    50   ~ 0
 PC[0..5]
 Wire Wire Line
 	6500 2900 7000 2900
@@ -682,10 +682,10 @@ Entry Wire Line
 Text Label 7100 2700 0    50   ~ 0
 PA[5..7]
 Wire Bus Line
-	2000 6200 2500 6200
+	2000 5950 2500 5950
 Wire Bus Line
-	2000 6300 2500 6300
-Text Label 2500 6300 2    50   ~ 0
+	2000 6050 2500 6050
+Text Label 2500 6050 2    50   ~ 0
 PA[5..7]
 $Comp
 L Mechanical:MountingHole MH1
@@ -776,8 +776,8 @@ Wire Wire Line
 Text Label 7000 2400 2    50   ~ 0
 RUN
 Wire Wire Line
-	2000 6400 2500 6400
-Text Label 2500 6400 2    50   ~ 0
+	2000 6150 2500 6150
+Text Label 2500 6150 2    50   ~ 0
 RUN
 Wire Wire Line
 	4250 3350 4250 3400
@@ -866,7 +866,7 @@ F2 "CAN_TX" I R 2000 1800 50
 F3 "CAN_RX" O R 2000 1900 50 
 $EndSheet
 $Sheet
-S 1000 4900 1000 400 
+S 1000 4900 1000 200 
 U 5D923D59
 F0 "Error Light" 50
 F1 "ErrorLight.sch" 50
@@ -889,21 +889,21 @@ ADC1_CH2
 Text Label 2500 4500 2    50   ~ 0
 ADC1_CH3
 $Sheet
-S 1000 5550 1000 300 
+S 1000 5300 1000 300 
 U 5D99F192
 F0 "USB" 50
 F1 "USB.sch" 50
-F2 "UART_RX" I R 2000 5650 50 
-F3 "UART_TX" O R 2000 5750 50 
+F2 "UART_RX" I R 2000 5400 50 
+F3 "UART_TX" O R 2000 5500 50 
 $EndSheet
-Text Label 2500 5650 2    50   ~ 0
+Text Label 2500 5400 2    50   ~ 0
 USART3_TX
 Wire Wire Line
-	2000 5650 2500 5650
-Text Label 2500 5750 2    50   ~ 0
+	2000 5400 2500 5400
+Text Label 2500 5500 2    50   ~ 0
 USART3_RX
 Wire Wire Line
-	2000 5750 2500 5750
+	2000 5500 2500 5500
 $Comp
 L power:GND #PWR0101
 U 1 1 5D8E306E
@@ -984,29 +984,29 @@ Wire Wire Line
 Text Label 4600 4700 0    50   ~ 0
 USART6_RX
 $Sheet
-S 1000 6950 1000 350 
+S 1000 6700 1000 350 
 U 5EE39517
 F0 "Bluetooth Module" 50
 F1 "BlutoothMod.sch" 50
-F2 "UART_RX" I R 2000 7050 50 
-F3 "UART_TX" O R 2000 7150 50 
-F4 "Mode" I R 2000 7250 50 
+F2 "UART_RX" I R 2000 6800 50 
+F3 "UART_TX" O R 2000 6900 50 
+F4 "Mode" I R 2000 7000 50 
 $EndSheet
 Wire Wire Line
-	2000 7150 2500 7150
+	2000 6900 2500 6900
 Wire Wire Line
-	2000 7050 2500 7050
+	2000 6800 2500 6800
 Wire Wire Line
-	2000 7250 2500 7250
-Text Label 2500 7150 2    50   ~ 0
+	2000 7000 2500 7000
+Text Label 2500 6900 2    50   ~ 0
 USART6_RX
-Text Label 2500 7050 2    50   ~ 0
+Text Label 2500 6800 2    50   ~ 0
 USART6_TX
 Wire Wire Line
 	5100 5300 4600 5300
 Text Label 4600 5300 0    50   ~ 0
 EVENTOUT
-Text Label 2500 7250 2    50   ~ 0
+Text Label 2500 7000 2    50   ~ 0
 EVENTOUT
 Wire Wire Line
 	5100 4600 4600 4600
@@ -1017,11 +1017,11 @@ Wire Wire Line
 Text Label 7000 4300 2    50   ~ 0
 LPTIM1(PWM)
 Wire Wire Line
-	2000 6500 2500 6500
+	2000 6250 2500 6250
+Text Label 2500 6250 2    50   ~ 0
+LPTIM1(PWM)
 Wire Bus Line
 	7100 2700 7100 3000
 Wire Bus Line
 	4500 3800 4500 4300
-Text Label 2500 6500 2    50   ~ 0
-LPTIM1(PWM)
 $EndSCHEMATC
