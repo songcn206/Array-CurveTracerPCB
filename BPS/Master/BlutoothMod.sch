@@ -294,8 +294,6 @@ NoConn ~ 6700 3700
 NoConn ~ 6700 3800
 NoConn ~ 6700 3900
 NoConn ~ 6700 4000
-NoConn ~ 5000 4500
-NoConn ~ 5000 4300
 NoConn ~ 5000 4200
 NoConn ~ 5000 4100
 NoConn ~ 5000 3800
@@ -309,43 +307,39 @@ UART_TX
 $Comp
 L Device:LED D16
 U 1 1 5EE20E59
-P 4600 4200
-F 0 "D16" V 4700 4350 50  0000 C CNN
-F 1 "LED" V 4600 4350 50  0000 C CNN
-F 2 "" H 4600 4200 50  0001 C CNN
-F 3 "~" H 4600 4200 50  0001 C CNN
-	1    4600 4200
+P 4250 4200
+F 0 "D16" V 4350 4350 50  0000 C CNN
+F 1 "LED" V 4250 4350 50  0000 C CNN
+F 2 "" H 4250 4200 50  0001 C CNN
+F 3 "~" H 4250 4200 50  0001 C CNN
+	1    4250 4200
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D17
 U 1 1 5EE21939
-P 4850 4400
-F 0 "D17" H 4843 4617 50  0000 C CNN
-F 1 "LED" H 4843 4526 50  0000 C CNN
-F 2 "" H 4850 4400 50  0001 C CNN
-F 3 "~" H 4850 4400 50  0001 C CNN
-	1    4850 4400
+P 4500 4400
+F 0 "D17" H 4493 4617 50  0000 C CNN
+F 1 "LED" H 4493 4526 50  0000 C CNN
+F 2 "" H 4500 4400 50  0001 C CNN
+F 3 "~" H 4500 4400 50  0001 C CNN
+	1    4500 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4600 4400 4700 4400
-Wire Wire Line
-	4600 4400 4600 4500
 $Comp
 L power:GND #PWR0117
 U 1 1 5EE2468E
-P 4600 4500
-F 0 "#PWR0117" H 4600 4250 50  0001 C CNN
-F 1 "GND" H 4605 4327 50  0000 C CNN
-F 2 "" H 4600 4500 50  0001 C CNN
-F 3 "" H 4600 4500 50  0001 C CNN
-	1    4600 4500
+P 4250 4500
+F 0 "#PWR0117" H 4250 4250 50  0001 C CNN
+F 1 "GND" H 4255 4327 50  0000 C CNN
+F 2 "" H 4250 4500 50  0001 C CNN
+F 3 "" H 4250 4500 50  0001 C CNN
+	1    4250 4500
 	1    0    0    -1  
 $EndComp
 Text Notes 3500 2850 0    50   ~ 0
 Reverse Voltage Protection Circuit\nGiven in Datasheet
-Text Notes 3450 4500 0    50   ~ 0
+Text Notes 3150 4500 0    50   ~ 0
 Status LED's\nPower On:11,\nStandby:01,\nConnection Established:00,\nor Data Session Open:01
 Text Notes 7600 4100 0    50   ~ 0
 On/Off LED
@@ -396,13 +390,6 @@ Wire Wire Line
 	6700 3500 7100 3500
 Text Notes 7450 3600 0    50   ~ 0
 RSSI Indicator\n(On: Strong)
-Wire Wire Line
-	4600 4400 4600 4350
-Connection ~ 4600 4400
-Wire Wire Line
-	4600 4050 4600 4000
-Wire Wire Line
-	4600 4000 5000 4000
 $Comp
 L Device:LED D19
 U 1 1 5EE52339
@@ -482,4 +469,21 @@ Wire Wire Line
 Connection ~ 6700 2250
 Text Notes 5750 1850 0    50   ~ 0
 On for Application mode\nOff for Testing mode
+Wire Wire Line
+	4250 4000 4250 4050
+Wire Wire Line
+	4250 4000 5000 4000
+Wire Wire Line
+	4350 4400 4250 4400
+Wire Wire Line
+	4250 4350 4250 4400
+Connection ~ 4250 4400
+Wire Wire Line
+	4250 4400 4250 4500
+Wire Wire Line
+	4650 4400 5000 4400
+Text HLabel 5000 4300 0    50   Input ~ 0
+UART_CTS
+Text HLabel 5000 4500 0    50   Output ~ 0
+UART_RTS
 $EndSCHEMATC
