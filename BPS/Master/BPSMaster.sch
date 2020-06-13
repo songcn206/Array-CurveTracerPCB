@@ -755,8 +755,6 @@ $EndComp
 Wire Wire Line
 	4800 2800 4850 2800
 Connection ~ 4850 2800
-NoConn ~ 6500 3500
-NoConn ~ 6500 3600
 Wire Wire Line
 	6500 3100 7000 3100
 Text Label 7000 3100 2    50   ~ 0
@@ -819,8 +817,6 @@ NoConn ~ 6500 4800
 NoConn ~ 5100 4400
 Wire Wire Line
 	5100 4500 4600 4500
-NoConn ~ 6500 3300
-NoConn ~ 6500 3400
 Wire Wire Line
 	6500 5100 7000 5100
 Wire Wire Line
@@ -979,10 +975,6 @@ Text Label 7800 5300 0    50   ~ 0
 SPI1_MISO
 Text Label 7800 5400 0    50   ~ 0
 SPI1_MOSI
-Wire Wire Line
-	5100 4700 4600 4700
-Text Label 4600 4700 0    50   ~ 0
-USART6_RX
 $Sheet
 S 1000 6700 1000 300 
 U 5EE39517
@@ -996,13 +988,9 @@ Wire Wire Line
 Wire Wire Line
 	2000 6800 2500 6800
 Text Label 2500 6900 2    50   ~ 0
-USART6_RX
+USART1_RX
 Text Label 2500 6800 2    50   ~ 0
-USART6_TX
-Wire Wire Line
-	5100 4600 4600 4600
-Text Label 4600 4600 0    50   ~ 0
-USART6_TX
+USART1_TX
 Wire Wire Line
 	6500 4300 7000 4300
 Text Label 7000 4300 2    50   ~ 0
@@ -1012,6 +1000,26 @@ Wire Wire Line
 Text Label 2500 6250 2    50   ~ 0
 LPTIM1(PWM)
 NoConn ~ 5100 5300
+Wire Wire Line
+	6500 3300 7000 3300
+Wire Wire Line
+	6500 3400 7000 3400
+Wire Wire Line
+	6500 3500 7000 3500
+Wire Wire Line
+	6500 3600 7000 3600
+Text Label 7000 3300 2    50   ~ 0
+USART1_TX
+Text Label 7000 3400 2    50   ~ 0
+USART1_RX
+Text Label 7000 3500 2    50   ~ 0
+USART1_CTS
+Text Label 7000 3600 2    50   ~ 0
+USART1_RTS
+NoConn ~ 5100 4600
+NoConn ~ 5100 4700
+NoConn ~ 6500 3500
+NoConn ~ 6500 3600
 Wire Bus Line
 	7100 2700 7100 3000
 Wire Bus Line
