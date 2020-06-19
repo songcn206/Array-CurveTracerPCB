@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -14,15 +14,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R R203
+L Device:R R?
 U 1 1 5C2B42FA
 P 8200 3550
-AR Path="/5E5E1F90/5C2B42FA" Ref="R203"  Part="1" 
+AR Path="/5E5E1F90/5C2B42FA" Ref="R?"  Part="1" 
 AR Path="/5E80FF20/5C2B42FA" Ref="R?"  Part="1" 
-AR Path="/5EA71171/5C2B42FA" Ref="R503"  Part="1" 
-AR Path="/5F479052/5C2B42FA" Ref="R9"  Part="1" 
-AR Path="/5F547B94/5C2B42FA" Ref="R12"  Part="1" 
-F 0 "R12" V 8280 3550 50  0000 C CNN
+AR Path="/5EA71171/5C2B42FA" Ref="R?"  Part="1" 
+AR Path="/5F479052/5C2B42FA" Ref="R38"  Part="1" 
+AR Path="/5F547B94/5C2B42FA" Ref="R41"  Part="1" 
+F 0 "R38" V 8280 3550 50  0000 C CNN
 F 1 "60" V 8200 3550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 8130 3550 50  0001 C CNN
 F 3 "" H 8200 3550 50  0001 C CNN
@@ -31,15 +31,15 @@ F 4 "71-CRCW080559R0FKEA" H 8200 3550 50  0001 C CNN "Mouser Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R202
+L Device:R R?
 U 1 1 5C2B4301
 P 8000 3550
-AR Path="/5E5E1F90/5C2B4301" Ref="R202"  Part="1" 
+AR Path="/5E5E1F90/5C2B4301" Ref="R?"  Part="1" 
 AR Path="/5E80FF20/5C2B4301" Ref="R?"  Part="1" 
-AR Path="/5EA71171/5C2B4301" Ref="R502"  Part="1" 
-AR Path="/5F479052/5C2B4301" Ref="R8"  Part="1" 
-AR Path="/5F547B94/5C2B4301" Ref="R11"  Part="1" 
-F 0 "R11" V 8080 3550 50  0000 C CNN
+AR Path="/5EA71171/5C2B4301" Ref="R?"  Part="1" 
+AR Path="/5F479052/5C2B4301" Ref="R37"  Part="1" 
+AR Path="/5F547B94/5C2B4301" Ref="R40"  Part="1" 
+F 0 "R37" V 8080 3550 50  0000 C CNN
 F 1 "60" V 8000 3550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7930 3550 50  0001 C CNN
 F 3 "" H 8000 3550 50  0001 C CNN
@@ -48,15 +48,15 @@ F 4 "71-CRCW080559R0FKEA" H 8000 3550 50  0001 C CNN "Mouser Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP201
+L Device:Jumper_NC_Small JP?
 U 1 1 5C2B4308
 P 8100 3250
-AR Path="/5E5E1F90/5C2B4308" Ref="JP201"  Part="1" 
+AR Path="/5E5E1F90/5C2B4308" Ref="JP?"  Part="1" 
 AR Path="/5E80FF20/5C2B4308" Ref="JP?"  Part="1" 
-AR Path="/5EA71171/5C2B4308" Ref="JP501"  Part="1" 
+AR Path="/5EA71171/5C2B4308" Ref="JP?"  Part="1" 
 AR Path="/5F479052/5C2B4308" Ref="JP1"  Part="1" 
 AR Path="/5F547B94/5C2B4308" Ref="JP2"  Part="1" 
-F 0 "JP2" H 8100 3330 50  0000 C CNN
+F 0 "JP1" H 8100 3330 50  0000 C CNN
 F 1 "Termination Resistors" H 8100 3200 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8100 3250 50  0001 C CNN
 F 3 "" H 8100 3250 50  0001 C CNN
@@ -64,15 +64,15 @@ F 3 "" H 8100 3250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C201
+L Device:C_Small C?
 U 1 1 5C2B4310
 P 2150 3350
-AR Path="/5E5E1F90/5C2B4310" Ref="C201"  Part="1" 
+AR Path="/5E5E1F90/5C2B4310" Ref="C?"  Part="1" 
 AR Path="/5E80FF20/5C2B4310" Ref="C?"  Part="1" 
-AR Path="/5EA71171/5C2B4310" Ref="C501"  Part="1" 
-AR Path="/5F479052/5C2B4310" Ref="C8"  Part="1" 
-AR Path="/5F547B94/5C2B4310" Ref="C16"  Part="1" 
-F 0 "C16" H 2160 3420 50  0000 L CNN
+AR Path="/5EA71171/5C2B4310" Ref="C?"  Part="1" 
+AR Path="/5F479052/5C2B4310" Ref="C26"  Part="1" 
+AR Path="/5F547B94/5C2B4310" Ref="C34"  Part="1" 
+F 0 "C26" H 2160 3420 50  0000 L CNN
 F 1 "10uF" H 2160 3270 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2150 3350 50  0001 C CNN
 F 3 "" H 2150 3350 50  0001 C CNN
@@ -81,15 +81,15 @@ F 4 "80-C0805C106K8RAUTO " H 2150 3350 50  0001 C CNN "Mouser Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C202
+L Device:C_Small C?
 U 1 1 5C2B4317
 P 2500 3350
-AR Path="/5E5E1F90/5C2B4317" Ref="C202"  Part="1" 
+AR Path="/5E5E1F90/5C2B4317" Ref="C?"  Part="1" 
 AR Path="/5E80FF20/5C2B4317" Ref="C?"  Part="1" 
-AR Path="/5EA71171/5C2B4317" Ref="C502"  Part="1" 
-AR Path="/5F479052/5C2B4317" Ref="C9"  Part="1" 
-AR Path="/5F547B94/5C2B4317" Ref="C17"  Part="1" 
-F 0 "C17" H 2510 3420 50  0000 L CNN
+AR Path="/5EA71171/5C2B4317" Ref="C?"  Part="1" 
+AR Path="/5F479052/5C2B4317" Ref="C27"  Part="1" 
+AR Path="/5F547B94/5C2B4317" Ref="C35"  Part="1" 
+F 0 "C27" H 2510 3420 50  0000 L CNN
 F 1 "0.1uF" H 2510 3270 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2500 3350 50  0001 C CNN
 F 3 "~" H 2500 3350 50  0001 C CNN
@@ -98,15 +98,15 @@ F 4 "80-C0805C104K3R " H 2500 3350 50  0001 C CNN "Mouser Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C203
+L Device:C_Small C?
 U 1 1 5C2B431E
 P 2950 3350
-AR Path="/5E5E1F90/5C2B431E" Ref="C203"  Part="1" 
+AR Path="/5E5E1F90/5C2B431E" Ref="C?"  Part="1" 
 AR Path="/5E80FF20/5C2B431E" Ref="C?"  Part="1" 
-AR Path="/5EA71171/5C2B431E" Ref="C503"  Part="1" 
-AR Path="/5F479052/5C2B431E" Ref="C10"  Part="1" 
-AR Path="/5F547B94/5C2B431E" Ref="C18"  Part="1" 
-F 0 "C18" H 2960 3420 50  0000 L CNN
+AR Path="/5EA71171/5C2B431E" Ref="C?"  Part="1" 
+AR Path="/5F479052/5C2B431E" Ref="C28"  Part="1" 
+AR Path="/5F547B94/5C2B431E" Ref="C36"  Part="1" 
+F 0 "C28" H 2960 3420 50  0000 L CNN
 F 1 "0.1uF" H 2960 3270 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2950 3350 50  0001 C CNN
 F 3 "~" H 2950 3350 50  0001 C CNN
@@ -115,15 +115,15 @@ F 4 "80-C0805C104K3R " H 2950 3350 50  0001 C CNN "Mouser Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C204
+L Device:C_Small C?
 U 1 1 5C2B4325
 P 3300 3350
-AR Path="/5E5E1F90/5C2B4325" Ref="C204"  Part="1" 
+AR Path="/5E5E1F90/5C2B4325" Ref="C?"  Part="1" 
 AR Path="/5E80FF20/5C2B4325" Ref="C?"  Part="1" 
-AR Path="/5EA71171/5C2B4325" Ref="C504"  Part="1" 
-AR Path="/5F479052/5C2B4325" Ref="C11"  Part="1" 
-AR Path="/5F547B94/5C2B4325" Ref="C19"  Part="1" 
-F 0 "C19" H 3310 3420 50  0000 L CNN
+AR Path="/5EA71171/5C2B4325" Ref="C?"  Part="1" 
+AR Path="/5F479052/5C2B4325" Ref="C29"  Part="1" 
+AR Path="/5F547B94/5C2B4325" Ref="C37"  Part="1" 
+F 0 "C29" H 3310 3420 50  0000 L CNN
 F 1 "0.01uF" H 3310 3270 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3300 3350 50  0001 C CNN
 F 3 "~" H 3300 3350 50  0001 C CNN
@@ -132,15 +132,15 @@ F 4 "80-C0805X103K1R3316 " H 3300 3350 50  0001 C CNN "Mouser Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C206
+L Device:C_Small C?
 U 1 1 5C2B432E
 P 6150 3200
-AR Path="/5E5E1F90/5C2B432E" Ref="C206"  Part="1" 
+AR Path="/5E5E1F90/5C2B432E" Ref="C?"  Part="1" 
 AR Path="/5E80FF20/5C2B432E" Ref="C?"  Part="1" 
-AR Path="/5EA71171/5C2B432E" Ref="C506"  Part="1" 
-AR Path="/5F479052/5C2B432E" Ref="C13"  Part="1" 
-AR Path="/5F547B94/5C2B432E" Ref="C21"  Part="1" 
-F 0 "C21" H 6160 3270 50  0000 L CNN
+AR Path="/5EA71171/5C2B432E" Ref="C?"  Part="1" 
+AR Path="/5F479052/5C2B432E" Ref="C31"  Part="1" 
+AR Path="/5F547B94/5C2B432E" Ref="C39"  Part="1" 
+F 0 "C31" H 6160 3270 50  0000 L CNN
 F 1 "10uF" H 6160 3120 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6150 3200 50  0001 C CNN
 F 3 "" H 6150 3200 50  0001 C CNN
@@ -149,15 +149,15 @@ F 4 "80-C0805C106K8RAUTO " H 6150 3200 50  0001 C CNN "Mouser Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C205
+L Device:C_Small C?
 U 1 1 5C2B4335
 P 5750 3200
-AR Path="/5E5E1F90/5C2B4335" Ref="C205"  Part="1" 
+AR Path="/5E5E1F90/5C2B4335" Ref="C?"  Part="1" 
 AR Path="/5E80FF20/5C2B4335" Ref="C?"  Part="1" 
-AR Path="/5EA71171/5C2B4335" Ref="C505"  Part="1" 
-AR Path="/5F479052/5C2B4335" Ref="C12"  Part="1" 
-AR Path="/5F547B94/5C2B4335" Ref="C20"  Part="1" 
-F 0 "C20" H 5760 3270 50  0000 L CNN
+AR Path="/5EA71171/5C2B4335" Ref="C?"  Part="1" 
+AR Path="/5F479052/5C2B4335" Ref="C30"  Part="1" 
+AR Path="/5F547B94/5C2B4335" Ref="C38"  Part="1" 
+F 0 "C30" H 5760 3270 50  0000 L CNN
 F 1 "0.22uF" H 5760 3120 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5750 3200 50  0001 C CNN
 F 3 "" H 5750 3200 50  0001 C CNN
@@ -166,15 +166,15 @@ F 4 "80-C0805C224J1RECTU " H 5750 3200 50  0001 C CNN "Mouser Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small L201
+L Device:Ferrite_Bead_Small L?
 U 1 1 5C2B433C
 P 5950 3050
-AR Path="/5E5E1F90/5C2B433C" Ref="L201"  Part="1" 
+AR Path="/5E5E1F90/5C2B433C" Ref="L?"  Part="1" 
 AR Path="/5E80FF20/5C2B433C" Ref="L?"  Part="1" 
-AR Path="/5EA71171/5C2B433C" Ref="L501"  Part="1" 
-AR Path="/5F479052/5C2B433C" Ref="L1"  Part="1" 
-AR Path="/5F547B94/5C2B433C" Ref="L3"  Part="1" 
-F 0 "L3" V 5850 3100 50  0000 L CNN
+AR Path="/5EA71171/5C2B433C" Ref="L?"  Part="1" 
+AR Path="/5F479052/5C2B433C" Ref="L6"  Part="1" 
+AR Path="/5F547B94/5C2B433C" Ref="L8"  Part="1" 
+F 0 "L6" V 5850 3100 50  0000 L CNN
 F 1 "2kH" V 5850 2900 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric" V 5880 3050 50  0001 C CNN
 F 3 "" H 5950 3050 50  0001 C CNN
@@ -183,15 +183,15 @@ F 4 "963-BK2125LM182-T " H 5950 3050 50  0001 C CNN "Mouser Part Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small L202
+L Device:Ferrite_Bead_Small L?
 U 1 1 5C2B4343
 P 5950 3350
-AR Path="/5E5E1F90/5C2B4343" Ref="L202"  Part="1" 
+AR Path="/5E5E1F90/5C2B4343" Ref="L?"  Part="1" 
 AR Path="/5E80FF20/5C2B4343" Ref="L?"  Part="1" 
-AR Path="/5EA71171/5C2B4343" Ref="L502"  Part="1" 
-AR Path="/5F479052/5C2B4343" Ref="L2"  Part="1" 
-AR Path="/5F547B94/5C2B4343" Ref="L4"  Part="1" 
-F 0 "L4" V 6050 3400 50  0000 L CNN
+AR Path="/5EA71171/5C2B4343" Ref="L?"  Part="1" 
+AR Path="/5F479052/5C2B4343" Ref="L7"  Part="1" 
+AR Path="/5F547B94/5C2B4343" Ref="L9"  Part="1" 
+F 0 "L7" V 6050 3400 50  0000 L CNN
 F 1 "2kH" V 6050 3200 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric" V 5880 3350 50  0001 C CNN
 F 3 "" H 5950 3350 50  0001 C CNN
@@ -200,15 +200,15 @@ F 4 "963-BK2125LM182-T " H 5950 3350 50  0001 C CNN "Mouser Part Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C207
+L Device:C_Small C?
 U 1 1 5C2B434A
 P 6550 3200
-AR Path="/5E5E1F90/5C2B434A" Ref="C207"  Part="1" 
+AR Path="/5E5E1F90/5C2B434A" Ref="C?"  Part="1" 
 AR Path="/5E80FF20/5C2B434A" Ref="C?"  Part="1" 
-AR Path="/5EA71171/5C2B434A" Ref="C507"  Part="1" 
-AR Path="/5F479052/5C2B434A" Ref="C14"  Part="1" 
-AR Path="/5F547B94/5C2B434A" Ref="C22"  Part="1" 
-F 0 "C22" H 6560 3270 50  0000 L CNN
+AR Path="/5EA71171/5C2B434A" Ref="C?"  Part="1" 
+AR Path="/5F479052/5C2B434A" Ref="C32"  Part="1" 
+AR Path="/5F547B94/5C2B434A" Ref="C40"  Part="1" 
+F 0 "C32" H 6560 3270 50  0000 L CNN
 F 1 "0.1uF" H 6560 3120 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6550 3200 50  0001 C CNN
 F 3 "~" H 6550 3200 50  0001 C CNN
@@ -217,15 +217,15 @@ F 4 "80-C0805C104K3R " H 6550 3200 50  0001 C CNN "Mouser Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C208
+L Device:C_Small C?
 U 1 1 5C2B4351
 P 6850 3200
-AR Path="/5E5E1F90/5C2B4351" Ref="C208"  Part="1" 
+AR Path="/5E5E1F90/5C2B4351" Ref="C?"  Part="1" 
 AR Path="/5E80FF20/5C2B4351" Ref="C?"  Part="1" 
-AR Path="/5EA71171/5C2B4351" Ref="C508"  Part="1" 
-AR Path="/5F479052/5C2B4351" Ref="C15"  Part="1" 
-AR Path="/5F547B94/5C2B4351" Ref="C23"  Part="1" 
-F 0 "C23" H 6860 3270 50  0000 L CNN
+AR Path="/5EA71171/5C2B4351" Ref="C?"  Part="1" 
+AR Path="/5F479052/5C2B4351" Ref="C33"  Part="1" 
+AR Path="/5F547B94/5C2B4351" Ref="C41"  Part="1" 
+F 0 "C33" H 6860 3270 50  0000 L CNN
 F 1 "0.01uF" H 6860 3120 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6850 3200 50  0001 C CNN
 F 3 "~" H 6850 3200 50  0001 C CNN
@@ -242,15 +242,15 @@ Text Notes 6550 2900 0    40   ~ 0
 Must be close\nto V_ISO_In
 NoConn ~ 3650 4100
 $Comp
-L power:PWR_FLAG #FLG0201
+L power:PWR_FLAG #FLG?
 U 1 1 5C2B4394
 P 7300 3000
-AR Path="/5E5E1F90/5C2B4394" Ref="#FLG0201"  Part="1" 
+AR Path="/5E5E1F90/5C2B4394" Ref="#FLG?"  Part="1" 
 AR Path="/5E80FF20/5C2B4394" Ref="#FLG?"  Part="1" 
-AR Path="/5EA71171/5C2B4394" Ref="#FLG0501"  Part="1" 
-AR Path="/5F479052/5C2B4394" Ref="#FLG0101"  Part="1" 
-AR Path="/5F547B94/5C2B4394" Ref="#FLG0103"  Part="1" 
-F 0 "#FLG0103" H 7300 3075 50  0001 C CNN
+AR Path="/5EA71171/5C2B4394" Ref="#FLG?"  Part="1" 
+AR Path="/5F479052/5C2B4394" Ref="#FLG02"  Part="1" 
+AR Path="/5F547B94/5C2B4394" Ref="#FLG04"  Part="1" 
+F 0 "#FLG02" H 7300 3075 50  0001 C CNN
 F 1 "PWR_FLAG" H 7300 2900 30  0000 C CNN
 F 2 "" H 7300 3000 50  0001 C CNN
 F 3 "" H 7300 3000 50  0001 C CNN
@@ -258,15 +258,15 @@ F 3 "" H 7300 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0202
+L power:PWR_FLAG #FLG?
 U 1 1 5C2B439A
 P 7300 3200
-AR Path="/5E5E1F90/5C2B439A" Ref="#FLG0202"  Part="1" 
+AR Path="/5E5E1F90/5C2B439A" Ref="#FLG?"  Part="1" 
 AR Path="/5E80FF20/5C2B439A" Ref="#FLG?"  Part="1" 
-AR Path="/5EA71171/5C2B439A" Ref="#FLG0502"  Part="1" 
-AR Path="/5F479052/5C2B439A" Ref="#FLG0102"  Part="1" 
-AR Path="/5F547B94/5C2B439A" Ref="#FLG0104"  Part="1" 
-F 0 "#FLG0104" H 7300 3275 50  0001 C CNN
+AR Path="/5EA71171/5C2B439A" Ref="#FLG?"  Part="1" 
+AR Path="/5F479052/5C2B439A" Ref="#FLG03"  Part="1" 
+AR Path="/5F547B94/5C2B439A" Ref="#FLG05"  Part="1" 
+F 0 "#FLG03" H 7300 3275 50  0001 C CNN
 F 1 "PWR_FLAG" H 7200 3150 50  0001 L CNN
 F 2 "" H 7300 3200 50  0001 C CNN
 F 3 "" H 7300 3200 50  0001 C CNN
@@ -276,15 +276,15 @@ $EndComp
 Text Notes 7600 2600 0    40   ~ 0
 CAN Bus\nProtection
 $Comp
-L Connector:TestPoint TP201
+L Connector:TestPoint TP?
 U 1 1 5C2B43B6
 P 7300 3800
-AR Path="/5E5E1F90/5C2B43B6" Ref="TP201"  Part="1" 
+AR Path="/5E5E1F90/5C2B43B6" Ref="TP?"  Part="1" 
 AR Path="/5E80FF20/5C2B43B6" Ref="TP?"  Part="1" 
-AR Path="/5EA71171/5C2B43B6" Ref="TP501"  Part="1" 
-AR Path="/5F479052/5C2B43B6" Ref="TP1"  Part="1" 
-AR Path="/5F547B94/5C2B43B6" Ref="TP3"  Part="1" 
-F 0 "TP3" H 7300 4100 50  0000 C BNN
+AR Path="/5EA71171/5C2B43B6" Ref="TP?"  Part="1" 
+AR Path="/5F479052/5C2B43B6" Ref="TP7"  Part="1" 
+AR Path="/5F547B94/5C2B43B6" Ref="TP9"  Part="1" 
+F 0 "TP7" H 7300 4100 50  0000 C BNN
 F 1 "CAN_H" H 7300 4050 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 7300 3800 50  0001 C CNN
 F 3 "" H 7300 3800 50  0001 C CNN
@@ -292,15 +292,15 @@ F 3 "" H 7300 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP202
+L Connector:TestPoint TP?
 U 1 1 5C2B43BD
 P 7300 4000
-AR Path="/5E5E1F90/5C2B43BD" Ref="TP202"  Part="1" 
+AR Path="/5E5E1F90/5C2B43BD" Ref="TP?"  Part="1" 
 AR Path="/5E80FF20/5C2B43BD" Ref="TP?"  Part="1" 
-AR Path="/5EA71171/5C2B43BD" Ref="TP502"  Part="1" 
-AR Path="/5F479052/5C2B43BD" Ref="TP2"  Part="1" 
-AR Path="/5F547B94/5C2B43BD" Ref="TP4"  Part="1" 
-F 0 "TP4" H 7250 4200 50  0000 L BNN
+AR Path="/5EA71171/5C2B43BD" Ref="TP?"  Part="1" 
+AR Path="/5F479052/5C2B43BD" Ref="TP8"  Part="1" 
+AR Path="/5F547B94/5C2B43BD" Ref="TP10"  Part="1" 
+F 0 "TP8" H 7250 4200 50  0000 L BNN
 F 1 "CAN_L" H 7200 4300 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5005-5009_Compact" H 7300 4000 50  0001 C CNN
 F 3 "" H 7300 4000 50  0001 C CNN
@@ -308,15 +308,15 @@ F 3 "" H 7300 4000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R201
+L Device:R R?
 U 1 1 5C2B43C4
 P 5550 4150
-AR Path="/5E5E1F90/5C2B43C4" Ref="R201"  Part="1" 
+AR Path="/5E5E1F90/5C2B43C4" Ref="R?"  Part="1" 
 AR Path="/5E80FF20/5C2B43C4" Ref="R?"  Part="1" 
-AR Path="/5EA71171/5C2B43C4" Ref="R501"  Part="1" 
-AR Path="/5F479052/5C2B43C4" Ref="R7"  Part="1" 
-AR Path="/5F547B94/5C2B43C4" Ref="R10"  Part="1" 
-F 0 "R10" V 5630 4150 50  0000 C CNN
+AR Path="/5EA71171/5C2B43C4" Ref="R?"  Part="1" 
+AR Path="/5F479052/5C2B43C4" Ref="R36"  Part="1" 
+AR Path="/5F547B94/5C2B43C4" Ref="R39"  Part="1" 
+F 0 "R36" V 5630 4150 50  0000 C CNN
 F 1 "0" V 5550 4150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5480 4150 50  0001 C CNN
 F 3 "" H 5550 4150 50  0001 C CNN
@@ -434,15 +434,15 @@ Wire Wire Line
 Wire Wire Line
 	5250 3050 5250 3150
 $Comp
-L power:GND #PWR0201
+L power:GND #PWR?
 U 1 1 5C28BDDE
 P 2150 3550
-AR Path="/5E5E1F90/5C28BDDE" Ref="#PWR0201"  Part="1" 
+AR Path="/5E5E1F90/5C28BDDE" Ref="#PWR?"  Part="1" 
 AR Path="/5E80FF20/5C28BDDE" Ref="#PWR?"  Part="1" 
-AR Path="/5EA71171/5C28BDDE" Ref="#PWR0501"  Part="1" 
-AR Path="/5F479052/5C28BDDE" Ref="#PWR0158"  Part="1" 
-AR Path="/5F547B94/5C28BDDE" Ref="#PWR0176"  Part="1" 
-F 0 "#PWR0176" H 2150 3300 50  0001 C CNN
+AR Path="/5EA71171/5C28BDDE" Ref="#PWR?"  Part="1" 
+AR Path="/5F479052/5C28BDDE" Ref="#PWR095"  Part="1" 
+AR Path="/5F547B94/5C28BDDE" Ref="#PWR098"  Part="1" 
+F 0 "#PWR095" H 2150 3300 50  0001 C CNN
 F 1 "GND" H 2300 3500 50  0000 C CNN
 F 2 "" H 2150 3550 50  0001 C CNN
 F 3 "" H 2150 3550 50  0001 C CNN
@@ -562,15 +562,15 @@ Wire Wire Line
 Wire Wire Line
 	2500 3000 2500 3100
 $Comp
-L power:+3.3V #PWR0203
+L power:+3.3V #PWR?
 U 1 1 5C4ABE05
 P 2950 3000
-AR Path="/5E5E1F90/5C4ABE05" Ref="#PWR0203"  Part="1" 
+AR Path="/5E5E1F90/5C4ABE05" Ref="#PWR?"  Part="1" 
 AR Path="/5E80FF20/5C4ABE05" Ref="#PWR?"  Part="1" 
-AR Path="/5EA71171/5C4ABE05" Ref="#PWR0503"  Part="1" 
-AR Path="/5F479052/5C4ABE05" Ref="#PWR0159"  Part="1" 
-AR Path="/5F547B94/5C4ABE05" Ref="#PWR0186"  Part="1" 
-F 0 "#PWR0186" H 2950 2850 50  0001 C CNN
+AR Path="/5EA71171/5C4ABE05" Ref="#PWR?"  Part="1" 
+AR Path="/5F479052/5C4ABE05" Ref="#PWR097"  Part="1" 
+AR Path="/5F547B94/5C4ABE05" Ref="#PWR0100"  Part="1" 
+F 0 "#PWR097" H 2950 2850 50  0001 C CNN
 F 1 "+3.3V" H 2965 3173 50  0000 C CNN
 F 2 "" H 2950 3000 50  0001 C CNN
 F 3 "" H 2950 3000 50  0001 C CNN
@@ -580,15 +580,15 @@ $EndComp
 Wire Wire Line
 	2950 3000 2950 3200
 $Comp
-L power:+5V #PWR0202
+L power:+5V #PWR?
 U 1 1 5C4C2AB0
 P 2500 3000
-AR Path="/5E5E1F90/5C4C2AB0" Ref="#PWR0202"  Part="1" 
+AR Path="/5E5E1F90/5C4C2AB0" Ref="#PWR?"  Part="1" 
 AR Path="/5E80FF20/5C4C2AB0" Ref="#PWR?"  Part="1" 
-AR Path="/5EA71171/5C4C2AB0" Ref="#PWR0502"  Part="1" 
-AR Path="/5F479052/5C4C2AB0" Ref="#PWR0160"  Part="1" 
-AR Path="/5F547B94/5C4C2AB0" Ref="#PWR0187"  Part="1" 
-F 0 "#PWR0187" H 2500 2850 50  0001 C CNN
+AR Path="/5EA71171/5C4C2AB0" Ref="#PWR?"  Part="1" 
+AR Path="/5F479052/5C4C2AB0" Ref="#PWR096"  Part="1" 
+AR Path="/5F547B94/5C4C2AB0" Ref="#PWR099"  Part="1" 
+F 0 "#PWR096" H 2500 2850 50  0001 C CNN
 F 1 "+5V" H 2515 3173 50  0000 C CNN
 F 2 "" H 2500 3000 50  0001 C CNN
 F 3 "" H 2500 3000 50  0001 C CNN
@@ -609,15 +609,15 @@ Wire Wire Line
 Text Notes 7600 4250 0    50   ~ 0
 As long as total equals to 120 Ohms,\nthe two termination resistors can be any value
 $Comp
-L Connector_Generic:Conn_01x04 J202
+L Connector_Generic:Conn_01x04 J?
 U 1 1 5F15D99A
 P 9100 3750
-AR Path="/5E5E1F90/5F15D99A" Ref="J202"  Part="1" 
+AR Path="/5E5E1F90/5F15D99A" Ref="J?"  Part="1" 
 AR Path="/5E80FF20/5F15D99A" Ref="J?"  Part="1" 
-AR Path="/5EA71171/5F15D99A" Ref="J502"  Part="1" 
-AR Path="/5F479052/5F15D99A" Ref="J5"  Part="1" 
-AR Path="/5F547B94/5F15D99A" Ref="J7"  Part="1" 
-F 0 "J7" H 9180 3742 50  0000 L CNN
+AR Path="/5EA71171/5F15D99A" Ref="J?"  Part="1" 
+AR Path="/5F479052/5F15D99A" Ref="J20"  Part="1" 
+AR Path="/5F547B94/5F15D99A" Ref="J22"  Part="1" 
+F 0 "J20" H 9180 3742 50  0000 L CNN
 F 1 "CAN_OUT" H 9180 3651 50  0000 L CNN
 F 2 "utsvt_conn:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 9100 3750 50  0001 C CNN
 F 3 "~" H 9100 3750 50  0001 C CNN
@@ -625,15 +625,15 @@ F 3 "~" H 9100 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Chips:ADM3055E U201
+L Chips:ADM3055E U?
 U 1 1 5F175F7A
 P 4350 3600
-AR Path="/5E5E1F90/5F175F7A" Ref="U201"  Part="1" 
+AR Path="/5E5E1F90/5F175F7A" Ref="U?"  Part="1" 
 AR Path="/5E80FF20/5F175F7A" Ref="U?"  Part="1" 
-AR Path="/5EA71171/5F175F7A" Ref="U501"  Part="1" 
-AR Path="/5F479052/5F175F7A" Ref="U2"  Part="1" 
-AR Path="/5F547B94/5F175F7A" Ref="U4"  Part="1" 
-F 0 "U4" H 4350 4397 60  0000 C CNN
+AR Path="/5EA71171/5F175F7A" Ref="U?"  Part="1" 
+AR Path="/5F479052/5F175F7A" Ref="U15"  Part="1" 
+AR Path="/5F547B94/5F175F7A" Ref="U17"  Part="1" 
+F 0 "U15" H 4350 4397 60  0000 C CNN
 F 1 "ADM3055E" H 4350 4291 60  0000 C CNN
 F 2 "utsvt_ics:SOIC-20W_7.5x15.4mm_Pitch1.27mm" H 4350 3700 60  0001 C CNN
 F 3 "" H 4350 3700 60  0001 C CNN
@@ -641,15 +641,15 @@ F 3 "" H 4350 3700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Chips:CDSOT23-T24CAN U202
+L Chips:CDSOT23-T24CAN U?
 U 1 1 5F177CC0
 P 8100 2850
-AR Path="/5E5E1F90/5F177CC0" Ref="U202"  Part="1" 
+AR Path="/5E5E1F90/5F177CC0" Ref="U?"  Part="1" 
 AR Path="/5E80FF20/5F177CC0" Ref="U?"  Part="1" 
-AR Path="/5EA71171/5F177CC0" Ref="U502"  Part="1" 
-AR Path="/5F479052/5F177CC0" Ref="U3"  Part="1" 
-AR Path="/5F547B94/5F177CC0" Ref="U5"  Part="1" 
-F 0 "U5" H 8100 3147 60  0000 C CNN
+AR Path="/5EA71171/5F177CC0" Ref="U?"  Part="1" 
+AR Path="/5F479052/5F177CC0" Ref="U16"  Part="1" 
+AR Path="/5F547B94/5F177CC0" Ref="U18"  Part="1" 
+F 0 "U16" H 8100 3147 60  0000 C CNN
 F 1 "CDSOT23-T24CAN" H 8100 3041 60  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23W" H 8100 2850 60  0001 C CNN
 F 3 "" H 8100 2850 60  0001 C CNN
@@ -660,14 +660,14 @@ $EndComp
 Wire Wire Line
 	8000 3850 8500 3850
 $Comp
-L Connector_Generic:Conn_01x04 J201
+L Connector_Generic:Conn_01x04 J?
 U 1 1 5E667EFE
 P 9100 3300
-AR Path="/5E5E1F90/5E667EFE" Ref="J201"  Part="1" 
-AR Path="/5EA71171/5E667EFE" Ref="J501"  Part="1" 
-AR Path="/5F479052/5E667EFE" Ref="J4"  Part="1" 
-AR Path="/5F547B94/5E667EFE" Ref="J6"  Part="1" 
-F 0 "J6" H 9179 3292 50  0000 L CNN
+AR Path="/5E5E1F90/5E667EFE" Ref="J?"  Part="1" 
+AR Path="/5EA71171/5E667EFE" Ref="J?"  Part="1" 
+AR Path="/5F479052/5E667EFE" Ref="J19"  Part="1" 
+AR Path="/5F547B94/5E667EFE" Ref="J21"  Part="1" 
+F 0 "J19" H 9179 3292 50  0000 L CNN
 F 1 "CAN_IN" H 9179 3201 50  0000 L CNN
 F 2 "utsvt_conn:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 9100 3300 50  0001 C CNN
 F 3 "~" H 9100 3300 50  0001 C CNN
