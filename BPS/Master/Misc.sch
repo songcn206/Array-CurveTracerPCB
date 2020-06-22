@@ -625,12 +625,6 @@ Wire Wire Line
 	3800 5150 3700 5150
 Wire Wire Line
 	3700 5150 3700 5800
-Wire Bus Line
-	4350 1500 5450 1500
-Wire Bus Line
-	1050 1500 3750 1500
-Wire Bus Line
-	1800 4600 5500 4600
 Text Notes 3050 4250 0    100  ~ 20
 Interface Pins
 Text Label 2200 4700 3    50   ~ 0
@@ -667,4 +661,10 @@ Text Label 5200 4700 3    50   ~ 0
 IP16
 Text Label 5400 4700 3    50   ~ 0
 IP17
+Wire Bus Line
+	4350 1500 5450 1500
+Wire Bus Line
+	1050 1500 3750 1500
+Wire Bus Line
+	1800 4600 5500 4600
 $EndSCHEMATC
