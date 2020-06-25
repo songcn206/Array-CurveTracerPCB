@@ -19,7 +19,7 @@ U 1 1 5EE47912
 P 5000 2900
 F 0 "U6" H 5850 3165 50  0000 C CNN
 F 1 "RN4870-V_RM118" H 5850 3074 50  0000 C CNN
-F 2 "RN4870IRM130" H 6550 3000 50  0001 L CNN
+F 2 "RN4870IRM130" H 6550 3000 50  0000 L CNN
 F 3 "http://docs-emea.rs-online.com/webdocs/152f/0900766b8152ff8f.pdf" H 6550 2900 50  0001 L CNN
 F 4 "Microchip RN4870-V/RM118 Bluetooth Chip 4.2" H 6550 2800 50  0001 L CNN "Description"
 F 5 "2.4" H 6550 2700 50  0001 L CNN "Height"
@@ -81,106 +81,6 @@ F 2 "" H 4950 2800 50  0001 C CNN
 F 3 "" H 4950 2800 50  0001 C CNN
 	1    4950 2800
 	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5000 3200 4900 3200
-Wire Wire Line
-	4900 3200 4900 3400
-Wire Wire Line
-	4900 3400 5000 3400
-Wire Wire Line
-	4900 3400 4900 3500
-Wire Wire Line
-	4900 3500 5000 3500
-Connection ~ 4900 3400
-Connection ~ 4900 3200
-$Comp
-L power:GND #PWR0108
-U 1 1 5EE4ABF0
-P 4650 3500
-F 0 "#PWR0108" H 4650 3250 50  0001 C CNN
-F 1 "GND" H 4655 3327 50  0000 C CNN
-F 2 "" H 4650 3500 50  0001 C CNN
-F 3 "" H 4650 3500 50  0001 C CNN
-	1    4650 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0109
-U 1 1 5EE4AD11
-P 4650 3150
-F 0 "#PWR0109" H 4650 3000 50  0001 C CNN
-F 1 "+3.3V" H 4665 3323 50  0000 C CNN
-F 2 "" H 4650 3150 50  0001 C CNN
-F 3 "" H 4650 3150 50  0001 C CNN
-	1    4650 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C17
-U 1 1 5EE4B59B
-P 4650 3350
-F 0 "C17" H 4765 3396 50  0000 L CNN
-F 1 "10uF" H 4650 3250 50  0000 L CNN
-F 2 "" H 4688 3200 50  0001 C CNN
-F 3 "~" H 4650 3350 50  0001 C CNN
-	1    4650 3350
-	1    0    0    -1  
-$EndComp
-Connection ~ 4650 3200
-Wire Wire Line
-	4650 3200 4900 3200
-Wire Wire Line
-	4650 3200 4650 3150
-Wire Wire Line
-	4650 3200 4300 3200
-$Comp
-L Transistor_FET:BSB008NE2LX Q5
-U 1 1 5EE62400
-P 4100 3300
-F 0 "Q5" V 4442 3300 50  0000 C CNN
-F 1 "BSB008NE2LX" V 4351 3300 50  0000 C CNN
-F 2 "Package_DirectFET:DirectFET_MX" H 4100 3300 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSB008NE2LX-DS-v02_00-EN.pdf?fileId=db3a30432e564707012e5745ca7d000e" H 4100 3300 50  0001 L CNN
-	1    4100 3300
-	0    1    -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 5EE6457A
-P 4100 3500
-F 0 "#PWR0110" H 4100 3250 50  0001 C CNN
-F 1 "GND" H 4105 3327 50  0000 C CNN
-F 2 "" H 4100 3500 50  0001 C CNN
-F 3 "" H 4100 3500 50  0001 C CNN
-	1    4100 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J12
-U 1 1 5EE69056
-P 3500 3200
-F 0 "J12" H 3418 3417 50  0000 C CNN
-F 1 "Conn_01x02" H 3418 3326 50  0000 C CNN
-F 2 "" H 3500 3200 50  0001 C CNN
-F 3 "~" H 3500 3200 50  0001 C CNN
-	1    3500 3200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 3200 3900 3200
-Wire Wire Line
-	3700 3300 3800 3300
-$Comp
-L power:GND #PWR0111
-U 1 1 5EE6AECF
-P 3800 3300
-F 0 "#PWR0111" H 3800 3050 50  0001 C CNN
-F 1 "GND" H 3805 3127 50  0000 C CNN
-F 2 "" H 3800 3300 50  0001 C CNN
-F 3 "" H 3800 3300 50  0001 C CNN
-	1    3800 3300
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0112
@@ -337,8 +237,6 @@ F 3 "" H 4250 4500 50  0001 C CNN
 	1    4250 4500
 	1    0    0    -1  
 $EndComp
-Text Notes 3500 2850 0    50   ~ 0
-Reverse Voltage Protection Circuit\nGiven in Datasheet
 Text Notes 3150 4500 0    50   ~ 0
 Status LED's\nPower On:11,\nStandby:01,\nConnection Established:00,\nor Data Session Open:01
 Text Notes 7600 4100 0    50   ~ 0
@@ -486,4 +384,7 @@ Text HLabel 5000 4300 0    50   Input ~ 0
 UART_CTS
 Text HLabel 5000 4500 0    50   Output ~ 0
 UART_RTS
+NoConn ~ 5000 3500
+NoConn ~ 5000 3400
+NoConn ~ 5000 3200
 $EndSCHEMATC
