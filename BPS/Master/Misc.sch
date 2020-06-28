@@ -453,17 +453,6 @@ Connection ~ 4750 2700
 Text HLabel 6700 1250 0    50   Input ~ 0
 FANPWR
 $Comp
-L power:+12V #PWR0118
-U 1 1 5EE38D3D
-P 7000 1050
-F 0 "#PWR0118" H 7000 900 50  0001 C CNN
-F 1 "+12V" H 7015 1223 50  0000 C CNN
-F 2 "" H 7000 1050 50  0001 C CNN
-F 3 "" H 7000 1050 50  0001 C CNN
-	1    7000 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Transistor_BJT:BUT11 Q6
 U 1 1 5EE3EB2A
 P 6900 1250
@@ -650,43 +639,99 @@ Text Label 5200 4700 3    50   ~ 0
 IP16
 Text Label 5400 4700 3    50   ~ 0
 IP17
+$Comp
+L power:GND #PWR0108
+U 1 1 5EF8895A
+P 7000 1050
+F 0 "#PWR0108" H 7000 800 50  0001 C CNN
+F 1 "GND" H 7005 877 50  0000 C CNN
+F 2 "" H 7000 1050 50  0001 C CNN
+F 3 "" H 7000 1050 50  0001 C CNN
+	1    7000 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J12
+U 1 1 5EF8DB7E
+P 3100 6000
+F 0 "J12" V 3300 5950 50  0000 L CNN
+F 1 "Conn_01x06" V 3200 5750 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3100 6000 50  0001 C CNN
+F 3 "~" H 3100 6000 50  0001 C CNN
+	1    3100 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J14
+U 1 1 5EF8E106
+P 3700 6000
+F 0 "J14" V 3900 5950 50  0000 L CNN
+F 1 "Conn_01x06" V 3800 5750 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3700 6000 50  0001 C CNN
+F 3 "~" H 3700 6000 50  0001 C CNN
+	1    3700 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J15
+U 1 1 5EF8EC17
+P 4300 6000
+F 0 "J15" V 4500 5950 50  0000 L CNN
+F 1 "Conn_01x06" V 4400 5750 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4300 6000 50  0001 C CNN
+F 3 "~" H 4300 6000 50  0001 C CNN
+	1    4300 6000
+	0    1    1    0   
+$EndComp
+Entry Wire Line
+	5500 4600 5600 4700
+Entry Wire Line
+	5700 4600 5800 4700
+Entry Wire Line
+	5900 4600 6000 4700
+Entry Wire Line
+	6100 4600 6200 4700
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5EFCE394
+P 5950 6000
+F 0 "J?" V 5822 6180 50  0000 L CNN
+F 1 "Conn_01x04" V 5913 6180 50  0000 L CNN
+F 2 "" H 5950 6000 50  0001 C CNN
+F 3 "~" H 5950 6000 50  0001 C CNN
+	1    5950 6000
+	0    1    1    0   
+$EndComp
+Text Notes 5500 6200 0    50   ~ 0
+For Bluetooth Module
+Wire Wire Line
+	5600 4700 5600 5800
+Wire Wire Line
+	5600 5800 5750 5800
+Wire Wire Line
+	5800 4700 5800 5800
+Wire Wire Line
+	5800 5800 5850 5800
+Wire Wire Line
+	6000 4700 6000 5800
+Wire Wire Line
+	6000 5800 5950 5800
+Wire Wire Line
+	6200 4700 6200 5800
+Wire Wire Line
+	6200 5800 6050 5800
 Wire Bus Line
 	4350 1500 5450 1500
 Wire Bus Line
 	1050 1500 3750 1500
 Wire Bus Line
-	1800 4600 5500 4600
-$Comp
-L Connector_Generic:Conn_01x08 J12
-U 1 1 5EF670FD
-P 3200 6000
-F 0 "J12" V 3400 5950 50  0000 L CNN
-F 1 "Conn_01x08" V 3300 5750 50  0000 L CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_2x4xP3.00mm_PolarizingPeg_Vertical" H 3200 6000 50  0001 C CNN
-F 3 "~" H 3200 6000 50  0001 C CNN
-	1    3200 6000
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x08 J14
-U 1 1 5EF67B62
-P 4000 6000
-F 0 "J14" V 4200 5950 50  0000 L CNN
-F 1 "Conn_01x08" V 4100 5750 50  0000 L CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_2x4xP3.00mm_PolarizingPeg_Vertical" H 4000 6000 50  0001 C CNN
-F 3 "~" H 4000 6000 50  0001 C CNN
-	1    4000 6000
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J15
-U 1 1 5EF68778
-P 4500 6000
-F 0 "J15" V 4700 5900 50  0000 L CNN
-F 1 "Conn_01x02" V 4600 5750 50  0000 L CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4500 6000 50  0001 C CNN
-F 3 "~" H 4500 6000 50  0001 C CNN
-	1    4500 6000
-	0    1    1    0   
-$EndComp
+	1800 4600 6300 4600
+Text Label 5600 4700 3    50   ~ 0
+USART1_TX
+Text Label 5800 4700 3    50   ~ 0
+USART1_RX
+Text Label 6000 4700 3    50   ~ 0
+USART1_CTS
+Text Label 6200 4700 3    50   ~ 0
+USART1_RTS
 $EndSCHEMATC

@@ -646,10 +646,6 @@ Text Label 7800 5300 0    50   ~ 0
 SPI1_MISO
 Text Label 7800 5400 0    50   ~ 0
 SPI1_MOSI
-Text Label 2500 6900 2    50   ~ 0
-USART1_RX
-Text Label 2500 6800 2    50   ~ 0
-USART1_TX
 Text Label 7000 4300 2    50   ~ 0
 LPTIM1(PWM)
 Text Label 2500 6250 2    50   ~ 0
@@ -662,10 +658,6 @@ Text Label 7000 3500 2    50   ~ 0
 USART1_CTS
 Text Label 7000 3600 2    50   ~ 0
 USART1_RTS
-Text Label 2500 7000 2    50   ~ 0
-USART1_RTS
-Text Label 2500 7100 2    50   ~ 0
-USART1_CTS
 $Comp
 L MCU_ST_STM32F4:STM32F413RHTx U1
 U 1 1 5C25CD9E
@@ -684,10 +676,6 @@ S 1000 6700 1000 500
 U 5EE39517
 F0 "Bluetooth Module" 50
 F1 "BlutoothMod.sch" 50
-F2 "UART_RX" I R 2000 6800 50 
-F3 "UART_TX" O R 2000 6900 50 
-F4 "UART_CTS" I R 2000 7000 50 
-F5 "UART_RTS" O R 2000 7100 50 
 $EndSheet
 Text Label 4450 4400 0    50   ~ 0
 IP1
@@ -736,25 +724,9 @@ Wire Wire Line
 Wire Wire Line
 	6500 3900 7200 3900
 Wire Wire Line
-	2000 7100 2500 7100
-Wire Wire Line
-	2000 7000 2500 7000
-Wire Wire Line
-	6500 3600 7000 3600
-Wire Wire Line
-	6500 3500 7000 3500
-Wire Wire Line
-	6500 3400 7000 3400
-Wire Wire Line
-	6500 3300 7000 3300
-Wire Wire Line
 	2000 6250 2500 6250
 Wire Wire Line
 	6500 4300 7000 4300
-Wire Wire Line
-	2000 6800 2500 6800
-Wire Wire Line
-	2000 6900 2500 6900
 Wire Wire Line
 	8300 5400 7800 5400
 Wire Wire Line
@@ -1135,12 +1107,28 @@ Wire Wire Line
 	4100 3100 4750 3100
 Wire Wire Line
 	4750 3100 4750 3500
+Entry Wire Line
+	7200 3300 7300 3200
+Entry Wire Line
+	7200 3400 7300 3300
+Entry Wire Line
+	7200 3500 7300 3400
+Entry Wire Line
+	7200 3600 7300 3500
+Wire Wire Line
+	6500 3300 7200 3300
+Wire Wire Line
+	6500 3400 7200 3400
+Wire Wire Line
+	6500 3500 7200 3500
+Wire Wire Line
+	6500 3600 7200 3600
 Wire Bus Line
 	7100 2750 7100 3000
 Wire Bus Line
 	4500 3850 4500 4250
 Wire Bus Line
-	7300 2400 7300 6050
-Wire Bus Line
 	4350 3650 4350 6050
+Wire Bus Line
+	7300 2400 7300 6050
 $EndSCHEMATC
