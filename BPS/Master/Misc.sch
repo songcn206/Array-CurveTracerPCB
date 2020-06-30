@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 11
+Sheet 4 10
 Title ""
 Date ""
 Rev ""
@@ -458,7 +458,7 @@ U 1 1 5EE3EB2A
 P 6900 1250
 F 0 "Q6" H 7092 1296 50  0000 L CNN
 F 1 "BUT11" H 7092 1205 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7100 1175 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7100 1175 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BU/BUT11.pdf" H 6900 1250 50  0001 L CNN
 	1    6900 1250
 	1    0    0    -1  
@@ -683,55 +683,62 @@ F 3 "~" H 4300 6000 50  0001 C CNN
 	1    4300 6000
 	0    1    1    0   
 $EndComp
-Entry Wire Line
-	5500 4600 5600 4700
-Entry Wire Line
-	5700 4600 5800 4700
-Entry Wire Line
-	5900 4600 6000 4700
-Entry Wire Line
-	6100 4600 6200 4700
 $Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5EFCE394
-P 5950 6000
-F 0 "J?" V 5822 6180 50  0000 L CNN
-F 1 "Conn_01x04" V 5913 6180 50  0000 L CNN
-F 2 "" H 5950 6000 50  0001 C CNN
-F 3 "~" H 5950 6000 50  0001 C CNN
-	1    5950 6000
-	0    1    1    0   
+L Mechanical:MountingHole H?
+U 1 1 5F1A8D62
+P 6000 4800
+AR Path="/5F1A8D62" Ref="H?"  Part="1" 
+AR Path="/5C392C6A/5F1A8D62" Ref="H4"  Part="1" 
+F 0 "H4" H 6100 4846 50  0000 L CNN
+F 1 "MountingHole" H 6100 4755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 6000 4800 50  0001 C CNN
+F 3 "~" H 6000 4800 50  0001 C CNN
+	1    6000 4800
+	1    0    0    -1  
 $EndComp
-Text Notes 5500 6200 0    50   ~ 0
-For Bluetooth Module
-Wire Wire Line
-	5600 4700 5600 5800
-Wire Wire Line
-	5600 5800 5750 5800
-Wire Wire Line
-	5800 4700 5800 5800
-Wire Wire Line
-	5800 5800 5850 5800
-Wire Wire Line
-	6000 4700 6000 5800
-Wire Wire Line
-	6000 5800 5950 5800
-Wire Wire Line
-	6200 4700 6200 5800
-Wire Wire Line
-	6200 5800 6050 5800
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5F1A8D68
+P 6000 4600
+AR Path="/5F1A8D68" Ref="H?"  Part="1" 
+AR Path="/5C392C6A/5F1A8D68" Ref="H3"  Part="1" 
+F 0 "H3" H 6100 4646 50  0000 L CNN
+F 1 "MountingHole" H 6100 4555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 6000 4600 50  0001 C CNN
+F 3 "~" H 6000 4600 50  0001 C CNN
+	1    6000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5F1A8D6E
+P 6000 4400
+AR Path="/5F1A8D6E" Ref="H?"  Part="1" 
+AR Path="/5C392C6A/5F1A8D6E" Ref="H2"  Part="1" 
+F 0 "H2" H 6100 4446 50  0000 L CNN
+F 1 "MountingHole" H 6100 4355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 6000 4400 50  0001 C CNN
+F 3 "~" H 6000 4400 50  0001 C CNN
+	1    6000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5F1A8D74
+P 6000 4200
+AR Path="/5F1A8D74" Ref="H?"  Part="1" 
+AR Path="/5C392C6A/5F1A8D74" Ref="H1"  Part="1" 
+F 0 "H1" H 6100 4246 50  0000 L CNN
+F 1 "MountingHole" H 6100 4155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 6000 4200 50  0001 C CNN
+F 3 "~" H 6000 4200 50  0001 C CNN
+	1    6000 4200
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	4350 1500 5450 1500
 Wire Bus Line
 	1050 1500 3750 1500
 Wire Bus Line
-	1800 4600 6300 4600
-Text Label 5600 4700 3    50   ~ 0
-USART1_TX
-Text Label 5800 4700 3    50   ~ 0
-USART1_RX
-Text Label 6000 4700 3    50   ~ 0
-USART1_CTS
-Text Label 6200 4700 3    50   ~ 0
-USART1_RTS
+	1800 4600 5400 4600
 $EndSCHEMATC
