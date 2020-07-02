@@ -38,8 +38,6 @@ F 3 "~" H 7300 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 1450 7000 1550
-Wire Wire Line
 	7000 1650 7100 1650
 Text HLabel 1050 1500 0    50   Input ~ 0
 PC[0..5]
@@ -397,17 +395,6 @@ Wire Wire Line
 	7000 2600 7100 2600
 Connection ~ 7000 2500
 $Comp
-L power:GNDPWR #PWR030
-U 1 1 5C82C789
-P 7700 2700
-F 0 "#PWR030" H 7700 2500 50  0001 C CNN
-F 1 "GNDPWR" H 7704 2546 50  0000 C CNN
-F 2 "" H 7700 2650 50  0001 C CNN
-F 3 "" H 7700 2650 50  0001 C CNN
-	1    7700 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED_ALT D9
 U 1 1 5C585DBB
 P 5250 2100
@@ -450,19 +437,6 @@ Wire Wire Line
 Text HLabel 1050 1700 0    50   Input ~ 0
 RUN
 Connection ~ 4750 2700
-Text HLabel 6700 1250 0    50   Input ~ 0
-FANPWR
-$Comp
-L Transistor_BJT:BUT11 Q6
-U 1 1 5EE3EB2A
-P 6900 1250
-F 0 "Q6" H 7092 1296 50  0000 L CNN
-F 1 "BUT11" H 7092 1205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7100 1175 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BU/BUT11.pdf" H 6900 1250 50  0001 L CNN
-	1    6900 1250
-	1    0    0    -1  
-$EndComp
 Text HLabel 1800 4600 0    50   Output ~ 0
 IP[0..17]
 Entry Wire Line
@@ -640,17 +614,6 @@ IP16
 Text Label 5400 4700 3    50   ~ 0
 IP17
 $Comp
-L power:GND #PWR0108
-U 1 1 5EF8895A
-P 7000 1050
-F 0 "#PWR0108" H 7000 800 50  0001 C CNN
-F 1 "GND" H 7005 877 50  0000 C CNN
-F 2 "" H 7000 1050 50  0001 C CNN
-F 3 "" H 7000 1050 50  0001 C CNN
-	1    7000 1050
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x06 J12
 U 1 1 5EF8DB7E
 P 3100 6000
@@ -733,6 +696,65 @@ F 1 "MountingHole" H 6100 4155 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.1mm" H 6000 4200 50  0001 C CNN
 F 3 "~" H 6000 4200 50  0001 C CNN
 	1    6000 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1450 7000 1550
+$Comp
+L power:GNDPWR #PWR030
+U 1 1 5C82C789
+P 7700 2700
+F 0 "#PWR030" H 7700 2500 50  0001 C CNN
+F 1 "GNDPWR" H 7704 2546 50  0000 C CNN
+F 2 "" H 7700 2650 50  0001 C CNN
+F 3 "" H 7700 2650 50  0001 C CNN
+	1    7700 2700
+	1    0    0    -1  
+$EndComp
+Text HLabel 6700 1250 0    50   Input ~ 0
+FANPWR
+$Comp
+L power:+12V #PWR034
+U 1 1 5EFE2C60
+P 7000 1050
+F 0 "#PWR034" H 7000 900 50  0001 C CNN
+F 1 "+12V" H 7015 1223 50  0000 C CNN
+F 2 "" H 7000 1050 50  0001 C CNN
+F 3 "" H 7000 1050 50  0001 C CNN
+	1    7000 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMP3013SFV Q6
+U 1 1 5EFE4C10
+P 6900 1250
+F 0 "Q6" H 7105 1296 50  0000 L CNN
+F 1 "DMP3013SFV" H 7105 1205 50  0000 L CNN
+F 2 "Package_SON:Diodes_PowerDI3333-8" H 7100 1175 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3013SFV.pdf" V 6900 1250 50  0001 L CNN
+	1    6900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5EFE4FE6
+P 6700 1400
+F 0 "R14" H 6750 1400 50  0000 L CNN
+F 1 "10k" V 6700 1300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6630 1400 50  0001 C CNN
+F 3 "~" H 6700 1400 50  0001 C CNN
+	1    6700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 5EFE5415
+P 6700 1550
+F 0 "#PWR035" H 6700 1300 50  0001 C CNN
+F 1 "GND" H 6705 1377 50  0000 C CNN
+F 2 "" H 6700 1550 50  0001 C CNN
+F 3 "" H 6700 1550 50  0001 C CNN
+	1    6700 1550
 	1    0    0    -1  
 $EndComp
 Wire Bus Line

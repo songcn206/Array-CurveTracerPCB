@@ -413,7 +413,7 @@ U 1 1 5EF85BFE
 P 9000 3650
 F 0 "J1" H 9080 3642 50  0000 L CNN
 F 1 "Conn_01x06" H 9080 3551 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9000 3650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 9000 3650 50  0001 C CNN
 F 3 "~" H 9000 3650 50  0001 C CNN
 	1    9000 3650
 	1    0    0    -1  
@@ -448,4 +448,99 @@ F 3 "" H 8800 3950 50  0001 C CNN
 	1    8800 3950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EFE54EF
+P 9250 2050
+F 0 "H2" H 9350 2096 50  0000 L CNN
+F 1 "MountingHole" H 9350 2005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 9250 2050 50  0001 C CNN
+F 3 "~" H 9250 2050 50  0001 C CNN
+	1    9250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EFE6AD0
+P 9250 2250
+F 0 "H3" H 9350 2296 50  0000 L CNN
+F 1 "MountingHole" H 9350 2205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 9250 2250 50  0001 C CNN
+F 3 "~" H 9250 2250 50  0001 C CNN
+	1    9250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EFE6EF1
+P 9250 2450
+F 0 "H4" H 9350 2496 50  0000 L CNN
+F 1 "MountingHole" H 9350 2405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 9250 2450 50  0001 C CNN
+F 3 "~" H 9250 2450 50  0001 C CNN
+	1    9250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EFE71CA
+P 9250 1850
+F 0 "H1" H 9350 1896 50  0000 L CNN
+F 1 "MountingHole" H 9350 1805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 9250 1850 50  0001 C CNN
+F 3 "~" H 9250 1850 50  0001 C CNN
+	1    9250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 5EFE794B
+P 10000 3500
+F 0 "J3" H 10080 3492 50  0000 L CNN
+F 1 "Conn_01x06" H 10080 3401 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10000 3500 50  0001 C CNN
+F 3 "~" H 10000 3500 50  0001 C CNN
+	1    10000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 5EFE8081
+P 10000 4100
+F 0 "J4" H 10080 4092 50  0000 L CNN
+F 1 "Conn_01x06" H 10080 4001 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10000 4100 50  0001 C CNN
+F 3 "~" H 10000 4100 50  0001 C CNN
+	1    10000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J2
+U 1 1 5EFE9541
+P 10000 2900
+F 0 "J2" H 10080 2892 50  0000 L CNN
+F 1 "Conn_01x06" H 10080 2801 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10000 2900 50  0001 C CNN
+F 3 "~" H 10000 2900 50  0001 C CNN
+	1    10000 2900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9800 2700
+NoConn ~ 9800 2800
+NoConn ~ 9800 2900
+NoConn ~ 9800 3000
+NoConn ~ 9800 3100
+NoConn ~ 9800 3200
+NoConn ~ 9800 3300
+NoConn ~ 9800 3400
+NoConn ~ 9800 3500
+NoConn ~ 9800 3600
+NoConn ~ 9800 3700
+NoConn ~ 9800 3800
+NoConn ~ 9800 3900
+NoConn ~ 9800 4000
+NoConn ~ 9800 4100
+NoConn ~ 9800 4200
+NoConn ~ 9800 4300
+NoConn ~ 9800 4400
 $EndSCHEMATC
