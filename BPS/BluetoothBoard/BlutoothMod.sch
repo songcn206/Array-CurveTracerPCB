@@ -374,7 +374,6 @@ Wire Wire Line
 	4650 4400 5000 4400
 NoConn ~ 5000 3500
 NoConn ~ 5000 3400
-NoConn ~ 5000 3200
 Wire Wire Line
 	8550 3300 8550 3550
 Wire Wire Line
@@ -543,4 +542,17 @@ NoConn ~ 9800 4100
 NoConn ~ 9800 4200
 NoConn ~ 9800 4300
 NoConn ~ 9800 4400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EFF4B60
+P 4750 3200
+F 0 "#PWR?" H 4750 3050 50  0001 C CNN
+F 1 "+3.3V" H 4765 3373 50  0000 C CNN
+F 2 "" H 4750 3200 50  0001 C CNN
+F 3 "" H 4750 3200 50  0001 C CNN
+	1    4750 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3200 5000 3200
 $EndSCHEMATC
