@@ -1,0 +1,160 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5F091D5D
+P 4250 3750
+F 0 "J1" H 4330 3742 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 3651 50  0000 L CNN
+F 2 "" H 4250 3750 50  0001 C CNN
+F 3 "~" H 4250 3750 50  0001 C CNN
+	1    4250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5F09203F
+P 4250 4400
+F 0 "J2" H 4330 4392 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 4301 50  0000 L CNN
+F 2 "" H 4250 4400 50  0001 C CNN
+F 3 "~" H 4250 4400 50  0001 C CNN
+	1    4250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5F092588
+P 4250 5050
+F 0 "J3" H 4330 5042 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 4951 50  0000 L CNN
+F 2 "" H 4250 5050 50  0001 C CNN
+F 3 "~" H 4250 5050 50  0001 C CNN
+	1    4250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5F092946
+P 4250 5700
+F 0 "J4" H 4330 5692 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 5601 50  0000 L CNN
+F 2 "" H 4250 5700 50  0001 C CNN
+F 3 "~" H 4250 5700 50  0001 C CNN
+	1    4250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 5F093D32
+P 3950 3600
+F 0 "#PWR01" H 3950 3450 50  0001 C CNN
+F 1 "+12V" H 3965 3773 50  0000 C CNN
+F 2 "" H 3950 3600 50  0001 C CNN
+F 3 "" H 3950 3600 50  0001 C CNN
+	1    3950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4400 4050 4400
+Wire Wire Line
+	3200 5050 4050 5050
+Wire Wire Line
+	3200 3750 4050 3750
+NoConn ~ 2900 5900
+NoConn ~ 2900 5250
+NoConn ~ 2900 4600
+NoConn ~ 2900 3950
+Connection ~ 4050 5700
+Wire Wire Line
+	4050 5700 4100 5700
+$Comp
+L Transistor_FET:BUK9M34-100EX Q?
+U 1 1 5F0AEA0D
+P 3100 3950
+F 0 "Q?" H 3304 3996 50  0000 L CNN
+F 1 "BUK9M34-100EX" H 3304 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 3875 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 3950 50  0001 L CNN
+	1    3100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BUK9M34-100EX Q?
+U 1 1 5F0B1145
+P 3100 4600
+F 0 "Q?" H 3304 4646 50  0000 L CNN
+F 1 "BUK9M34-100EX" H 3304 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 4525 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 4600 50  0001 L CNN
+	1    3100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BUK9M34-100EX Q?
+U 1 1 5F0B279A
+P 3100 5250
+F 0 "Q?" H 3304 5296 50  0000 L CNN
+F 1 "BUK9M34-100EX" H 3304 5205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 5175 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 5250 50  0001 L CNN
+	1    3100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BUK9M34-100EX Q?
+U 1 1 5F0B2EF7
+P 3100 5900
+F 0 "Q?" H 3304 5946 50  0000 L CNN
+F 1 "BUK9M34-100EX" H 3304 5855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 5825 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 5900 50  0001 L CNN
+	1    3100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5700 4050 5700
+Wire Wire Line
+	3200 4150 3600 4150
+Wire Wire Line
+	3600 4150 3600 4800
+Wire Wire Line
+	3200 6100 3600 6100
+Connection ~ 3600 6100
+Wire Wire Line
+	3200 5450 3600 5450
+Connection ~ 3600 5450
+Wire Wire Line
+	3600 5450 3600 6100
+Wire Wire Line
+	3200 4800 3600 4800
+Connection ~ 3600 4800
+Wire Wire Line
+	3600 4800 3600 5450
+$Comp
+L power:GND #PWR?
+U 1 1 5F0B61B4
+P 3600 6200
+F 0 "#PWR?" H 3600 5950 50  0001 C CNN
+F 1 "GND" H 3605 6027 50  0000 C CNN
+F 2 "" H 3600 6200 50  0001 C CNN
+F 3 "" H 3600 6200 50  0001 C CNN
+	1    3600 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6100 3600 6200
+$EndSCHEMATC
