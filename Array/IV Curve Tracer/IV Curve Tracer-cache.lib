@@ -1,0 +1,417 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Amplifier_Operational_OP179GRT
+#
+DEF Amplifier_Operational_OP179GRT U 0 5 Y Y 1 F N
+F0 "U" 0 200 50 H V L CNN
+F1 "Amplifier_Operational_OP179GRT" 0 -200 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23-5" 0 0 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+$FPLIST
+ SOT?23*
+$ENDFPLIST
+DRAW
+P 4 0 1 10 -200 200 200 0 -200 -200 -200 200 f
+X V+ 2 -100 300 150 D 50 50 0 1 W
+X V- 5 -100 -300 150 U 50 50 0 1 W
+X ~ 1 300 0 100 L 50 50 1 1 O
+X + 3 -300 100 100 R 50 50 1 1 I
+X - 4 -300 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Array_Curve_Tracer_INA211
+#
+DEF Array_Curve_Tracer_INA211 U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Array_Curve_Tracer_INA211" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -200 -250 0 0 1 0 N
+C -150 -300 50 0 1 0 N
+S -300 -200 350 -800 0 1 0 N
+X REF 1 -400 -350 100 R 50 50 1 1 I
+X GND 2 -400 -500 100 R 50 50 1 1 I
+X V+ 3 -400 -650 100 R 50 50 1 1 I
+X IN+ 4 450 -650 100 L 50 50 1 1 I
+X IN- 5 450 -500 100 L 50 50 1 1 I
+X OUT 6 450 -350 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x15
+#
+DEF Connector_Generic_Conn_01x15 J 0 40 Y N 1 F N
+F0 "J" 0 800 50 H V C CNN
+F1 "Connector_Generic_Conn_01x15" 0 -800 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -695 0 -705 1 1 6 N
+S -50 -595 0 -605 1 1 6 N
+S -50 -495 0 -505 1 1 6 N
+S -50 -395 0 -405 1 1 6 N
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 305 0 295 1 1 6 N
+S -50 405 0 395 1 1 6 N
+S -50 505 0 495 1 1 6 N
+S -50 605 0 595 1 1 6 N
+S -50 705 0 695 1 1 6 N
+S -50 750 50 -750 1 1 10 f
+X Pin_1 1 -200 700 150 R 50 50 1 1 P
+X Pin_10 10 -200 -200 150 R 50 50 1 1 P
+X Pin_11 11 -200 -300 150 R 50 50 1 1 P
+X Pin_12 12 -200 -400 150 R 50 50 1 1 P
+X Pin_13 13 -200 -500 150 R 50 50 1 1 P
+X Pin_14 14 -200 -600 150 R 50 50 1 1 P
+X Pin_15 15 -200 -700 150 R 50 50 1 1 P
+X Pin_2 2 -200 600 150 R 50 50 1 1 P
+X Pin_3 3 -200 500 150 R 50 50 1 1 P
+X Pin_4 4 -200 400 150 R 50 50 1 1 P
+X Pin_5 5 -200 300 150 R 50 50 1 1 P
+X Pin_6 6 -200 200 150 R 50 50 1 1 P
+X Pin_7 7 -200 100 150 R 50 50 1 1 P
+X Pin_8 8 -200 0 150 R 50 50 1 1 P
+X Pin_9 9 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Screw_Terminal_01x02
+#
+DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D_Zener
+#
+DEF Device_D_Zener D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D_Zener" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 3 0 1 10 -50 -50 -50 50 -30 50 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Q_NMOS_GDS
+#
+DEF Device_Q_NMOS_GDS Q 0 0 Y N 1 F N
+F0 "Q" 200 50 50 H V L CNN
+F1 "Device_Q_NMOS_GDS" 200 -50 50 H V L CNN
+F2 "" 200 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 65 0 110 0 1 10 N
+C 100 -70 10 0 1 0 F
+C 100 70 10 0 1 0 F
+P 2 0 1 0 10 0 -100 0 N
+P 2 0 1 10 10 75 10 -75 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 0 100 -100 100 0 30 0 N
+P 4 0 1 0 30 -70 130 -70 130 70 30 70 N
+P 4 0 1 0 40 0 80 15 80 -15 40 0 F
+P 4 0 1 0 110 20 115 15 145 15 150 10 N
+P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
+X G 1 -200 0 100 R 50 50 1 1 I
+X D 2 100 200 100 D 50 50 1 1 P
+X S 3 100 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_HMK325C7475KM-PE
+#
+DEF SamacSys_Parts_HMK325C7475KM-PE C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "SamacSys_Parts_HMK325C7475KM-PE" 350 150 50 H V L CNN
+F2 "CAPC3225X270N" 350 50 50 H I L CNN
+F3 "https://ds.yuden.co.jp/TYCOMPAS/ut/download?pn=TMK212BBJ226MG-TT+&fileType=CS" 350 -50 50 H I L CNN
+F4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1210 100V 4.7uF 10% X7S" 350 -150 50 H I L CNN "Description"
+F5 "2.7" 350 -250 50 H I L CNN "Height"
+F6 "963-HMK325C7475KM-PE" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/HMK325C7475KM-PE?qs=lkMpTOwszhfJgAO%252ByK1nIw%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "TAIYO YUDEN" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "HMK325C7475KM-PE" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 280 100 280 -100 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_MAX680ESA+
+#
+DEF SamacSys_Parts_MAX680ESA+ IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "SamacSys_Parts_MAX680ESA+" 850 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 850 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/MAX680ESA+.pdf" 850 0 50 H I L CNN
+F4 "MAX680ESA+, Charge Pump Inverting, Step Up 10mA 8 kHz, +/-10 V, 8-Pin, SO N" 850 -100 50 H I L CNN "Description"
+F5 "1.75" 850 -200 50 H I L CNN "Height"
+F6 "700-MAX680ESA" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=700-MAX680ESA" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Maxim Integrated" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "MAX680ESA+" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
+X C1- 1 0 0 200 R 50 50 0 0 P
+X C2+ 2 0 -100 200 R 50 50 0 0 P
+X C2- 3 0 -200 200 R 50 50 0 0 P
+X V- 4 0 -300 200 R 50 50 0 0 W
+X GND 5 1000 -300 200 L 50 50 0 0 W
+X VCC 6 1000 -200 200 L 50 50 0 0 W
+X C1+ 7 1000 -100 200 L 50 50 0 0 P
+X V+ 8 1000 0 200 L 50 50 0 0 W
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_SMDTC04100TA00JS00
+#
+DEF SamacSys_Parts_SMDTC04100TA00JS00 C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "SamacSys_Parts_SMDTC04100TA00JS00" 350 150 50 H V L CNN
+F2 "SMDTC04100TA00JS00" 350 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/SMDTC04100TA00JS00.pdf" 350 -50 50 H I L CNN
+F4 "Film Capacitors 1uF 63 Volts 5%" 350 -150 50 H I L CNN "Description"
+F5 "5" 350 -250 50 H I L CNN "Height"
+F6 "505-SMDTC04100TA00JS" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/WIMA/SMDTC04100TA00JS00?qs=WKNSk2eAW0qqe4OQTbUxSQ%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "WIMA" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "SMDTC04100TA00JS00" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 280 100 280 -100 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_TLHR5400-AS12Z
+#
+DEF SamacSys_Parts_TLHR5400-AS12Z LED 0 30 Y Y 1 F N
+F0 "LED" 500 350 50 H V L BNN
+F1 "SamacSys_Parts_TLHR5400-AS12Z" 500 250 50 H V L BNN
+F2 "TLHR5400AS12Z" 500 150 50 H I L BNN
+F3 "http://www.vishay.com/docs/83012/tlhg540.pdf" 500 50 50 H I L BNN
+F4 "Standard LEDs - Through Hole Red 10mcd; 5mm 612-625nm; 2V Typ" 500 -50 50 H I L BNN "Description"
+F5 "12.8" 500 -150 50 H I L BNN "Height"
+F6 "78-TLHR5400-AS12Z" 500 -250 50 H I L BNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TLHR5400-AS12Z?qs=nQ9vpdMXC6Dc4iRzpr4t7Q%3D%3D" 500 -350 50 H I L BNN "Mouser Price/Stock"
+F8 "Vishay" 500 -450 50 H I L BNN "Manufacturer_Name"
+F9 "TLHR5400-AS12Z" 500 -550 50 H I L BNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 200 100 200 -100 N
+P 2 0 1 6 250 100 150 200 N
+P 2 0 1 6 350 100 250 200 N
+P 2 0 1 6 400 0 500 0 N
+P 4 0 1 6 200 0 400 100 400 -100 200 0 N
+P 4 0 1 10 210 170 180 140 150 200 210 170 F
+P 4 0 1 10 310 170 280 140 250 200 310 170 F
+X A 1 600 0 100 L 50 50 0 0 P
+X K 2 0 0 100 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# power_+10V
+#
+DEF power_+10V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+10V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +10V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_-10V
+#
+DEF power_-10V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 100 50 H I C CNN
+F1 "power_-10V" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 30 50 0 100 -30 50 0 50 F
+X -10V 1 0 0 0 U 50 50 0 0 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GNDA
+#
+DEF power_GNDA #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDA" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDA 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
