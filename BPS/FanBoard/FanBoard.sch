@@ -19,7 +19,7 @@ U 1 1 5F091D5D
 P 4250 3650
 F 0 "J1" H 4330 3642 50  0000 L CNN
 F 1 "Conn_01x02" H 4330 3551 50  0000 L CNN
-F 2 "" H 4250 3650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4250 3650 50  0001 C CNN
 F 3 "~" H 4250 3650 50  0001 C CNN
 	1    4250 3650
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5F09203F
 P 4250 4300
 F 0 "J2" H 4330 4292 50  0000 L CNN
 F 1 "Conn_01x02" H 4330 4201 50  0000 L CNN
-F 2 "" H 4250 4300 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4250 4300 50  0001 C CNN
 F 3 "~" H 4250 4300 50  0001 C CNN
 	1    4250 4300
 	1    0    0    -1  
@@ -41,7 +41,7 @@ U 1 1 5F092588
 P 4250 4950
 F 0 "J3" H 4330 4942 50  0000 L CNN
 F 1 "Conn_01x02" H 4330 4851 50  0000 L CNN
-F 2 "" H 4250 4950 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4250 4950 50  0001 C CNN
 F 3 "~" H 4250 4950 50  0001 C CNN
 	1    4250 4950
 	1    0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 5F092946
 P 4250 5600
 F 0 "J4" H 4330 5592 50  0000 L CNN
 F 1 "Conn_01x02" H 4330 5501 50  0000 L CNN
-F 2 "" H 4250 5600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4250 5600 50  0001 C CNN
 F 3 "~" H 4250 5600 50  0001 C CNN
 	1    4250 5600
 	1    0    0    -1  
@@ -71,9 +71,9 @@ $EndComp
 Wire Wire Line
 	3200 4400 3700 4400
 Wire Wire Line
-	3200 5050 4050 5050
+	3200 5050 3700 5050
 Wire Wire Line
-	3200 3750 4050 3750
+	3200 3750 3700 3750
 NoConn ~ 2900 5900
 NoConn ~ 2900 5250
 NoConn ~ 2900 4600
@@ -164,7 +164,7 @@ F 3 "https://www.wolfspeed.com/media/downloads/103/C3D25170H.pdf" H 3700 4250 50
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3200 5700 4050 5700
+	3200 5700 3750 5700
 Connection ~ 3700 4400
 Wire Wire Line
 	3700 4400 4050 4400
@@ -240,4 +240,13 @@ Wire Wire Line
 Connection ~ 3950 5400
 Wire Wire Line
 	3950 5400 3950 4950
+Connection ~ 3700 3750
+Wire Wire Line
+	3700 3750 4050 3750
+Connection ~ 3700 5050
+Wire Wire Line
+	3700 5050 4050 5050
+Connection ~ 3750 5700
+Wire Wire Line
+	3750 5700 4050 5700
 $EndSCHEMATC
