@@ -313,4 +313,50 @@ F 3 "" H 5800 4700 50  0001 C CNN
 	1    5800 4700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Converter_DCDC:ATA00A18S-L U1
+U 1 1 5F104936
+P 5850 4050
+F 0 "U1" H 5850 4517 50  0000 C CNN
+F 1 "ATA00A18S-L" H 5850 4426 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_Artesyn_ATA_SMD" H 5850 3700 50  0001 C CIN
+F 3 "https://www.artesyn.com/power/assets/ata_series_ds_01apr2015_79c25814fd.pdf" H 5850 3600 50  0001 C CNN
+	1    5850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4600 5250 4600
+Wire Wire Line
+	5250 4600 5250 3850
+Wire Wire Line
+	5250 3850 5350 3850
+Connection ~ 5800 4600
+Wire Wire Line
+	5800 4700 5350 4700
+Wire Wire Line
+	5350 4700 5350 4250
+Connection ~ 5800 4700
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5F1077A2
+P 6850 3900
+F 0 "J7" H 6930 3892 50  0000 L CNN
+F 1 "Conn_01x02" H 6930 3801 50  0000 L CNN
+F 2 "" H 6850 3900 50  0001 C CNN
+F 3 "~" H 6850 3900 50  0001 C CNN
+	1    6850 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3850 6650 3850
+Wire Wire Line
+	6650 3850 6650 3900
+Wire Wire Line
+	6350 4050 6650 4050
+Wire Wire Line
+	6650 4050 6650 4000
+Text Label 6400 3850 0    50   ~ 0
+5V
+Text Label 6400 4050 0    50   ~ 0
+GND
 $EndSCHEMATC
