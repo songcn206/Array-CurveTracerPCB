@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 4 10
 Title ""
 Date ""
 Rev ""
@@ -13,45 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J3
-U 1 1 5C39DF85
-P 8350 2650
-F 0 "J3" H 8350 2850 50  0000 L CNN
-F 1 "FrontFans" H 8250 2350 50  0000 L CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_2x4xP3.00mm_PolarizingPeg_Vertical" H 8350 2650 50  0001 C CNN
-F 3 "~" H 8350 2650 50  0001 C CNN
-	1    8350 2650
-	1    0    0    -1  
-$EndComp
-Text Notes 8200 2150 0    100  ~ 20
-Fans
-$Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J4
-U 1 1 5C39DFFD
-P 8350 3400
-F 0 "J4" H 8350 3600 50  0000 L CNN
-F 1 "BackFans" H 8250 3100 50  0000 L CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_2x4xP3.00mm_PolarizingPeg_Vertical" H 8350 3400 50  0001 C CNN
-F 3 "~" H 8350 3400 50  0001 C CNN
-	1    8350 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR028
-U 1 1 5C39E1C8
-P 8050 2450
-F 0 "#PWR028" H 8050 2300 50  0001 C CNN
-F 1 "+12V" H 8065 2623 50  0000 C CNN
-F 2 "" H 8050 2450 50  0001 C CNN
-F 3 "" H 8050 2450 50  0001 C CNN
-	1    8050 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 2450 8050 2550
-Wire Wire Line
-	8050 2650 8150 2650
 Text HLabel 2100 2500 0    50   Input ~ 0
 PC[0..5]
 $Comp
@@ -120,10 +81,10 @@ F 5 "APTD2012LSURCK" V 4900 3100 50  0001 C CNN "P/N"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR029
+L power:GND #PWR030
 U 1 1 5C3C06CA
 P 2850 3700
-F 0 "#PWR029" H 2850 3450 50  0001 C CNN
+F 0 "#PWR030" H 2850 3450 50  0001 C CNN
 F 1 "GND" H 2855 3527 50  0000 C CNN
 F 2 "" H 2850 3700 50  0001 C CNN
 F 3 "" H 2850 3700 50  0001 C CNN
@@ -333,91 +294,6 @@ Text Label 5800 2600 3    50   ~ 0
 PA6
 Text HLabel 6500 2500 2    50   Input ~ 0
 PA[5..7]
-Wire Wire Line
-	8150 2550 8050 2550
-Connection ~ 8050 2550
-Wire Wire Line
-	8050 2550 8050 2650
-Wire Wire Line
-	8150 2750 8050 2750
-Wire Wire Line
-	8050 2750 8050 2650
-Connection ~ 8050 2650
-Wire Wire Line
-	8150 2850 8050 2850
-Wire Wire Line
-	8050 2850 8050 2750
-Connection ~ 8050 2750
-Wire Wire Line
-	8750 3700 8750 3600
-Wire Wire Line
-	8750 2850 8650 2850
-Wire Wire Line
-	8750 2850 8750 2750
-Wire Wire Line
-	8750 2550 8650 2550
-Connection ~ 8750 2850
-Wire Wire Line
-	8650 2750 8750 2750
-Connection ~ 8750 2750
-Wire Wire Line
-	8750 2750 8750 2650
-Wire Wire Line
-	8650 2650 8750 2650
-Connection ~ 8750 2650
-Wire Wire Line
-	8750 2650 8750 2550
-Wire Wire Line
-	8650 3600 8750 3600
-Connection ~ 8750 3600
-Wire Wire Line
-	8750 3600 8750 3500
-Wire Wire Line
-	8650 3500 8750 3500
-Connection ~ 8750 3500
-Wire Wire Line
-	8750 3500 8750 3400
-Wire Wire Line
-	8650 3400 8750 3400
-Connection ~ 8750 3400
-Wire Wire Line
-	8750 3400 8750 3300
-Wire Wire Line
-	8650 3300 8750 3300
-Connection ~ 8750 3300
-Wire Wire Line
-	8750 3300 8750 2850
-Wire Wire Line
-	8050 2850 8050 3300
-Wire Wire Line
-	8050 3300 8150 3300
-Connection ~ 8050 2850
-Wire Wire Line
-	8050 3300 8050 3400
-Wire Wire Line
-	8050 3400 8150 3400
-Connection ~ 8050 3300
-Wire Wire Line
-	8050 3400 8050 3500
-Wire Wire Line
-	8050 3500 8150 3500
-Connection ~ 8050 3400
-Wire Wire Line
-	8050 3500 8050 3600
-Wire Wire Line
-	8050 3600 8150 3600
-Connection ~ 8050 3500
-$Comp
-L power:GNDPWR #PWR030
-U 1 1 5C82C789
-P 8750 3700
-F 0 "#PWR030" H 8750 3500 50  0001 C CNN
-F 1 "GNDPWR" H 8754 3546 50  0000 C CNN
-F 2 "" H 8750 3650 50  0001 C CNN
-F 3 "" H 8750 3650 50  0001 C CNN
-	1    8750 3700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:LED_ALT D9
 U 1 1 5C585DBB

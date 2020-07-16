@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 10
+Sheet 6 10
 Title ""
 Date ""
 Rev ""
@@ -18,17 +18,17 @@ L Connector_Generic:Conn_01x04 J7
 U 1 1 5C2DA595
 P 10050 3500
 F 0 "J7" H 10200 3500 50  0000 R CNN
-F 1 "ContactorConnector" H 10850 3400 50  0000 R CNN
+F 1 "ContactorConn" H 10700 3400 50  0000 R CNN
 F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 10050 3500 50  0001 C CNN
 F 3 "~" H 10050 3500 50  0001 C CNN
 	1    10050 3500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR063
+L power:GND #PWR059
 U 1 1 5C30292A
 P 9750 3800
-F 0 "#PWR063" H 9750 3550 50  0001 C CNN
+F 0 "#PWR059" H 9750 3550 50  0001 C CNN
 F 1 "GND" H 9755 3627 50  0000 C CNN
 F 2 "" H 9750 3800 50  0001 C CNN
 F 3 "" H 9750 3800 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "" H 9750 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R36
+L Device:R R25
 U 1 1 5C302C24
 P 8950 3700
-F 0 "R36" V 8850 3700 50  0000 C CNN
+F 0 "R25" V 8850 3700 50  0000 C CNN
 F 1 "1k" V 8950 3700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 8880 3700 50  0001 C CNN
 F 3 "~" H 8950 3700 50  0001 C CNN
@@ -51,10 +51,10 @@ Wire Wire Line
 Wire Wire Line
 	9850 3700 9200 3700
 $Comp
-L Device:C C28
+L Device:C C24
 U 1 1 5C3030F2
 P 8700 3950
-F 0 "C28" H 8815 3996 50  0000 L CNN
+F 0 "C24" H 8815 3996 50  0000 L CNN
 F 1 "1u" H 8815 3905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8738 3800 50  0001 C CNN
 F 3 "~" H 8700 3950 50  0001 C CNN
@@ -68,23 +68,10 @@ Wire Wire Line
 Wire Wire Line
 	8700 4200 8700 4100
 $Comp
-L BPSMaster-rescue:BAS70-04-utsvt-bps U?
-U 1 1 5C304528
-P 8200 3500
-AR Path="/5C304528" Ref="U?"  Part="1" 
-AR Path="/5C38C674/5C304528" Ref="U10"  Part="1" 
-F 0 "U10" H 8072 3346 50  0000 R CNN
-F 1 "BAS70-04" H 8072 3255 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8650 3500 50  0001 C CNN
-F 3 "" H 8650 3500 50  0001 C CNN
-	1    8200 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR066
+L power:GND #PWR058
 U 1 1 5C304D16
 P 8700 4200
-F 0 "#PWR066" H 8700 3950 50  0001 C CNN
+F 0 "#PWR058" H 8700 3950 50  0001 C CNN
 F 1 "GND" H 8705 4027 50  0000 C CNN
 F 2 "" H 8700 4200 50  0001 C CNN
 F 3 "" H 8700 4200 50  0001 C CNN
@@ -93,10 +80,10 @@ F 3 "" H 8700 4200 50  0001 C CNN
 $EndComp
 Connection ~ 8700 3700
 $Comp
-L power:GND #PWR064
+L power:GND #PWR057
 U 1 1 5C305432
 P 8200 4000
-F 0 "#PWR064" H 8200 3750 50  0001 C CNN
+F 0 "#PWR057" H 8200 3750 50  0001 C CNN
 F 1 "GND" H 8205 3827 50  0000 C CNN
 F 2 "" H 8200 4000 50  0001 C CNN
 F 3 "" H 8200 4000 50  0001 C CNN
@@ -106,10 +93,10 @@ $EndComp
 Wire Wire Line
 	8200 4000 8200 3950
 $Comp
-L power:+5V #PWR062
+L power:+5V #PWR056
 U 1 1 5C305723
 P 8200 3350
-F 0 "#PWR062" H 8200 3200 50  0001 C CNN
+F 0 "#PWR056" H 8200 3200 50  0001 C CNN
 F 1 "+5V" H 8215 3523 50  0000 C CNN
 F 2 "" H 8200 3350 50  0001 C CNN
 F 3 "" H 8200 3350 50  0001 C CNN
@@ -140,10 +127,10 @@ Wire Wire Line
 Wire Wire Line
 	5600 3550 5600 3600
 $Comp
-L Device:Q_NMOS_GDS Q1
+L Device:Q_NMOS_GDS Q2
 U 1 1 5C30DEE4
 P 5500 3850
-F 0 "Q1" H 5705 3896 50  0000 L CNN
+F 0 "Q2" H 5705 3896 50  0000 L CNN
 F 1 "VND5N07-E" H 5705 3805 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 5700 3950 50  0001 C CNN
 F 3 "~" H 5500 3850 50  0001 C CNN
@@ -157,10 +144,10 @@ Wire Wire Line
 Text Label 6250 3550 2    50   ~ 0
 CONTACTOR_V-
 $Comp
-L Device:R R38
+L Device:R R23
 U 1 1 5C30E2C4
 P 5200 4100
-F 0 "R38" H 5250 4100 50  0000 L CNN
+F 0 "R23" H 5250 4100 50  0000 L CNN
 F 1 "10k" V 5200 4000 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5130 4100 50  0001 C CNN
 F 3 "~" H 5200 4100 50  0001 C CNN
@@ -181,10 +168,10 @@ Wire Wire Line
 	5600 4450 5600 4350
 Connection ~ 5600 4350
 $Comp
-L Device:R R37
+L Device:R R22
 U 1 1 5C30EC57
 P 4950 3850
-F 0 "R37" V 4850 3850 50  0000 C CNN
+F 0 "R22" V 4850 3850 50  0000 C CNN
 F 1 "0" V 4950 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4880 3850 50  0001 C CNN
 F 3 "~" H 4950 3850 50  0001 C CNN
@@ -195,63 +182,63 @@ Wire Wire Line
 	5100 3850 5200 3850
 Connection ~ 5200 3850
 $Comp
-L power:+12V #PWR057
+L power:+12V #PWR050
 U 1 1 5C30FC6C
-P 3350 2800
-F 0 "#PWR057" H 3350 2650 50  0001 C CNN
-F 1 "+12V" H 3365 2973 50  0000 C CNN
-F 2 "" H 3350 2800 50  0001 C CNN
-F 3 "" H 3350 2800 50  0001 C CNN
-	1    3350 2800
+P 3600 2800
+F 0 "#PWR050" H 3600 2650 50  0001 C CNN
+F 1 "+12V" H 3615 2973 50  0000 C CNN
+F 2 "" H 3600 2800 50  0001 C CNN
+F 3 "" H 3600 2800 50  0001 C CNN
+	1    3600 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C26
+L Device:C C21
 U 1 1 5C30FCB3
-P 3350 3050
-F 0 "C26" H 3465 3096 50  0000 L CNN
-F 1 "10u" H 3465 3005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3388 2900 50  0001 C CNN
-F 3 "~" H 3350 3050 50  0001 C CNN
-	1    3350 3050
+P 3600 3050
+F 0 "C21" H 3715 3096 50  0000 L CNN
+F 1 "10u" H 3715 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3638 2900 50  0001 C CNN
+F 3 "~" H 3600 3050 50  0001 C CNN
+	1    3600 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C27
+L Device:C C22
 U 1 1 5C310937
-P 3800 3050
-F 0 "C27" H 3915 3096 50  0000 L CNN
-F 1 "0.1u" H 3915 3005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3838 2900 50  0001 C CNN
-F 3 "~" H 3800 3050 50  0001 C CNN
-	1    3800 3050
+P 4050 3050
+F 0 "C22" H 4165 3096 50  0000 L CNN
+F 1 "0.1u" H 4165 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 2900 50  0001 C CNN
+F 3 "~" H 4050 3050 50  0001 C CNN
+	1    4050 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 3300 3350 3250
-Text Notes 2700 4900 0    50   ~ 0
-Since +12V is used to drive the contactor, use GNDPWR to keep 12V line\nisolated from the main electronics of the BPS.
+	3600 3300 3600 3250
+Text Notes 4800 4950 0    50   ~ 0
+Since +12V is used to drive the contactor,\nuse GNDPWR to keep +12V line isolated\nfrom the main electronics of the BPS.
 Wire Wire Line
-	3350 3250 3800 3250
+	3600 3250 4050 3250
 Wire Wire Line
-	3800 3250 3800 3200
-Connection ~ 3350 3250
+	4050 3250 4050 3200
+Connection ~ 3600 3250
 Wire Wire Line
-	3350 3250 3350 3200
+	3600 3250 3600 3200
 Wire Wire Line
-	3350 2800 3350 2850
+	3600 2800 3600 2850
 Wire Wire Line
-	3350 2850 3800 2850
+	3600 2850 4050 2850
 Wire Wire Line
-	3800 2850 3800 2900
-Connection ~ 3350 2850
+	4050 2850 4050 2900
+Connection ~ 3600 2850
 Wire Wire Line
-	3350 2850 3350 2900
-Connection ~ 3800 2850
-Text Notes 3250 2500 0    50   ~ 0
+	3600 2850 3600 2900
+Connection ~ 4050 2850
+Text Notes 2950 2500 0    50   ~ 0
 Recommended in datasheet.\nPlace these two bypass caps as close to possible on PCB.
 Wire Wire Line
-	3800 2850 4400 2850
+	4050 2850 4400 2850
 Wire Wire Line
 	4300 3650 4400 3650
 Wire Wire Line
@@ -261,30 +248,29 @@ Wire Wire Line
 Wire Wire Line
 	4400 3950 4300 3950
 $Comp
-L Device:R R35
+L Device:R R21
 U 1 1 5C3152A3
-P 2700 3500
-F 0 "R35" V 2600 3500 50  0000 C CNN
-F 1 "470" V 2700 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2630 3500 50  0001 C CNN
-F 3 "~" H 2700 3500 50  0001 C CNN
-	1    2700 3500
+P 2800 3500
+F 0 "R21" V 2700 3500 50  0000 C CNN
+F 1 "470" V 2800 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2730 3500 50  0001 C CNN
+F 3 "~" H 2800 3500 50  0001 C CNN
+	1    2800 3500
 	-1   0    0    1   
 $EndComp
-Text HLabel 1350 4200 0    50   Input ~ 0
+Text HLabel 1450 4200 0    50   Input ~ 0
 CONTACTOR_EN
 Text Notes 5700 4350 0    50   ~ 0
 Please check footprint and symbol matches!\n1: G\n2: D\n3: S
-NoConn ~ 3200 3950
-NoConn ~ 3200 3650
 $Comp
-L Device:D_ALT D10
+L Device:D_ALT D11
 U 1 1 5C31D45E
 P 5300 3400
-F 0 "D10" V 5254 3479 50  0000 L CNN
-F 1 "1N4148WS" V 5345 3479 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323" H 5300 3400 50  0001 C CNN
-F 3 "~" H 5300 3400 50  0001 C CNN
+F 0 "D11" V 5254 3479 50  0000 L CNN
+F 1 "V2F22HM3/H" V 5345 3479 50  0000 L CNN
+F 2 "UTSVT_Passive:V2F22HM" H 5300 3400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/v2f22-1767661.pdf" H 5300 3400 50  0001 C CNN
+F 4 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/V2F22HM3-H?qs=BJlw7L4Cy78MY7ajCA04cw%3D%3D" V 5300 3400 50  0001 C CNN "Mouser"
 	1    5300 3400
 	0    1    1    0   
 $EndComp
@@ -319,38 +305,38 @@ Wire Wire Line
 	4600 3700 4600 3850
 Connection ~ 4600 3850
 $Comp
-L Device:R R33
+L Device:R R20
 U 1 1 5C381FF3
-P 2250 3350
-F 0 "R33" H 2320 3396 50  0000 L CNN
-F 1 "1.5k" V 2250 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2180 3350 50  0001 C CNN
-F 3 "~" H 2250 3350 50  0001 C CNN
-	1    2250 3350
+P 2350 3350
+F 0 "R20" H 2420 3396 50  0000 L CNN
+F 1 "1.5k" V 2350 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2280 3350 50  0001 C CNN
+F 3 "~" H 2350 3350 50  0001 C CNN
+	1    2350 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 3200 2250 3100
+	2350 3200 2350 3100
 $Comp
-L Device:LED_ALT D11
+L Device:LED_ALT D10
 U 1 1 5C382DF7
-P 2250 3700
-F 0 "D11" V 2300 4000 50  0000 R CNN
-F 1 "ContactorEn" V 2200 4250 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 2250 3700 50  0001 C CNN
-F 3 "~" H 2250 3700 50  0001 C CNN
-F 4 "Green" V 2250 3700 50  0001 C CNN "Color"
-F 5 "APTD2012LCGCK" V 2250 3700 50  0001 C CNN "P/N"
-	1    2250 3700
+P 2350 3700
+F 0 "D10" V 2400 4000 50  0000 R CNN
+F 1 "ContactorEn" V 2300 4250 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 2350 3700 50  0001 C CNN
+F 3 "~" H 2350 3700 50  0001 C CNN
+F 4 "Green" V 2350 3700 50  0001 C CNN "Color"
+F 5 "APTD2012LCGCK" V 2350 3700 50  0001 C CNN "P/N"
+	1    2350 3700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2250 3550 2250 3500
+	2350 3550 2350 3500
 $Comp
-L Device:R R34
+L Device:R R24
 U 1 1 5C3945DD
 P 8700 3400
-F 0 "R34" V 8600 3400 50  0000 C CNN
+F 0 "R24" V 8600 3400 50  0000 C CNN
 F 1 "4.7k" V 8700 3400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 8630 3400 50  0001 C CNN
 F 3 "~" H 8700 3400 50  0001 C CNN
@@ -372,10 +358,10 @@ Connection ~ 9200 3700
 Wire Wire Line
 	9200 3700 9100 3700
 $Comp
-L power:GNDPWR #PWR067
+L power:GNDPWR #PWR054
 U 1 1 5C3F7F9B
 P 5600 4450
-F 0 "#PWR067" H 5600 4250 50  0001 C CNN
+F 0 "#PWR054" H 5600 4250 50  0001 C CNN
 F 1 "GNDPWR" H 5604 4296 50  0000 C CNN
 F 2 "" H 5600 4400 50  0001 C CNN
 F 3 "" H 5600 4400 50  0001 C CNN
@@ -383,21 +369,21 @@ F 3 "" H 5600 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDPWR #PWR061
+L power:GNDPWR #PWR051
 U 1 1 5C3F8405
-P 3350 3300
-F 0 "#PWR061" H 3350 3100 50  0001 C CNN
-F 1 "GNDPWR" H 3354 3146 50  0000 C CNN
-F 2 "" H 3350 3250 50  0001 C CNN
-F 3 "" H 3350 3250 50  0001 C CNN
-	1    3350 3300
+P 3600 3300
+F 0 "#PWR051" H 3600 3100 50  0001 C CNN
+F 1 "GNDPWR" H 3604 3146 50  0000 C CNN
+F 2 "" H 3600 3250 50  0001 C CNN
+F 3 "" H 3600 3250 50  0001 C CNN
+	1    3600 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDPWR #PWR065
+L power:GNDPWR #PWR052
 U 1 1 5C3FD54A
 P 4400 4050
-F 0 "#PWR065" H 4400 3850 50  0001 C CNN
+F 0 "#PWR052" H 4400 3850 50  0001 C CNN
 F 1 "GNDPWR" H 4404 3896 50  0000 C CNN
 F 2 "" H 4400 4000 50  0001 C CNN
 F 3 "" H 4400 4000 50  0001 C CNN
@@ -407,115 +393,104 @@ $EndComp
 Wire Wire Line
 	4600 3850 4800 3850
 Wire Wire Line
-	2700 3100 2250 3100
+	2800 3100 2350 3100
 Wire Wire Line
-	2700 3750 3200 3750
+	2800 3750 3300 3750
 $Comp
 L Device:Q_NMOS_GSD Q?
 U 1 1 5C9B865E
-P 2150 4200
+P 2250 4200
 AR Path="/5C392C6A/5C9B865E" Ref="Q?"  Part="1" 
-AR Path="/5C38C674/5C9B865E" Ref="Q2"  Part="1" 
-F 0 "Q2" H 2355 4246 50  0000 L CNN
-F 1 "NTR4003NT1G" H 2355 4155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2350 4300 50  0001 C CNN
-F 3 "~" H 2150 4200 50  0001 C CNN
-	1    2150 4200
+AR Path="/5C38C674/5C9B865E" Ref="Q1"  Part="1" 
+F 0 "Q1" H 2455 4246 50  0000 L CNN
+F 1 "NTR4003NT1G" H 2455 4155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 4300 50  0001 C CNN
+F 3 "~" H 2250 4200 50  0001 C CNN
+	1    2250 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C9B866F
-P 2250 4700
+P 2350 4700
 AR Path="/5C392C6A/5C9B866F" Ref="#PWR?"  Part="1" 
-AR Path="/5C38C674/5C9B866F" Ref="#PWR068"  Part="1" 
-F 0 "#PWR068" H 2250 4450 50  0001 C CNN
-F 1 "GND" H 2255 4527 50  0000 C CNN
-F 2 "" H 2250 4700 50  0001 C CNN
-F 3 "" H 2250 4700 50  0001 C CNN
-	1    2250 4700
+AR Path="/5C38C674/5C9B866F" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 2350 4450 50  0001 C CNN
+F 1 "GND" H 2355 4527 50  0000 C CNN
+F 2 "" H 2350 4700 50  0001 C CNN
+F 3 "" H 2350 4700 50  0001 C CNN
+	1    2350 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 4700 2250 4600
-Connection ~ 2250 4600
+	2350 4700 2350 4600
+Connection ~ 2350 4600
 Wire Wire Line
-	1350 4200 1450 4200
+	1450 4200 1550 4200
 Wire Wire Line
-	2250 3850 2250 3950
+	2350 3850 2350 3950
 Wire Wire Line
-	2700 3650 2700 3750
+	2800 3650 2800 3750
 Wire Wire Line
-	2700 3100 2700 3350
+	2800 3100 2800 3350
 Wire Wire Line
-	2700 3850 2700 3950
+	2800 3850 2800 3950
 Wire Wire Line
-	2700 3950 2250 3950
+	2800 3950 2350 3950
 Wire Wire Line
-	2700 3850 3200 3850
-Connection ~ 2250 3950
+	2800 3850 3300 3850
+Connection ~ 2350 3950
 Wire Wire Line
-	2250 3950 2250 4000
+	2350 3950 2350 4000
 $Comp
-L power:+5V #PWR060
+L power:+5V #PWR049
 U 1 1 5C3C25EA
-P 2700 3000
-F 0 "#PWR060" H 2700 2850 50  0001 C CNN
-F 1 "+5V" H 2715 3173 50  0000 C CNN
-F 2 "" H 2700 3000 50  0001 C CNN
-F 3 "" H 2700 3000 50  0001 C CNN
-	1    2700 3000
+P 2800 3000
+F 0 "#PWR049" H 2800 2850 50  0001 C CNN
+F 1 "+5V" H 2815 3173 50  0000 C CNN
+F 2 "" H 2800 3000 50  0001 C CNN
+F 3 "" H 2800 3000 50  0001 C CNN
+	1    2800 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 3000 2700 3100
-Connection ~ 2700 3100
+	2800 3000 2800 3100
+Connection ~ 2800 3100
 $Comp
-L Device:R R39
+L Device:R R18
 U 1 1 5C3FA547
-P 1600 4200
-F 0 "R39" V 1500 4200 50  0000 C CNN
-F 1 "0" V 1600 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1530 4200 50  0001 C CNN
-F 3 "~" H 1600 4200 50  0001 C CNN
-	1    1600 4200
+P 1700 4200
+F 0 "R18" V 1600 4200 50  0000 C CNN
+F 1 "0" V 1700 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1630 4200 50  0001 C CNN
+F 3 "~" H 1700 4200 50  0001 C CNN
+	1    1700 4200
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R40
+L Device:R R19
 U 1 1 5C400FAD
-P 1850 4400
-F 0 "R40" H 1900 4400 50  0000 L CNN
-F 1 "10k" V 1850 4300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1780 4400 50  0001 C CNN
-F 3 "~" H 1850 4400 50  0001 C CNN
-	1    1850 4400
+P 1950 4400
+F 0 "R19" H 2000 4400 50  0000 L CNN
+F 1 "10k" V 1950 4300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1880 4400 50  0001 C CNN
+F 3 "~" H 1950 4400 50  0001 C CNN
+	1    1950 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 4400 2250 4600
+	2350 4400 2350 4600
 Wire Wire Line
-	1850 4550 1850 4600
+	1950 4550 1950 4600
 Wire Wire Line
-	1850 4600 2250 4600
-Wire Wire Line
-	1750 4200 1850 4200
-Wire Wire Line
-	1850 4200 1850 4250
-Connection ~ 1850 4200
+	1950 4600 2350 4600
 Wire Wire Line
 	1850 4200 1950 4200
-$Comp
-L BPSMaster-rescue:SI8261ABC-IS-utsvt-bps U11
-U 1 1 5C30F57F
-P 3750 3550
-F 0 "U11" H 3750 2900 50  0000 C CNN
-F 1 "SI8261ABC-IS" H 3750 3000 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3750 3550 50  0001 C CNN
-F 3 "" H 3750 3550 50  0001 C CNN
-	1    3750 3550
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	1950 4200 1950 4250
+Connection ~ 1950 4200
+Wire Wire Line
+	1950 4200 2050 4200
 Wire Wire Line
 	4300 3750 4400 3750
 Wire Wire Line
@@ -524,10 +499,10 @@ Connection ~ 4400 3850
 Wire Wire Line
 	4400 3850 4600 3850
 $Comp
-L power:+12V #PWR058
+L power:+12V #PWR053
 U 1 1 5C30CB9C
 P 5600 2800
-F 0 "#PWR058" H 5600 2650 50  0001 C CNN
+F 0 "#PWR053" H 5600 2650 50  0001 C CNN
 F 1 "+12V" H 5615 2973 50  0000 C CNN
 F 2 "" H 5600 2800 50  0001 C CNN
 F 3 "" H 5600 2800 50  0001 C CNN
@@ -537,10 +512,10 @@ $EndComp
 Wire Wire Line
 	6300 2950 6300 2900
 $Comp
-L power:GNDPWR #PWR059
+L power:GNDPWR #PWR055
 U 1 1 5C3F88F8
 P 6300 2950
-F 0 "#PWR059" H 6300 2750 50  0001 C CNN
+F 0 "#PWR055" H 6300 2750 50  0001 C CNN
 F 1 "GNDPWR" H 6304 2796 50  0000 C CNN
 F 2 "" H 6300 2900 50  0001 C CNN
 F 3 "" H 6300 2900 50  0001 C CNN
@@ -557,14 +532,48 @@ Connection ~ 5600 2900
 Wire Wire Line
 	5800 2900 5600 2900
 $Comp
-L Device:C C25
+L Device:C C23
 U 1 1 5C3F87F6
 P 5950 2900
-F 0 "C25" V 5698 2900 50  0000 C CNN
+F 0 "C23" V 5698 2900 50  0000 C CNN
 F 1 "1u" V 5789 2900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5988 2750 50  0001 C CNN
 F 3 "~" H 5950 2900 50  0001 C CNN
 	1    5950 2900
 	0    1    1    0   
+$EndComp
+Text Notes 900  5350 0    50   ~ 0
+Extra transistor interface present because the Si8261 Isolator requires\n6mA to turn but we wanted an LED indicator on the board to tell\nus the Contactor is on. The max current output of an STM32\npin is 8mA and adding a LED in parallel will exceed the max.
+Text Notes 7850 5250 0    50   ~ 0
+Pins 3 and 4 of the connector for the Contactor are auxillary pins.\nThe AUX pins tells us the state the contactor is in (OPEN/CLOSED).\nWe only need one pin to determine the state. The Clipper Ckt. (2 diodes)\nis to clip/limit the voltage the contactor auxillary pins output.\nThe microcontroller can only accept a max digital voltage input of 5V,\nanything exceeding this could damage the mcu. The clipper ckt will\nprevent the line from exceeding the max.
+Text Notes 8850 4150 0    50   ~ 0
+Contactor AUX pins
+Text Notes 5900 2500 0    50   ~ 0
+Flyback diode is required for any transistor interface\nwith a component that has some type of inductor.\nInductors resist sudden changes in voltages so current\nspikes to compensate. (Think of V=LdI/dt)
+Text Notes 7850 3050 0    50   ~ 0
+May need to add isolator for AUX pins but the previous BPS never had any\nproblems with the auxillary pins of the contactor so... ¯\_(-.- )_/¯
+$Comp
+L utsvt-bps:SI8261ABC-IS U8
+U 1 1 5F12C1AC
+P 3800 3550
+F 0 "U8" H 3800 2900 50  0000 C CNN
+F 1 "SI8261ABC-IS" H 3800 3000 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3800 3550 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/Si826x.pdf" H 3800 3550 50  0001 C CNN
+F 4 "2.2V" H 3800 3550 50  0001 C CNN "Vf"
+F 5 "6mA" H 3800 3550 50  0001 C CNN "If"
+	1    3800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L utsvt-bps:BAS70-04 U9
+U 1 1 5F133A4C
+P 8200 3500
+F 0 "U9" H 8073 3346 50  0000 R CNN
+F 1 "BAS70-04" H 8073 3255 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8650 3500 50  0001 C CNN
+F 3 "" H 8650 3500 50  0001 C CNN
+	1    8200 3500
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
