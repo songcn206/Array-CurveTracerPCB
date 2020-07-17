@@ -207,8 +207,8 @@ L Connector_Generic:Conn_01x02 J?
 U 1 1 5D76E59D
 P 9400 3500
 AR Path="/5C4C7509/5D76E59D" Ref="J?"  Part="1" 
-AR Path="/5D766247/5D76E59D" Ref="J6"  Part="1" 
-F 0 "J6" H 9479 3492 50  0000 L CNN
+AR Path="/5D766247/5D76E59D" Ref="J7"  Part="1" 
+F 0 "J7" H 9479 3492 50  0000 L CNN
 F 1 "MinionConn" H 9479 3401 50  0000 L CNN
 F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 9400 3500 50  0001 C CNN
 F 3 "~" H 9400 3500 50  0001 C CNN
@@ -571,12 +571,12 @@ Voltage/Temperature Brd
 Text Notes 1100 2750 0    50   ~ 0
 VT: Voltage/Temperature\nI: Current (Amperes)
 $Comp
-L Connector_Generic:Conn_01x04 J7
+L Connector_Generic:Conn_01x04 J8
 U 1 1 5F1F64D7
 P 9400 4200
-F 0 "J7" H 9480 4192 50  0000 L CNN
+F 0 "J8" H 9480 4192 50  0000 L CNN
 F 1 "CurrentConn" H 9480 4101 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical" H 9400 4200 50  0001 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 9400 4200 50  0001 C CNN
 F 3 "~" H 9400 4200 50  0001 C CNN
 	1    9400 4200
 	1    0    0    -1  

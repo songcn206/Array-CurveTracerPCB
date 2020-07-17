@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L utsvt-connectors:CANConnector J9
+L utsvt-connectors:CANConnector J10
 U 1 1 5C2B42F3
 P 9250 3800
-F 0 "J9" H 9250 3550 60  0000 C CNN
+F 0 "J10" H 9250 3550 60  0000 C CNN
 F 1 "CAN_Out" H 9250 4050 60  0000 C CNN
 F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 9400 4100 60  0001 C CNN
 F 3 "" H 9400 4100 60  0001 C CNN
@@ -25,37 +25,15 @@ F 3 "" H 9400 4100 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R R28
-U 1 1 5C2B42FA
-P 8200 3550
-F 0 "R28" V 8280 3550 50  0000 C CNN
-F 1 "60" V 8200 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8130 3550 50  0001 C CNN
-F 3 "" H 8200 3550 50  0001 C CNN
-	1    8200 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R27
 U 1 1 5C2B4301
-P 8000 3550
-F 0 "R27" V 8080 3550 50  0000 C CNN
-F 1 "60" V 8000 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7930 3550 50  0001 C CNN
-F 3 "" H 8000 3550 50  0001 C CNN
-	1    8000 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5C2B4308
-P 8100 3250
-F 0 "JP1" H 8100 3330 50  0000 C CNN
-F 1 "Termination Resistors" H 8100 3200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8100 3250 50  0001 C CNN
-F 3 "" H 8100 3250 50  0001 C CNN
-	1    8100 3250
-	-1   0    0    1   
+P 8100 3550
+F 0 "R27" V 8180 3550 50  0000 C CNN
+F 1 "120" V 8100 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8030 3550 50  0001 C CNN
+F 3 "" H 8100 3550 50  0001 C CNN
+	1    8100 3550
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C25
@@ -187,10 +165,10 @@ Text Notes 6550 2900 0    40   ~ 0
 Must be close\nto V_ISO_In
 NoConn ~ 3650 4100
 $Comp
-L power:PWR_FLAG #FLG03
+L power:PWR_FLAG #FLG07
 U 1 1 5C2B4394
 P 7300 3000
-F 0 "#FLG03" H 7300 3075 50  0001 C CNN
+F 0 "#FLG07" H 7300 3075 50  0001 C CNN
 F 1 "PWR_FLAG" H 7300 2900 30  0000 C CNN
 F 2 "" H 7300 3000 50  0001 C CNN
 F 3 "" H 7300 3000 50  0001 C CNN
@@ -198,10 +176,10 @@ F 3 "" H 7300 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG04
+L power:PWR_FLAG #FLG08
 U 1 1 5C2B439A
 P 7300 3200
-F 0 "#FLG04" H 7300 3275 50  0001 C CNN
+F 0 "#FLG08" H 7300 3275 50  0001 C CNN
 F 1 "PWR_FLAG" H 7200 3150 50  0001 L CNN
 F 2 "" H 7300 3200 50  0001 C CNN
 F 3 "" H 7300 3200 50  0001 C CNN
@@ -311,20 +289,12 @@ Wire Notes Line
 	5400 2650 6000 2650
 Wire Notes Line
 	6500 2950 6950 2950
-Wire Wire Line
-	8000 3250 8000 3400
-Wire Wire Line
-	8200 3250 8200 3400
 Connection ~ 5250 3350
 Connection ~ 6150 3550
 Wire Wire Line
 	7300 3200 7300 3150
 Wire Wire Line
 	7300 3050 7300 3000
-Wire Wire Line
-	8000 3850 8000 3700
-Wire Wire Line
-	8200 3950 8200 3700
 Wire Wire Line
 	7750 2900 7550 2900
 Wire Wire Line
@@ -409,16 +379,6 @@ Wire Wire Line
 	2950 3450 2950 3500
 Wire Wire Line
 	2950 3500 3300 3500
-Connection ~ 8000 3850
-Wire Wire Line
-	8000 3850 8900 3850
-Connection ~ 8200 3950
-Wire Wire Line
-	8200 3950 8900 3950
-Wire Wire Line
-	7450 3850 8000 3850
-Wire Wire Line
-	7550 3950 8200 3950
 Wire Wire Line
 	7150 3150 7300 3150
 Connection ~ 7300 3150
@@ -460,10 +420,6 @@ Text Label 5050 3850 0    50   ~ 0
 CAN_H
 Text Label 5050 3950 0    50   ~ 0
 CAN_L
-Text Label 8000 3350 2    50   ~ 0
-TERM_H
-Text Label 8200 3350 0    50   ~ 0
-TERM_L
 Connection ~ 5750 3050
 Wire Wire Line
 	5750 3050 5850 3050
@@ -525,4 +481,22 @@ Wire Wire Line
 	5250 3350 5750 3350
 Text Notes 7600 4250 0    50   ~ 0
 As long as total equals to 120 Ohms,\nthe two termination resistors can be any value
+Wire Wire Line
+	7450 3850 7900 3850
+Wire Wire Line
+	7550 3950 8300 3950
+Wire Wire Line
+	7950 3550 7900 3550
+Wire Wire Line
+	7900 3550 7900 3850
+Connection ~ 7900 3850
+Wire Wire Line
+	7900 3850 8900 3850
+Wire Wire Line
+	8250 3550 8300 3550
+Wire Wire Line
+	8300 3550 8300 3950
+Connection ~ 8300 3950
+Wire Wire Line
+	8300 3950 8900 3950
 $EndSCHEMATC

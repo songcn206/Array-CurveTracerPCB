@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x04 J8
+L Connector_Generic:Conn_01x04 J9
 U 1 1 5C2DA595
 P 10050 3500
-F 0 "J8" H 10200 3500 50  0000 R CNN
+F 0 "J9" H 10200 3500 50  0000 R CNN
 F 1 "ContactorConn" H 10700 3400 50  0000 R CNN
 F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x4xP3.00mm_PolarizingPeg_Vertical" H 10050 3500 50  0001 C CNN
 F 3 "~" H 10050 3500 50  0001 C CNN
