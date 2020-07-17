@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source C:\Users\Sijin\Git\SolarCar\Electronics\BPS\Master\BPSMaster.sch)
-    (date "7/16/2020 10:54:38 PM")
+    (source C:\Users\Sijin\Git\SolarCar\Electronics\BPS\Leader\BPSLeader.sch)
+    (date "7/16/2020 10:58:05 PM")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -9,7 +9,7 @@
         (company)
         (rev)
         (date)
-        (source BPSMaster.sch)
+        (source BPSLeader.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))
@@ -1225,6 +1225,7 @@
       (footprint Package_TO_SOT_SMD:SOT-23)
       (datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/20001889F.pdf)
       (fields
+        (field (name Mouser) https://www.mouser.com/ProductDetail/Microchip-Technology/MCP112T-270E-LB?qs=X7k1PQjaM9f%252Bkma3gOGkcg%3D%3D)
         (field (name Threshold) 2.63))
       (libsource (lib utsvt-bps) (part MCP112) (description "Reset circuitry. Prevents brownouts."))
       (sheetpath (names /Bluetooth/) (tstamps /5F24B488/))

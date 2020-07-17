@@ -114,7 +114,8 @@ F 0 "U18" H 3500 4065 50  0000 C CNN
 F 1 "MCP112" H 3500 3974 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3500 3900 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001889F.pdf" H 3500 3900 50  0001 C CNN
-F 4 "2.63" H 3500 3900 50  0001 C CNN "Threshold"
+F 4 "https://www.mouser.com/ProductDetail/Microchip-Technology/MCP112T-270E-LB?qs=X7k1PQjaM9f%252Bkma3gOGkcg%3D%3D" H 3500 3900 50  0001 C CNN "Mouser"
+F 5 "2.63" H 3500 3900 50  0001 C CNN "Threshold"
 	1    3500 3900
 	1    0    0    -1  
 $EndComp
