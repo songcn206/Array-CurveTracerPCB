@@ -621,13 +621,12 @@ Wire Wire Line
 Wire Wire Line
 	10550 2900 10650 2900
 $Sheet
-S 800  5800 1000 400 
+S 800  5800 1000 300 
 U 5C392C6A
 F0 "LEDs" 50
 F1 "LEDs.sch" 50
 F2 "PC[0..5]" I R 1800 5900 50 
-F3 "PA[5..7]" I R 1800 6000 50 
-F4 "RUN" I R 1800 6100 50 
+F3 "PA[4..7]" I R 1800 6000 50 
 $EndSheet
 Text Notes 8650 1150 0    100  ~ 20
 Bypass Capacitors
@@ -637,7 +636,7 @@ Entry Wire Line
 	4500 4100 4600 4200
 Entry Wire Line
 	4500 4000 4600 4100
-Text Label 4500 4300 2    50   ~ 0
+Text Label 4500 4400 2    50   ~ 0
 PC[0..5]
 Text Label 2300 5900 2    50   ~ 0
 PC[0..5]
@@ -651,16 +650,14 @@ Text Label 7000 3000 2    50   ~ 0
 PA6
 Entry Wire Line
 	7000 3000 7100 2900
-Entry Wire Line
-	7000 2900 7100 2800
-Text Label 7100 2700 0    50   ~ 0
-PA[5..7]
+Text Label 7100 2600 0    50   ~ 0
+PA[4..7]
 Wire Bus Line
 	1800 5900 2300 5900
 Wire Bus Line
 	1800 6000 2300 6000
 Text Label 2300 6000 2    50   ~ 0
-PA[5..7]
+PA[4..7]
 $Comp
 L Mechanical:MountingHole MH1
 U 1 1 5C9FCF93
@@ -713,7 +710,6 @@ NoConn ~ 5100 5500
 NoConn ~ 5100 5400
 NoConn ~ 5100 5300
 NoConn ~ 6500 4300
-NoConn ~ 6500 2800
 NoConn ~ 6500 2500
 $Comp
 L power:PWR_FLAG #FLG01
@@ -744,13 +740,9 @@ Wire Wire Line
 Text Label 2300 4700 2    50   ~ 0
 FAULT
 Wire Wire Line
-	6500 2400 7000 2400
-Text Label 7000 2400 2    50   ~ 0
-RUN
-Wire Wire Line
-	1800 6100 2300 6100
-Text Label 2300 6100 2    50   ~ 0
-RUN
+	5100 4400 4600 4400
+Text Label 4600 4400 0    50   ~ 0
+PC4
 Wire Wire Line
 	4250 3350 4250 3400
 Wire Wire Line
@@ -788,7 +780,6 @@ Wire Wire Line
 Wire Wire Line
 	10550 2600 10650 2600
 NoConn ~ 6500 4800
-NoConn ~ 5100 4400
 Wire Wire Line
 	5100 4500 4600 4500
 Wire Wire Line
@@ -915,21 +906,17 @@ Wire Wire Line
 	9100 4950 8600 4950
 Wire Wire Line
 	9100 5050 8600 5050
-Text Label 8600 4850 0    50   ~ 0
-SPI1_CLK
 Text Label 8600 4950 0    50   ~ 0
 SPI1_MISO
-Text Label 8600 5050 0    50   ~ 0
-SPI1_MOSI
 $Sheet
-S 800  6500 1000 500 
+S 800  6350 1000 500 
 U 5F145F02
 F0 "Fan Board Interface" 50
 F1 "FanBrdInterface.sch" 50
-F2 "PWM1" I R 1800 6600 50 
-F3 "PWM2" I R 1800 6700 50 
-F4 "PWM3" I R 1800 6800 50 
-F5 "PWM4" I R 1800 6900 50 
+F2 "PWM1" I R 1800 6450 50 
+F3 "PWM2" I R 1800 6550 50 
+F4 "PWM3" I R 1800 6650 50 
+F5 "PWM4" I R 1800 6750 50 
 $EndSheet
 Wire Wire Line
 	5100 5000 4600 5000
@@ -989,28 +976,28 @@ TIM12_CH1
 Text Label 7000 5500 2    50   ~ 0
 TIM12_CH2
 Wire Wire Line
-	1800 6600 2300 6600
+	1800 6450 2300 6450
 Wire Wire Line
-	2300 6700 1800 6700
-Text Label 2300 6600 2    50   ~ 0
+	2300 6550 1800 6550
+Text Label 2300 6450 2    50   ~ 0
 TIM3_CH1
-Text Label 2300 6700 2    50   ~ 0
+Text Label 2300 6550 2    50   ~ 0
 TIM3_CH2
 Wire Wire Line
-	1800 6800 2300 6800
+	1800 6650 2300 6650
 Wire Wire Line
-	1800 6900 2300 6900
-Text Label 2300 6800 2    50   ~ 0
+	1800 6750 2300 6750
+Text Label 2300 6650 2    50   ~ 0
 TIM12_CH1
-Text Label 2300 6900 2    50   ~ 0
+Text Label 2300 6750 2    50   ~ 0
 TIM12_CH2
 $Sheet
-S 800  7300 1000 300 
+S 800  7150 1000 300 
 U 5F24B488
 F0 "Bluetooth" 50
 F1 "Bluetooth.sch" 50
-F2 "UART_RX" I R 1800 7400 50 
-F3 "UART_TX" O R 1800 7500 50 
+F2 "UART_RX" I R 1800 7250 50 
+F3 "UART_TX" O R 1800 7350 50 
 $EndSheet
 Wire Wire Line
 	6500 2600 7000 2600
@@ -1021,14 +1008,14 @@ UART2_TX
 Text Label 7000 2700 2    50   ~ 0
 UART2_RX
 Wire Wire Line
-	1800 7400 2300 7400
+	1800 7250 2300 7250
 Wire Wire Line
-	2300 7500 1800 7500
-Text Label 2300 7400 2    50   ~ 0
+	2300 7350 1800 7350
+Text Label 2300 7250 2    50   ~ 0
 UART2_TX
-Text Label 2300 7500 2    50   ~ 0
+Text Label 2300 7350 2    50   ~ 0
 UART2_RX
-Text Notes 2500 7550 0    50   ~ 0
+Text Notes 2500 7400 0    50   ~ 0
 Important note, UART must have these connections:\nSTM RX to IC TX\nSTM TX to IC RX
 Wire Wire Line
 	9100 5400 8600 5400
@@ -1036,12 +1023,8 @@ Wire Wire Line
 	8600 5500 9100 5500
 Wire Wire Line
 	9100 5600 8600 5600
-Text Label 8600 5600 0    50   ~ 0
-SPI3_MOSI
 Text Label 8600 5500 0    50   ~ 0
 SPI3_MISO
-Text Label 8600 5400 0    50   ~ 0
-SPI3_CLK
 $Comp
 L power:GND #PWR014
 U 1 1 5F29C965
@@ -1161,8 +1144,27 @@ F 3 "~" H 9300 5400 50  0001 C CNN
 	1    9300 5400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6500 2800 7000 2800
+Entry Wire Line
+	7000 2800 7100 2700
+Entry Wire Line
+	7000 2900 7100 2800
+Text Label 7000 2800 2    50   ~ 0
+PA4
+Entry Wire Line
+	4500 4300 4600 4400
+NoConn ~ 6500 2400
 Wire Bus Line
-	7100 2700 7100 3000
+	7100 2600 7100 3000
 Wire Bus Line
-	4500 3900 4500 4300
+	4500 3900 4500 4400
+Text Label 8600 5600 0    50   ~ 0
+SPI3_MOSI
+Text Label 8600 5400 0    50   ~ 0
+SPI3_CLK
+Text Label 8600 4850 0    50   ~ 0
+SPI1_CLK
+Text Label 8600 5050 0    50   ~ 0
+SPI1_MOSI
 $EndSCHEMATC
