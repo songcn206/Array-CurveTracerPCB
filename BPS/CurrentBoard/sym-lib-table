@@ -1,3 +1,2 @@
 (sym_lib_table
-  (lib (name CurrentBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/CurrentBoard-rescue.lib)(options "")(descr ""))
 )
