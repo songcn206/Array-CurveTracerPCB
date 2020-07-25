@@ -69,56 +69,6 @@ F 3 "" H 3550 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 4400 3700 4400
-Wire Wire Line
-	3200 5050 3700 5050
-Wire Wire Line
-	3200 3750 3700 3750
-$Comp
-L Transistor_FET:BUK9M34-100EX Q1
-U 1 1 5F0AEA0D
-P 3100 3950
-F 0 "Q1" H 3304 3996 50  0000 L CNN
-F 1 "BUK9M34-100EX" H 3304 3905 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 3875 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 3950 50  0001 L CNN
-	1    3100 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:BUK9M34-100EX Q2
-U 1 1 5F0B1145
-P 3100 4600
-F 0 "Q2" H 3304 4646 50  0000 L CNN
-F 1 "BUK9M34-100EX" H 3304 4555 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 4525 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 4600 50  0001 L CNN
-	1    3100 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:BUK9M34-100EX Q3
-U 1 1 5F0B279A
-P 3100 5250
-F 0 "Q3" H 3304 5296 50  0000 L CNN
-F 1 "BUK9M34-100EX" H 3304 5205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 5175 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 5250 50  0001 L CNN
-	1    3100 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:BUK9M34-100EX Q4
-U 1 1 5F0B2EF7
-P 3100 5900
-F 0 "Q4" H 3304 5946 50  0000 L CNN
-F 1 "BUK9M34-100EX" H 3304 5855 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 5825 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 5900 50  0001 L CNN
-	1    3100 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	3200 4150 3600 4150
 Wire Wire Line
 	3600 4150 3600 4800
@@ -137,64 +87,10 @@ Wire Wire Line
 	3600 4800 3600 5450
 Wire Wire Line
 	3600 6100 3600 6200
-$Comp
-L Diode:C3D25170H D2
-U 1 1 5F0A0D46
-P 3700 4250
-F 0 "D2" V 3700 4350 50  0000 L CNN
-F 1 "C3D25170H" V 3600 4300 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-2_Vertical" H 3700 4075 50  0001 C CNN
-F 3 "https://www.wolfspeed.com/media/downloads/103/C3D25170H.pdf" H 3700 4250 50  0001 C CNN
-	1    3700 4250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3200 5700 3750 5700
-Connection ~ 3700 4400
-Wire Wire Line
-	3700 4400 4050 4400
-$Comp
-L Diode:C3D25170H D1
-U 1 1 5F0A355E
-P 3700 3600
-F 0 "D1" V 3700 3700 50  0000 L CNN
-F 1 "C3D25170H" V 3600 3650 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-2_Vertical" H 3700 3425 50  0001 C CNN
-F 3 "https://www.wolfspeed.com/media/downloads/103/C3D25170H.pdf" H 3700 3600 50  0001 C CNN
-	1    3700 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:C3D25170H D3
-U 1 1 5F0A37E3
-P 3700 4900
-F 0 "D3" V 3700 5000 50  0000 L CNN
-F 1 "C3D25170H" V 3600 4950 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-2_Vertical" H 3700 4725 50  0001 C CNN
-F 3 "https://www.wolfspeed.com/media/downloads/103/C3D25170H.pdf" H 3700 4900 50  0001 C CNN
-	1    3700 4900
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:C3D25170H D4
-U 1 1 5F0A3942
-P 3750 5550
-F 0 "D4" V 3750 5650 50  0000 L CNN
-F 1 "C3D25170H" V 3650 5600 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-2_Vertical" H 3750 5375 50  0001 C CNN
-F 3 "https://www.wolfspeed.com/media/downloads/103/C3D25170H.pdf" H 3750 5550 50  0001 C CNN
-	1    3750 5550
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4050 5600 3950 5600
 Wire Wire Line
 	3950 5600 3950 5400
-Wire Wire Line
-	3950 3450 3700 3450
-Connection ~ 3700 3450
-Wire Wire Line
-	3700 3450 3550 3450
 Wire Wire Line
 	4050 3650 3950 3650
 Connection ~ 3950 3650
@@ -225,15 +121,6 @@ Wire Wire Line
 Connection ~ 3950 5400
 Wire Wire Line
 	3950 5400 3950 4950
-Connection ~ 3700 3750
-Wire Wire Line
-	3700 3750 4050 3750
-Connection ~ 3700 5050
-Wire Wire Line
-	3700 5050 4050 5050
-Connection ~ 3750 5700
-Wire Wire Line
-	3750 5700 4050 5700
 Wire Wire Line
 	2900 3950 2550 3950
 Wire Wire Line
@@ -332,4 +219,117 @@ F 3 "" H 3600 6150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	850  4750 1100 4750
+$Comp
+L Transistor_FET:BUK9M34-100EX Q4
+U 1 1 5F0B2EF7
+P 3100 5900
+F 0 "Q4" H 3304 5946 50  0000 L CNN
+F 1 "BUK9M34-100EX" H 3304 5855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 5825 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 5900 50  0001 L CNN
+	1    3100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BUK9M34-100EX Q3
+U 1 1 5F0B279A
+P 3100 5250
+F 0 "Q3" H 3304 5296 50  0000 L CNN
+F 1 "BUK9M34-100EX" H 3304 5205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 5175 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 5250 50  0001 L CNN
+	1    3100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BUK9M34-100EX Q2
+U 1 1 5F0B1145
+P 3100 4600
+F 0 "Q2" H 3304 4646 50  0000 L CNN
+F 1 "BUK9M34-100EX" H 3304 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 4525 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 4600 50  0001 L CNN
+	1    3100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BUK9M34-100EX Q1
+U 1 1 5F0AEA0D
+P 3100 3950
+F 0 "Q1" H 3304 3996 50  0000 L CNN
+F 1 "BUK9M34-100EX" H 3304 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 3300 3875 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK9M34-100E.pdf" V 3100 3950 50  0001 L CNN
+	1    3100 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5700 4050 5700
+Wire Wire Line
+	3200 5700 3750 5700
+Connection ~ 3750 5700
+$Comp
+L Diode:C3D25170H D4
+U 1 1 5F0A3942
+P 3750 5550
+F 0 "D4" V 3750 5650 50  0000 L CNN
+F 1 "V22F22HM3" V 3650 5600 50  0000 L CNN
+F 2 "UTSVT_BPS:V2F22HM" H 3750 5375 50  0001 C CNN
+F 3 "https://www.wolfspeed.com/media/downloads/103/C3D25170H.pdf" H 3750 5550 50  0001 C CNN
+	1    3750 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 5050 4050 5050
+Wire Wire Line
+	3200 5050 3700 5050
+Connection ~ 3700 5050
+$Comp
+L Diode:C3D25170H D3
+U 1 1 5F0A37E3
+P 3700 4900
+F 0 "D3" V 3700 5000 50  0000 L CNN
+F 1 "V22F22HM3" V 3600 4950 50  0000 L CNN
+F 2 "UTSVT_BPS:V2F22HM" H 3700 4725 50  0001 C CNN
+F 3 "https://www.wolfspeed.com/media/downloads/103/C3D25170H.pdf" H 3700 4900 50  0001 C CNN
+	1    3700 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 4400 4050 4400
+Wire Wire Line
+	3200 4400 3700 4400
+Connection ~ 3700 4400
+$Comp
+L Diode:C3D25170H D2
+U 1 1 5F0A0D46
+P 3700 4250
+F 0 "D2" V 3700 4350 50  0000 L CNN
+F 1 "V22F22HM3" V 3600 4300 50  0000 L CNN
+F 2 "UTSVT_BPS:V2F22HM" H 3700 4075 50  0001 C CNN
+F 3 "https://www.wolfspeed.com/media/downloads/103/C3D25170H.pdf" H 3700 4250 50  0001 C CNN
+	1    3700 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 3750 4050 3750
+Wire Wire Line
+	3200 3750 3700 3750
+Connection ~ 3700 3750
+Wire Wire Line
+	3700 3450 3550 3450
+Wire Wire Line
+	3950 3450 3700 3450
+Connection ~ 3700 3450
+$Comp
+L Diode:C3D25170H D1
+U 1 1 5F0A355E
+P 3700 3600
+F 0 "D1" V 3700 3700 50  0000 L CNN
+F 1 "V22F22HM3" V 3600 3650 50  0000 L CNN
+F 2 "UTSVT_BPS:V2F22HM" H 3700 3425 50  0001 C CNN
+F 3 "https://www.wolfspeed.com/media/downloads/103/C3D25170H.pdf" H 3700 3600 50  0001 C CNN
+	1    3700 3600
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
