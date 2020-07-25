@@ -499,4 +499,14 @@ Wire Wire Line
 Connection ~ 8300 3950
 Wire Wire Line
 	8300 3950 8900 3950
+Wire Notes Line
+	4250 2500 4250 4750
+Text Notes 3900 2300 0    100  ~ 20
+ISOLATED
+Text Notes 3100 4500 0    50   ~ 0
+Local (Leader Board) GND
+Text Notes 4400 4500 0    50   ~ 0
+CAN GND (Different from Power GND)
+Text Notes 3500 5150 0    50   ~ 0
+Isolated CAN transceiver. This connects\nto the main electrical system's CAN bus.\nLook in datasheet for more information\nabout this page.
 $EndSCHEMATC

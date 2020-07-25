@@ -666,4 +666,10 @@ F 3 "https://www.mouser.com/datasheet/2/336/HX1188NL-515471.pdf" H 8100 3400 50 
 	1    8100 3400
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	8100 5250 8100 2250
+Text Notes 7750 2150 0    100  ~ 20
+ISOLATED
+Text Notes 2650 1900 0    50   ~ 10
+4-wire SPI to 2-wire Isolated SPI Converter ICs
 $EndSCHEMATC

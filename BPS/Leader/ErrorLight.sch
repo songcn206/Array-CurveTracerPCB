@@ -26,7 +26,7 @@ F 3 "~" H 7350 3400 50  0001 C CNN
 	1    7350 3400
 	1    0    0    -1  
 $EndComp
-Text Notes 5900 2650 0    100  ~ 20
+Text Notes 3350 1800 0    100  ~ 20
 Error Light
 $Comp
 L Device:R R?
@@ -46,78 +46,76 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR?
 U 1 1 5D930954
-P 5050 2900
+P 6650 2700
 AR Path="/5C392C6A/5D930954" Ref="#PWR?"  Part="1" 
 AR Path="/5D923D59/5D930954" Ref="#PWR068"  Part="1" 
-F 0 "#PWR068" H 5050 2750 50  0001 C CNN
-F 1 "+12V" H 5065 3073 50  0000 C CNN
-F 2 "" H 5050 2900 50  0001 C CNN
-F 3 "" H 5050 2900 50  0001 C CNN
-	1    5050 2900
-	1    0    0    -1  
+F 0 "#PWR068" H 6650 2550 50  0001 C CNN
+F 1 "+12V" H 6665 2873 50  0000 C CNN
+F 2 "" H 6650 2700 50  0001 C CNN
+F 3 "" H 6650 2700 50  0001 C CNN
+	1    6650 2700
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5D93095A
-P 5050 3150
+P 6650 2950
 AR Path="/5C392C6A/5D93095A" Ref="C?"  Part="1" 
 AR Path="/5D923D59/5D93095A" Ref="C33"  Part="1" 
-F 0 "C33" H 5165 3196 50  0000 L CNN
-F 1 "10u" H 5165 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5088 3000 50  0001 C CNN
-F 3 "~" H 5050 3150 50  0001 C CNN
-	1    5050 3150
-	1    0    0    -1  
+F 0 "C33" H 6765 2996 50  0000 L CNN
+F 1 "10u" H 6765 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6688 2800 50  0001 C CNN
+F 3 "~" H 6650 2950 50  0001 C CNN
+	1    6650 2950
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 5D930960
-P 5050 3400
+P 6650 3200
 AR Path="/5C392C6A/5D930960" Ref="#PWR?"  Part="1" 
 AR Path="/5D923D59/5D930960" Ref="#PWR069"  Part="1" 
-F 0 "#PWR069" H 5050 3200 50  0001 C CNN
-F 1 "GNDPWR" H 5054 3246 50  0000 C CNN
-F 2 "" H 5050 3350 50  0001 C CNN
-F 3 "" H 5050 3350 50  0001 C CNN
-	1    5050 3400
-	1    0    0    -1  
+F 0 "#PWR069" H 6650 3000 50  0001 C CNN
+F 1 "GNDPWR" H 6654 3046 50  0000 C CNN
+F 2 "" H 6650 3150 50  0001 C CNN
+F 3 "" H 6650 3150 50  0001 C CNN
+	1    6650 3200
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 3300 5050 3350
+	6650 3100 6650 3150
 Wire Wire Line
-	5050 2900 5050 2950
+	6650 2700 6650 2750
 $Comp
 L Device:C C?
 U 1 1 5D930968
-P 5500 3150
+P 6200 2950
 AR Path="/5C392C6A/5D930968" Ref="C?"  Part="1" 
 AR Path="/5D923D59/5D930968" Ref="C34"  Part="1" 
-F 0 "C34" H 5615 3196 50  0000 L CNN
-F 1 "0.1u" H 5615 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5538 3000 50  0001 C CNN
-F 3 "~" H 5500 3150 50  0001 C CNN
-	1    5500 3150
-	1    0    0    -1  
+F 0 "C34" H 6315 2996 50  0000 L CNN
+F 1 "0.1u" H 6315 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6238 2800 50  0001 C CNN
+F 3 "~" H 6200 2950 50  0001 C CNN
+	1    6200 2950
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 3300 5500 3350
+	6200 3100 6200 3150
 Wire Wire Line
-	5500 3350 5050 3350
-Connection ~ 5050 3350
+	6200 3150 6650 3150
+Connection ~ 6650 3150
 Wire Wire Line
-	5050 3350 5050 3400
+	6650 3150 6650 3200
 Wire Wire Line
-	5500 3000 5500 2950
+	6200 2800 6200 2750
 Wire Wire Line
-	5500 2950 5050 2950
-Connection ~ 5050 2950
+	6200 2750 6650 2750
+Connection ~ 6650 2750
 Wire Wire Line
-	5050 2950 5050 3000
+	6650 2750 6650 2800
 Wire Wire Line
 	5750 3750 5850 3750
-Wire Wire Line
-	5850 3750 5850 2950
-Connection ~ 5500 2950
+Connection ~ 6200 2750
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 5D93097A
@@ -424,7 +422,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 2950 7050 3400
 Wire Wire Line
-	5850 2950 5500 2950
+	5850 2750 6200 2750
 $Comp
 L utsvt-bps:SI8261ABC-IS U12
 U 1 1 5F13FC4D
@@ -449,4 +447,16 @@ F 3 "~" H 6950 3950 50  0001 C CNN
 	1    6950 3950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5850 2750 5850 3750
+Wire Notes Line
+	5250 5200 5250 2250
+Text Notes 2300 5650 0    50   ~ 0
+Extra transistor interface present because the Si8261 Isolator requires\n6mA to turn but we wanted an LED indicator on the board to tell\nus the Contactor is on. The max current output of an STM32\npin is 8mA and adding a LED in parallel will exceed the max.
+Text Notes 4900 2100 0    100  ~ 20
+ISOLATED
+Text Notes 4100 2550 0    50   ~ 0
+Local (Leader Board) GND\n(Internal)
+Text Notes 5400 2550 0    50   ~ 0
+Power GND\n(External)
 $EndSCHEMATC

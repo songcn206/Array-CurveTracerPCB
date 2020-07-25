@@ -362,14 +362,14 @@ Connection ~ 4900 3700
 Connection ~ 5800 3700
 Wire Wire Line
 	5800 3700 6600 3700
-Wire Bus Line
-	3500 2500 4800 2500
-Wire Bus Line
-	5900 2500 8300 2500
 Entry Wire Line
 	5800 2600 5900 2500
 Text Label 5800 2600 3    50   ~ 0
 PC4
 Text Notes 5400 3850 0    50   ~ 0
 Heartbeat LED Green!!
+Wire Bus Line
+	3500 2500 4800 2500
+Wire Bus Line
+	5900 2500 8300 2500
 $EndSCHEMATC
