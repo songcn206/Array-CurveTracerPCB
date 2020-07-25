@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\manth\Documents\GitHub\Electronics\BPS\FanBoard\FanBoard.sch)
-    (date "24/07/2020 21:53:09")
+    (date "25/07/2020 16:39:51")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -45,6 +45,7 @@
       (tstamp 5F092946))
     (comp (ref J5)
       (value LDRBRDConn)
+      (footprint Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_02x03_Counter_Clockwise) (description "Generic connector, double row, 02x03, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
