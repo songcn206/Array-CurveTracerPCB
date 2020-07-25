@@ -1,4 +1,4 @@
-18720936608805339
+18722532284612866
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81609,6 +81609,13 @@ UTSVT_Passive
 CP_Radial_D31mm_P9mm
 
 
+0
+2
+2
+UTSVT_Passive
+C_2220_5750Metric
+Capacitor SMD 2220In_5750Metrix
+Capacitor, 5750
 0
 2
 2

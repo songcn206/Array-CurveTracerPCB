@@ -1166,10 +1166,10 @@ SPI1_MOSI
 Text Notes 5950 6800 0    50   ~ 10
 Graphics/Logos
 $Comp
-L utsvt-misc:Logo_Placeholder LOGO2
+L utsvt-misc:Logo_Placeholder LOGO1
 U 1 1 5F2CE831
 P 6250 7000
-F 0 "LOGO2" H 6250 7150 50  0001 C CNN
+F 0 "LOGO1" H 6250 7150 50  0001 C CNN
 F 1 "Dr. Hallock" H 6390 7000 50  0000 L CNN
 F 2 "UTSVT_Special:Hallock_Image_Small" H 6250 7075 50  0001 C CNN
 F 3 "" H 6250 7075 50  0001 C CNN
@@ -1177,10 +1177,10 @@ F 3 "" H 6250 7075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L utsvt-misc:Logo_Placeholder LOGO3
+L utsvt-misc:Logo_Placeholder LOGO2
 U 1 1 5F2D0A96
 P 6250 7350
-F 0 "LOGO3" H 6250 7500 50  0001 C CNN
+F 0 "LOGO2" H 6250 7500 50  0001 C CNN
 F 1 "UTSVT Logo" H 6390 7350 50  0000 L CNN
 F 2 "UTSVT_Special:UTSVT_Logo_Symbol" H 6250 7425 50  0001 C CNN
 F 3 "" H 6250 7425 50  0001 C CNN
