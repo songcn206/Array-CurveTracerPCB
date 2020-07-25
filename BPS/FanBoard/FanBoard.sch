@@ -19,7 +19,7 @@ U 1 1 5F091D5D
 P 4250 3650
 F 0 "J1" H 4330 3642 50  0000 L CNN
 F 1 "Conn_01x02" H 4330 3551 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4250 3650 50  0001 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 3650 50  0001 C CNN
 F 3 "~" H 4250 3650 50  0001 C CNN
 	1    4250 3650
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5F09203F
 P 4250 4300
 F 0 "J2" H 4330 4292 50  0000 L CNN
 F 1 "Conn_01x02" H 4330 4201 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4250 4300 50  0001 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 4300 50  0001 C CNN
 F 3 "~" H 4250 4300 50  0001 C CNN
 	1    4250 4300
 	1    0    0    -1  
@@ -41,7 +41,7 @@ U 1 1 5F092588
 P 4250 4950
 F 0 "J3" H 4330 4942 50  0000 L CNN
 F 1 "Conn_01x02" H 4330 4851 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4250 4950 50  0001 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 4950 50  0001 C CNN
 F 3 "~" H 4250 4950 50  0001 C CNN
 	1    4250 4950
 	1    0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 5F092946
 P 4250 5600
 F 0 "J4" H 4330 5592 50  0000 L CNN
 F 1 "Conn_01x02" H 4330 5501 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4250 5600 50  0001 C CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 5600 50  0001 C CNN
 F 3 "~" H 4250 5600 50  0001 C CNN
 	1    4250 5600
 	1    0    0    -1  
@@ -270,36 +270,62 @@ Wire Wire Line
 Wire Wire Line
 	2500 5100 2300 5100
 $Comp
-L Connector_Generic:Conn_01x06 J5
-U 1 1 5F1BB034
-P 2100 5000
-F 0 "J5" H 2350 4950 50  0000 C CNN
-F 1 "Conn_01x06" H 2400 4800 50  0000 C CNN
-F 2 "" H 2100 5000 50  0001 C CNN
-F 3 "~" H 2100 5000 50  0001 C CNN
-	1    2100 5000
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+12V #PWR03
 U 1 1 5F1BC556
-P 2300 4700
-F 0 "#PWR03" H 2300 4550 50  0001 C CNN
-F 1 "+12V" H 2315 4873 50  0000 C CNN
-F 2 "" H 2300 4700 50  0001 C CNN
-F 3 "" H 2300 4700 50  0001 C CNN
-	1    2300 4700
+P 1250 4800
+F 0 "#PWR03" H 1250 4650 50  0001 C CNN
+F 1 "+12V" H 1265 4973 50  0000 C CNN
+F 2 "" H 1250 4800 50  0001 C CNN
+F 3 "" H 1250 4800 50  0001 C CNN
+	1    1250 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
-U 1 1 5F1BCBA1
-P 2300 5200
-F 0 "#PWR04" H 2300 4950 50  0001 C CNN
-F 1 "GND" H 2305 5027 50  0000 C CNN
-F 2 "" H 2300 5200 50  0001 C CNN
-F 3 "" H 2300 5200 50  0001 C CNN
-	1    2300 5200
+L Connector_Generic:Conn_02x03_Counter_Clockwise J5
+U 1 1 5F1BA642
+P 1650 4900
+F 0 "J5" H 1700 5250 50  0000 C CNN
+F 1 "LDRBRDConn" H 1700 5150 50  0000 C CNN
+F 2 "" H 1650 4900 50  0001 C CNN
+F 3 "~" H 1650 4900 50  0001 C CNN
+	1    1650 4900
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GNDPWR #PWR04
+U 1 1 5F1BB28B
+P 1950 5000
+F 0 "#PWR04" H 1950 4800 50  0001 C CNN
+F 1 "GNDPWR" H 1954 4846 50  0000 C CNN
+F 2 "" H 1950 4950 50  0001 C CNN
+F 3 "" H 1950 4950 50  0001 C CNN
+	1    1950 5000
+	1    0    0    -1  
+$EndComp
+Text Label 2300 4800 0    50   ~ 0
+FAN1
+Text Label 2300 4900 0    50   ~ 0
+FAN2
+Text Label 2300 5000 0    50   ~ 0
+FAN3
+Text Label 2300 5100 0    50   ~ 0
+FAN4
+Text Label 1250 4900 0    50   ~ 0
+FAN1
+Text Label 1250 5000 0    50   ~ 0
+FAN2
+Text Label 2150 4800 2    50   ~ 0
+FAN3
+Text Label 2150 4900 2    50   ~ 0
+FAN4
+Wire Wire Line
+	1450 4900 1250 4900
+Wire Wire Line
+	1450 5000 1250 5000
+Wire Wire Line
+	1950 4800 2150 4800
+Wire Wire Line
+	1950 4900 2150 4900
+Wire Wire Line
+	1250 4800 1450 4800
 $EndSCHEMATC
