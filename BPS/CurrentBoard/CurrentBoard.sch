@@ -754,11 +754,11 @@ F 3 "" H 1600 6000 50  0001 C CNN
 	1    1600 6000
 	1    0    0    -1  
 $EndComp
-Text Label 1600 5650 2    50   ~ 0
+Text Label 1600 5850 2    50   ~ 0
 RSHH
 Text Label 1600 5750 2    50   ~ 0
 RSHL
-Text Label 1600 5850 2    50   ~ 0
+Text Label 1600 5650 2    50   ~ 0
 ETS
 $Comp
 L Mechanical:MountingHole H3
