@@ -157,17 +157,6 @@ F 3 "" H 850 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J5
-U 1 1 5F1BA642
-P 1300 4850
-F 0 "J5" H 1350 5200 50  0000 C CNN
-F 1 "LDRBRDConn" H 1350 5100 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical" H 1300 4850 50  0001 C CNN
-F 3 "~" H 1300 4850 50  0001 C CNN
-	1    1300 4850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDPWR #PWR04
 U 1 1 5F1BB28B
 P 1650 5050
@@ -331,5 +320,60 @@ F 2 "UTSVT_BPS:V2F22HM" H 3700 3425 50  0001 C CNN
 F 3 "https://www.wolfspeed.com/media/downloads/103/C3D25170H.pdf" H 3700 3600 50  0001 C CNN
 	1    3700 3600
 	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F1DFA7F
+P 5300 3650
+F 0 "H1" H 5400 3696 50  0000 L CNN
+F 1 "MountingHole" H 5400 3605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 5300 3650 50  0001 C CNN
+F 3 "~" H 5300 3650 50  0001 C CNN
+	1    5300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F1E031B
+P 5300 3950
+F 0 "H2" H 5400 3996 50  0000 L CNN
+F 1 "MountingHole" H 5400 3905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 5300 3950 50  0001 C CNN
+F 3 "~" H 5300 3950 50  0001 C CNN
+	1    5300 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F1E06E8
+P 5300 4250
+F 0 "H3" H 5400 4296 50  0000 L CNN
+F 1 "MountingHole" H 5400 4205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 5300 4250 50  0001 C CNN
+F 3 "~" H 5300 4250 50  0001 C CNN
+	1    5300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F1E0A9F
+P 5300 4600
+F 0 "H4" H 5400 4646 50  0000 L CNN
+F 1 "MountingHole" H 5400 4555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 5300 4600 50  0001 C CNN
+F 3 "~" H 5300 4600 50  0001 C CNN
+	1    5300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Top_Bottom J5
+U 1 1 5F1EEC57
+P 1300 4850
+F 0 "J5" H 1350 5167 50  0000 C CNN
+F 1 "LDRBRDConn" H 1350 5076 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical" H 1300 4850 50  0001 C CNN
+F 3 "~" H 1300 4850 50  0001 C CNN
+	1    1300 4850
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
