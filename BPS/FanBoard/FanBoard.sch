@@ -14,50 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5F091D5D
-P 4250 3650
-F 0 "J1" H 4330 3642 50  0000 L CNN
-F 1 "Conn_01x02" H 4330 3551 50  0000 L CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 3650 50  0001 C CNN
-F 3 "~" H 4250 3650 50  0001 C CNN
-	1    4250 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5F09203F
-P 4250 4300
-F 0 "J2" H 4330 4292 50  0000 L CNN
-F 1 "Conn_01x02" H 4330 4201 50  0000 L CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 4300 50  0001 C CNN
-F 3 "~" H 4250 4300 50  0001 C CNN
-	1    4250 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5F092588
-P 4250 4950
-F 0 "J3" H 4330 4942 50  0000 L CNN
-F 1 "Conn_01x02" H 4330 4851 50  0000 L CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 4950 50  0001 C CNN
-F 3 "~" H 4250 4950 50  0001 C CNN
-	1    4250 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 5F092946
-P 4250 5600
-F 0 "J4" H 4330 5592 50  0000 L CNN
-F 1 "Conn_01x02" H 4330 5501 50  0000 L CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 5600 50  0001 C CNN
-F 3 "~" H 4250 5600 50  0001 C CNN
-	1    4250 5600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR01
 U 1 1 5F093D32
 P 3550 3450
@@ -366,14 +322,91 @@ F 3 "~" H 5300 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Top_Bottom J5
+L Connector_Generic:Conn_02x03_Top_Bottom LDRBRDConn1
 U 1 1 5F1EEC57
 P 1300 4850
-F 0 "J5" H 1350 5167 50  0000 C CNN
-F 1 "LDRBRDConn" H 1350 5076 50  0000 C CNN
+F 0 "LDRBRDConn1" H 1350 5167 50  0000 C CNN
+F 1 "Conn_02x03" H 1350 5076 50  0000 C CNN
 F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical" H 1300 4850 50  0001 C CNN
 F 3 "~" H 1300 4850 50  0001 C CNN
 	1    1300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED STATUS1
+U 1 1 5F1F72F0
+P 5250 5350
+F 0 "STATUS1" V 5197 5430 50  0000 L CNN
+F 1 "LED" V 5288 5430 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5250 5350 50  0001 C CNN
+F 3 "~" H 5250 5350 50  0001 C CNN
+	1    5250 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR02
+U 1 1 5F1F79F1
+P 5250 5200
+F 0 "#PWR02" H 5250 5050 50  0001 C CNN
+F 1 "+12V" H 5265 5373 50  0000 C CNN
+F 2 "" H 5250 5200 50  0001 C CNN
+F 3 "" H 5250 5200 50  0001 C CNN
+	1    5250 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR05
+U 1 1 5F1F7EC5
+P 5250 5500
+F 0 "#PWR05" H 5250 5300 50  0001 C CNN
+F 1 "GNDPWR" H 5254 5346 50  0000 C CNN
+F 2 "" H 5250 5450 50  0001 C CNN
+F 3 "" H 5250 5450 50  0001 C CNN
+	1    5250 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 FAN4
+U 1 1 5F092946
+P 4250 5600
+F 0 "FAN4" H 4330 5592 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 5501 50  0000 L CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 5600 50  0001 C CNN
+F 3 "~" H 4250 5600 50  0001 C CNN
+	1    4250 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 FAN3
+U 1 1 5F092588
+P 4250 4950
+F 0 "FAN3" H 4330 4942 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 4851 50  0000 L CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 4950 50  0001 C CNN
+F 3 "~" H 4250 4950 50  0001 C CNN
+	1    4250 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 FAN2
+U 1 1 5F09203F
+P 4250 4300
+F 0 "FAN2" H 4330 4292 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 4201 50  0000 L CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 4300 50  0001 C CNN
+F 3 "~" H 4250 4300 50  0001 C CNN
+	1    4250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 FAN1
+U 1 1 5F091D5D
+P 4250 3650
+F 0 "FAN1" H 4330 3642 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 3551 50  0000 L CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 4250 3650 50  0001 C CNN
+F 3 "~" H 4250 3650 50  0001 C CNN
+	1    4250 3650
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
