@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 10
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -13,6 +13,19 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5D93093E
+P 7350 3450
+AR Path="/5C392C6A/5D93093E" Ref="J?"  Part="1" 
+AR Path="/5D923D59/5D93093E" Ref="J9"  Part="1" 
+F 0 "J9" H 7430 3442 50  0000 L CNN
+F 1 "ErrorLightConnector" H 7430 3351 50  0000 L CNN
+F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x2xP3.00mm_PolarizingPeg_Vertical" H 7350 3450 50  0001 C CNN
+F 3 "~" H 7350 3450 50  0001 C CNN
+	1    7350 3450
+	1    0    0    -1  
+$EndComp
 Text Notes 5900 2650 0    100  ~ 20
 Error Light
 $Comp
@@ -142,15 +155,15 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR?
 U 1 1 5D930982
-P 7050 2650
+P 7050 2900
 AR Path="/5C38C674/5D930982" Ref="#PWR?"  Part="1" 
 AR Path="/5C392C6A/5D930982" Ref="#PWR?"  Part="1" 
 AR Path="/5D923D59/5D930982" Ref="#PWR073"  Part="1" 
-F 0 "#PWR073" H 7050 2500 50  0001 C CNN
-F 1 "+12V" H 7065 2823 50  0000 C CNN
-F 2 "" H 7050 2650 50  0001 C CNN
-F 3 "" H 7050 2650 50  0001 C CNN
-	1    7050 2650
+F 0 "#PWR073" H 7050 2750 50  0001 C CNN
+F 1 "+12V" H 7065 3073 50  0000 C CNN
+F 2 "" H 7050 2900 50  0001 C CNN
+F 3 "" H 7050 2900 50  0001 C CNN
+	1    7050 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -279,37 +292,39 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5D9309C2
-P 6700 3000
+P 7400 3000
 AR Path="/5C38C674/5D9309C2" Ref="C?"  Part="1" 
 AR Path="/5C392C6A/5D9309C2" Ref="C?"  Part="1" 
 AR Path="/5D923D59/5D9309C2" Ref="C37"  Part="1" 
-F 0 "C37" V 6448 3000 50  0000 C CNN
-F 1 "1uF" V 6539 3000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6738 2850 50  0001 C CNN
-F 3 "~" H 6700 3000 50  0001 C CNN
-	1    6700 3000
-	0    -1   1    0   
+F 0 "C37" V 7148 3000 50  0000 C CNN
+F 1 "1uF" V 7239 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7438 2850 50  0001 C CNN
+F 3 "~" H 7400 3000 50  0001 C CNN
+	1    7400 3000
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 5D9309C8
-P 6350 3050
+P 7750 3050
 AR Path="/5C38C674/5D9309C8" Ref="#PWR?"  Part="1" 
 AR Path="/5C392C6A/5D9309C8" Ref="#PWR?"  Part="1" 
 AR Path="/5D923D59/5D9309C8" Ref="#PWR074"  Part="1" 
-F 0 "#PWR074" H 6350 2850 50  0001 C CNN
-F 1 "GNDPWR" H 6354 2896 50  0000 C CNN
-F 2 "" H 6350 3000 50  0001 C CNN
-F 3 "" H 6350 3000 50  0001 C CNN
-	1    6350 3050
-	-1   0    0    -1  
+F 0 "#PWR074" H 7750 2850 50  0001 C CNN
+F 1 "GNDPWR" H 7754 2896 50  0000 C CNN
+F 2 "" H 7750 3000 50  0001 C CNN
+F 3 "" H 7750 3000 50  0001 C CNN
+	1    7750 3050
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6350 3050 6350 3000
+	7750 3050 7750 3000
 Wire Wire Line
-	6350 3000 6550 3000
+	7750 3000 7550 3000
 Wire Wire Line
-	6850 3000 7050 3000
+	7050 2900 7050 3000
+Wire Wire Line
+	7250 3000 7050 3000
 Connection ~ 7050 3000
 Wire Wire Line
 	7050 3000 7050 3300
@@ -466,37 +481,4 @@ Wire Wire Line
 Connection ~ 5850 3950
 Wire Wire Line
 	5850 3950 6050 3950
-$Comp
-L Connector_Generic:Conn_01x03 J9
-U 1 1 5EF1892A
-P 7350 3450
-F 0 "J9" H 7430 3492 50  0000 L CNN
-F 1 "ErrorLightConnector" H 7430 3401 50  0000 L CNN
-F 2 "UTSVT_Connectors:Molex_MicroFit3.0_1x3xP3.00mm_PolarizingPeg_Vertical" H 7350 3450 50  0001 C CNN
-F 3 "~" H 7350 3450 50  0001 C CNN
-	1    7350 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 3350 7150 3250
-$Comp
-L Switch:SW_Push SW3
-U 1 1 5EF1C7EF
-P 7150 3050
-F 0 "SW3" V 7104 3198 50  0000 L CNN
-F 1 "SW_Push" V 7195 3198 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3SL-1002P" H 7150 3250 50  0001 C CNN
-F 3 "~" H 7150 3250 50  0001 C CNN
-	1    7150 3050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7050 2850 7150 2850
-Wire Wire Line
-	7050 2850 7050 3000
-Wire Wire Line
-	7050 2850 7050 2650
-Connection ~ 7050 2850
-Text Notes 7300 2950 0    50   ~ 0
-Changes pulse type
 $EndSCHEMATC

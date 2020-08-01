@@ -148,7 +148,7 @@ LowPrec
 Text Notes 6650 2650 0    50   ~ 0
 The ADC has low impedence so buffer op-amp will prevent weird measurement deviations.
 $Comp
-L BPSMaster-rescue:LTC6256-utsvt-bps U5
+L utsvt-bps:LTC6256 U5
 U 1 1 5E3224B6
 P 3450 2850
 F 0 "U5" H 3200 3150 50  0000 C CNN
