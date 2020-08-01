@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\Sijin\Git\SolarCar\Electronics\BPS\Leader\BPSLeader.sch)
-    (date "7/25/2020 11:25:43 PM")
+    (date "8/1/2020 4:35:47 PM")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
