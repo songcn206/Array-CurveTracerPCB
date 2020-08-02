@@ -243,8 +243,6 @@ Wire Wire Line
 NoConn ~ 7500 4000
 NoConn ~ 7500 3600
 Wire Wire Line
-	2050 3050 2900 3050
-Wire Wire Line
 	3000 3150 2900 3150
 Wire Wire Line
 	2900 3150 2900 3250
@@ -282,12 +280,6 @@ Wire Wire Line
 Wire Wire Line
 	2050 3000 2050 3050
 Connection ~ 2050 3050
-Wire Wire Line
-	2900 3150 2900 3050
-Connection ~ 2900 3150
-Connection ~ 2900 3050
-Wire Wire Line
-	2900 3050 3000 3050
 $Comp
 L Device:R_Small R?
 U 1 1 5F148A8B
@@ -520,8 +512,6 @@ F 3 "" H 4850 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 5300 2900 5300
-Wire Wire Line
 	3000 5400 2900 5400
 Wire Wire Line
 	2900 5400 2900 5500
@@ -530,12 +520,6 @@ Wire Wire Line
 Wire Wire Line
 	2050 5250 2050 5300
 Connection ~ 2050 5300
-Wire Wire Line
-	2900 5400 2900 5300
-Connection ~ 2900 5400
-Connection ~ 2900 5300
-Wire Wire Line
-	2900 5300 3000 5300
 Wire Wire Line
 	2550 2750 3000 2750
 Text Notes 3150 4350 0    50   ~ 0
@@ -668,4 +652,40 @@ F 3 "" H 2050 5250 50  0001 C CNN
 	1    2050 5250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2050 3050 3000 3050
+$Comp
+L power:+5V #PWR?
+U 1 1 5F27160B
+P 2900 2450
+AR Path="/5C4C7509/5F27160B" Ref="#PWR?"  Part="1" 
+AR Path="/5D766247/5F27160B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2900 2300 50  0001 C CNN
+F 1 "+5V" H 2915 2623 50  0000 C CNN
+F 2 "" H 2900 2450 50  0001 C CNN
+F 3 "" H 2900 2450 50  0001 C CNN
+	1    2900 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2450 2900 3150
+Connection ~ 2900 3150
+Wire Wire Line
+	2050 5300 3000 5300
+$Comp
+L power:+5V #PWR?
+U 1 1 5F27542F
+P 2900 4700
+AR Path="/5C4C7509/5F27542F" Ref="#PWR?"  Part="1" 
+AR Path="/5D766247/5F27542F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2900 4550 50  0001 C CNN
+F 1 "+5V" H 2915 4873 50  0000 C CNN
+F 2 "" H 2900 4700 50  0001 C CNN
+F 3 "" H 2900 4700 50  0001 C CNN
+	1    2900 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4700 2900 5400
+Connection ~ 2900 5400
 $EndSCHEMATC
