@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\hanna\Documents\Git\Electronics\BPS\CurrentBoard\CurrentBoard.sch)
-    (date "8/2/2020 1:52:12 AM")
+    (date "8/2/2020 2:30:22 AM")
     (tool "Eeschema (5.1.5)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -45,7 +45,7 @@
     (comp (ref U4)
       (value HX1188FNL)
       (footprint UTSVT_BPS:HXXXX)
-      (libsource (lib utsvt-bps) (part HX1188FNL) (description ""))
+      (libsource (lib utsvt-bps) (part HX1188FNL) (description "Dual Transformer with CMC"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5F103B51))
     (comp (ref R4)
@@ -336,9 +336,12 @@
         (pin (num 19) (name CLK) (type BiDi))
         (pin (num 20) (name INT) (type output))))
     (libpart (lib utsvt-bps) (part HX1188FNL)
+      (description "Dual Transformer with CMC")
+      (docs https://www.mouser.com/datasheet/2/336/HX1188NL-515471.pdf)
       (fields
         (field (name Reference) U)
-        (field (name Value) HX1188FNL))
+        (field (name Value) HX1188FNL)
+        (field (name Footprint) UTSVT_BPS:HXXXX))
       (pins
         (pin (num 1) (name TD+) (type BiDi))
         (pin (num 2) (name TCT) (type BiDi))
@@ -358,10 +361,10 @@
         (field (name Value) LTC6820))
       (pins
         (pin (num 1) (name EN) (type input))
-        (pin (num 2) (name MOSI) (type unspc))
-        (pin (num 3) (name MISO) (type unspc))
-        (pin (num 4) (name SCK) (type unspc))
-        (pin (num 5) (name *CS) (type unspc))
+        (pin (num 2) (name MOSI) (type BiDi))
+        (pin (num 3) (name MISO) (type BiDi))
+        (pin (num 4) (name SCK) (type BiDi))
+        (pin (num 5) (name *CS) (type BiDi))
         (pin (num 6) (name VDDS) (type power_in))
         (pin (num 7) (name POL) (type input))
         (pin (num 8) (name PHA) (type input))
