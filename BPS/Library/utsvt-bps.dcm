@@ -19,12 +19,6 @@ $CMP LTC6255
 F https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6255-6256-6257.pdf
 $ENDCMP
 #
-$CMP LTC6820
-D Regular SPI to Isolated SPI Converter
-K isolated, SPI, isoSPI
-F https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6820.pdf
-$ENDCMP
-#
 $CMP M24128
 D EEPROM Memory Chip
 K EEPROM, memory, non-volatile
